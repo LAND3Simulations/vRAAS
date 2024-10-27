@@ -1,0 +1,35 @@
+name: Validate JSON in .raas files
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install jq (for JSON validation)
+      run: sudo apt-get install jq -y
+
+    - name: Find and validate all .raas files
+      run: |
+        find ./aircraft -name '*.raas' -print0 | while IFS= read -r -d '' file; do
+          echo "Validating $file..."
+          if ! jq empty "$file"; then
+            echo "::error file=$file::Invalid JSON format"
+            exit 1
+          fi
+        done

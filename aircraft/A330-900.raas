@@ -1,0 +1,43 @@
+{
+  "General": {
+    "PositionShiftMeters": 35
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 3",
+    "TodaCallMaxLength": 1900,
+    "TakeoffShortRunwayLength": 1900,
+    "LandingDistanceAvailableMaxM": 1900,
+    "ApproachShortRunwayCautionM": 1900
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 3"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "ID": "CPT+FO_ND",
+        "PosX": "50%",
+        "PosY": "31%",
+        "FontSize": 90,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "BrightnessVariable": "[L:LIGHTING_POTENTIOMETER_19|double]",
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": false,
+        "PanelName": "VCockpit01",
+        "ID": "CPT+FO_PFD",
+        "PosX": "44%",
+        "PosY": "42%",
+        "FontSize": 80,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": false,
+        "BrightnessVariable": "[L:LIGHTING_POTENTIOMETER_18|double]",
+        "OtherStyles": ""
+      }
+    ]
+  }
+}

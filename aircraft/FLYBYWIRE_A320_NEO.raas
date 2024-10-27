@@ -1,0 +1,12 @@
+{
+    "General": {
+        "PositionShiftMeters": 25,
+        "FlapsInhibit": "[L:A32NX_GPWS_FLAP_OFF|double] > 0"
+    },
+    "SmartRunway": {
+        "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4"
+    },
+    "SmartLanding": {
+        "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4"
+    }
+}

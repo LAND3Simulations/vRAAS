@@ -1,0 +1,31 @@
+{
+  "General": {
+    "PositionShiftMeters": 20
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] == 1 || [S:FLAPS HANDLE INDEX|number] == 2 || [S:FLAPS HANDLE INDEX|number] == 4",
+    "TodaCallMaxLength": 1300,
+    "TakeoffShortRunwayLength": 1300,
+    "LandingDistanceAvailableMaxM": 1300,
+    "ApproachShortRunwayCautionM": 1300
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 5",
+    "ApproachSpeed": "[L:FSS_EXX_PFD_GV_AIRSPD_VAP_1|double]"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "ID": "CPT_PFD",
+        "PosX": "34.85%",
+        "PosY": "13.6%",
+        "FontSize": 50,
+        "FontFamily": "FSS-EJET",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      }
+    ]
+  }
+}

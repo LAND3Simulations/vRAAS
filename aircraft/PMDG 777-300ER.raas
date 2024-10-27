@@ -1,0 +1,67 @@
+{
+  "General": {
+    "PositionShiftMeters": 40,
+    "FlapsInhibit": "[L:switch_301_a|double] == 100"
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[L:switch_507_a|double] >= 10 && [L:switch_507_a|double] <= 40",
+    "TodaCallMaxLength": 2100,
+    "TakeoffShortRunwayLength": 2100,
+    "LandingDistanceAvailableMaxM": 2100,
+    "ApproachShortRunwayCautionM": 2100
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[L:switch_507_a|double] >= 50",
+    "ApproachSpeed": "if([L:ngx_SPDwindow|double] > 0, [L:ngx_SPDwindow|double], [S:AIRSPEED INDICATED|knots])"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": false,
+        "PanelName": "VCockpit01",
+        "ID": "CPT_PFD",
+        "PosX": "22.1%",
+        "PosY": "39.1%",
+        "FontSize": 43,
+        "FontFamily": "Arial",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "ID": "CPT_ND",
+        "PosX": "75.1%",
+        "PosY": "25.5%",
+        "FontSize": 80,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "BrightnessVariable": "[L:LEFT_INBD_BRIGHT_CONTROL|double]",
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": false,
+        "PanelName": "VCockpit01",
+        "ID": "FO_PFD",
+        "PosX": "72.2%",
+        "PosY": "89.1%",
+        "FontSize": 43,
+        "FontFamily": "Arial",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "ID": "FO_ND",
+        "PosX": "25.1%",
+        "PosY": "75.5%",
+        "FontSize": 80,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "BrightnessVariable": "[L:RIGHT_INBD_BRIGHT_CONTROL|double]",
+        "OtherStyles": ""
+      }
+    ]
+  }
+}

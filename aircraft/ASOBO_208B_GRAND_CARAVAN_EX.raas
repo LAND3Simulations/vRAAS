@@ -1,0 +1,21 @@
+{
+  "General": {},
+  "SmartRunway": {},
+  "SmartLanding": {},
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "ID": "PFD",
+        "PosX": "45.0%",
+        "PosY": "29.6%",
+        "FontSize": 50,
+        "FontFamily": "Roboto-Regular",
+        "CenterOnSpace": false,
+        "DisplayPower": "[L:AS1000_PFD_State|double] > 0",
+        "OtherStyles": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "General": {
+    "PositionShiftMeters": 35,
+    "FlapsInhibit": "[L:A32NX_GPWS_FLAP_OFF|double] == 1"
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4",
+    "TodaCallMaxLength": 1900,
+    "TakeoffShortRunwayLength": 1900,
+    "LandingDistanceAvailableMaxM": 1900,
+    "ApproachShortRunwayCautionM": 1900
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "([S:FLAPS HANDLE INDEX|number] >= 4 && [L:A32NX_GPWS_FLAPS3|double]) || [S:FLAPS HANDLE INDEX|number] == 5",
+    "ApproachSpeed": "[L:A32NX_SPEEDS_VLS|double]"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "ID": "CPT_ND",
+        "PosX": "50%",
+        "PosY": "28%",
+        "FontSize": 50,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit15",
+        "ID": "FO_ND",
+        "PosX": "50%",
+        "PosY": "28%",
+        "FontSize": 50,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "OtherStyles": ""
+      }
+    ]
+  }
+}
