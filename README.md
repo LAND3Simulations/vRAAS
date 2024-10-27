@@ -153,17 +153,17 @@ Your favourite aircraft is not listed? Feel free to send a request on our Discor
 
 ## FAQ
 ### Activation / Serial 
-###### Is an active internet connection required? 
+#### Is an active internet connection required? 
 Internet connection is required to activate the product on first launch.
 
 ### General
-###### Do I have to launch it manually each time I want to fly? 
+#### Do I have to launch it manually each time I want to fly? 
 The vRAAS process needs to be running for RAAS to work, but there is an auto-start option available in the general settings tab.  
 You can also select the _Minimize to tray_ , _Start minimized_ and _auto-close_ options. That way, you'll not need to interact with the vRAAS window at all.
 
-###### Does vRAAS reduce the fps?
+#### Does vRAAS reduce the fps?
 We could not measure any reduction in fps.  
 There have been no reports of any performance issues.
 
-###### How can I change the unit to feet?
+#### How can I change the unit to feet?
 Main Window -> RAAS Features -> ALL AIRCRAFT -> Units
