@@ -40,10 +40,10 @@ The following aircraft will work perfectly without any configuration from your s
 | FlyByWire                   | A320neo                    |      ✅     	|       ✅      |1)      	|
 | Fenix                       | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
 | FlightSimStudio FSS         | E170/E175/E190(F)/E195(F)  |      ✅     	|       ✅      |      	|
-| FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1)  No displays to show vRAAS Text. |
+| FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1)  <br> No displays to show vRAAS text. |
 | Horizon Simulations         | B787                       |      ✅     	|       ✅      |      	|
 | IniBuilds A306F             | A306F                      |      ✅     	|       ✅      |1)      	|
-| iFly			               | B737-MAX8                  |      ⚠️     	|       ⚠️      |1)  RAAS included in aircraft. vRAAS disabled by default.       	|
+| iFly			               | B737-MAX8                  |      ⚠️     	|       ⚠️      |1)  <br> RAAS included in aircraft. vRAAS disabled by default. With vRAAS enabled, text will be displayed on PFD       	|
 | Leonardo                    | MADDOX X                   |      ✅     	|       ✅      |      	|
 | LatinVFR                    | A330-900neo                |      ✅     	|       ✅      |1)      	|
 | Headwind Simulations        | A330neo					     |      ✅     	|       ✅      |      	|
@@ -56,7 +56,7 @@ The following aircraft will work perfectly without any configuration from your s
 | Asobo / Default             | C208 Grand Caravan         |      ✅     	|       ✅      |1)      	|
 | PMDG                        | B737 (ALL VARIANTS)        |      ✅     	|       ✅      |      	|
 | PMDG                        | B777                       |      ✅     	|       ✅      |      	|
-| ProSim                      | B738                       |      ✅     	|       ❌      |1)  vRAAS cannot access ProSim Display. |
+| ProSim                      | B738                       |      ✅     	|       ❌      |1)  <br> vRAAS cannot access ProSim Display. |
 
 1\) **_TOO FAST_** callout during approach is currently not available for this aircraft due to missing data from add-on.
 
