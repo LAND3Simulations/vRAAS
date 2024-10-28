@@ -1,17 +1,43 @@
 {
-    "General": {
-        "Enabled": false,
-        "PositionShiftMeters": 25,
-        "RaasInhibit": "[L:VC_Runway_Inhibit_SW_VAL|double] == 0"
-    },
-    "SmartRunway": {
-        "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 6 && [S:FLAPS HANDLE INDEX|number] != 2",
-        "TodaCallMaxLength": 1900,
-        "TakeoffShortRunwayLength": 1900,
-        "LandingDistanceAvailableMaxM": 1900,
-        "ApproachShortRunwayCautionM": 1900
-    },
-    "SmartLanding": {
-        "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 7"
-    }
+  "General": {
+    "Enabled": false,
+    "PositionShiftMeters": 25,
+    "RaasInhibit": "[L:VC_Runway_Inhibit_SW_VAL|double] == 0"
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 6 && [S:FLAPS HANDLE INDEX|number] != 2",
+    "TodaCallMaxLength": 1900,
+    "TakeoffShortRunwayLength": 1900,
+    "LandingDistanceAvailableMaxM": 1900,
+    "ApproachShortRunwayCautionM": 1900
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 7"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "ID": "CPT_PFD",
+        "PosX": "66.6%",
+        "PosY": "38.5%",
+        "FontSize": 38,
+        "FontFamily": "ARIAL",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit05",
+        "ID": "FO_PFD",
+        "PosX": "33.0%",
+        "PosY": "38.5%",
+        "FontSize": 38,
+        "FontFamily": "ARIAL",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      }
+    ]
+  }
 }
