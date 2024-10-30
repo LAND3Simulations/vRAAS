@@ -15,6 +15,7 @@ Enhance your flight simulation experience with **vRAAS**, a virtual Runway Aware
 - **No Performance Impact**: Enjoy realistic alerts with no noticeable effect on FPS.
 - **Flexible Audio**: Select any Windows sound output device for audio alerts.
 - **Built-in Self-Test**: Ensure functionality with a reliable self-test feature.
+- **In-Cockpit controls**: RAAS INHIBIT or FLAP INHIBIT switches in your cockpit are linked to vRAAS
 
 ### Known Limitations:
 
