@@ -163,7 +163,9 @@ You can also select the _Minimize to tray_ , _Start minimized_ and _auto-close_ 
 
 #### Does vRAAS reduce the fps?
 We could not measure any reduction in fps.  
-There have been no reports of any performance issues.
+
+#### Can I disable the self test on startup?
+Sure, go to _General Settings_ and disable _Self-Test on startup_
 
 #### How can I change the unit to feet?
 Main Window -> RAAS Features -> ALL AIRCRAFT -> Units
