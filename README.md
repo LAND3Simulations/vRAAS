@@ -39,6 +39,7 @@ The following aircraft will work perfectly without any configuration from your s
 | Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
 |---------------------------|----------------------------|:----------:|:------------:|------|
 | FlyByWire                   | A320neo                    |      ✅     	|       ✅      |1)      	|
+| FlyByWire                   | A380X                      |      ✅     	|       ✅      |        	|
 | Fenix                       | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
 | FlightSimStudio FSS         | E170/E175/E190(F)/E195(F)  |      ✅     	|       ✅      |      	|
 | FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1)  <br> No displays to show vRAAS text. |
