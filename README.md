@@ -33,7 +33,7 @@ vRAAS has been tested with the MSFS 2024 Tech Alpha, and all features performed 
 
 ## Aircraft Compatibility List
 
-Generally, vRAAS audio calls work with all aircraft, including 3rd-party addons. However, some features require additional configuration or fine-tuning. The following aircraft will work perfectly without any configuration on your part.
+Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party addons. However, some features require additional configuration or fine-tuning. The following aircraft will work perfectly without any configuration on your part.
 
 **vRAAS Audio**: Audio calls, generally available for all aircraft  
 **vRAAS Display**: In-game RAAS text messages displayed on PFD or ND  
