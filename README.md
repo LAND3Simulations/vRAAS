@@ -213,7 +213,6 @@ Compared to other RAAS add-ons on the market, **vRAAS** offers the following ben
 - **I get the self-test alert even when the aircraft is cold-and-dark.**  
   _Currently, vRAAS is always "powered on." Linking vRAAS to the aircraft power state is on our to-do list. In the meantime, you can disable the self-test on the_ _General Settings_ _page._
 
----
 
 ### Any further questions? Ideas? Join our Discord!
 [<img width="200" src="https://github.com/user-attachments/assets/4df0b494-7c98-4a4c-b677-b22b63523ad6">](http://discord.land3simulations.com/)
@@ -226,3 +225,11 @@ Compared to other RAAS add-ons on the market, **vRAAS** offers the following ben
 - Add (Virtual-)Airline specific profiles
 - Expand voice options
 - Increase support for more aircraft
+
+---
+
+###### Impressum (Imprint)
+
+To comply with German law, please refer to our [Impressum](http://land3simulations.com/impressum.html) for legal details.
+
+
