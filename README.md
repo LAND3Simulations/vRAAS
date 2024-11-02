@@ -2,6 +2,9 @@
 
 Enhance your flight simulation experience with **vRAAS**, a virtual Runway Awareness and Advisory System designed to replicate the functionality of real-world systems, delivering runway alerts and advisories directly within MSFS. Every feature operates **exactly** like its real counterpart and can be easily customized or disabled to suit your preferences.
 
+[<img src="https://github.com/user-attachments/assets/0a74de5a-6c71-4480-9750-ad2e417fdb07">](https://contrail.shop/products/land3-simulations-vraas-msfs) <br/><br/>
+[<img width="200" src="https://github.com/user-attachments/assets/4df0b494-7c98-4a4c-b677-b22b63523ad6">](http://discord.land3simulations.com/)
+
 ### Key Features:
 
 - **Full Compatibility**: Works seamlessly with all airports, including add-ons, and supports all aircraft types—no configuration required.
@@ -171,3 +174,6 @@ Sure, go to _General Settings_ and disable _Self-Test on startup_
 
 #### How can I change the unit to feet?
 Main Window -> RAAS Features -> ALL AIRCRAFT -> Units
+
+### Any further questions? Ideas? Join our Discord!
+[<img width="200" src="https://github.com/user-attachments/assets/4df0b494-7c98-4a4c-b677-b22b63523ad6">](http://discord.land3simulations.com/)
