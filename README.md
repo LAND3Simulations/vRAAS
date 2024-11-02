@@ -160,6 +160,9 @@ Don’t see your favorite aircraft listed? Feel free to send a request on our Di
 
 - **Does vRAAS reduce FPS?**  
   _We haven't observed any noticeable impact on FPS._
+  
+- **Do I need Internet for vRAAS to work?**  
+  _vRAAS automatically downloads aircraft-specific details at each launch. Although vRAAS generally functions well without an internet connection, some convenience features do require it._
 
 - **Can I disable the self-test on startup?**  
   _Yes, go to_ _General Settings_ _and disable_ _Self-Test on startup_.
