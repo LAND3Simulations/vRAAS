@@ -54,7 +54,7 @@ The following aircraft will work perfectly without any configuration from your s
 | Headwind Simulations        | A330neo					     |      ✅     	|       ✅      |      	|
 | Microsoft / Default         | A310                       |      ✅     	|       ✅      |1)      	|
 | Asobo / Default             | B747-8i                    |      ✅     	|       ✅      |1)      	|
-| Asobo / Default             | B787-9                     |      ✅     	|       ✅      |1)          |   
+| Asobo / Default             | B787-10                    |      ✅     	|       ✅      |1)          |   
 | Asobo / Default             | A320neo                    |      ✅     	|       ✅      |1)      	|
 | Asobo / Default             | CJ4                        |      ✅     	|       ✅      |1)      	|
 | Asobo / Default             | Citation Longitude         |      ✅     	|       ✅      |1)      	|
