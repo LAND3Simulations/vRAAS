@@ -177,5 +177,29 @@ Sure, go to _General Settings_ and disable _Self-Test on startup_
 #### How can I change the unit to feet?
 Main Window -> RAAS Features -> ALL AIRCRAFT -> Units
 
+#### How can I disable the RAAS Display for certain displays?
+Go to _Main Window -> RAAS Features -> CURERNT AIRCRAFT -> Display setup_ <br/>
+Simply check/uncheck the desired display. There you can also move/resize the text.
+
+#### I don't see any text on my PFD/ND
+Make sure the community-folder plugin is installed. This should normally happen automatically.<br/>
+Check if your aircraft is in the supported list above. Can't find it?<br/>
+Go to _Main Window -> RAAS Features -> CURERNT AIRCRAFT -> Display setup_ to position it yourself or send a request on our Discord.
+
+#### The real aircraft only shows RAAS Text when TERR is selected on the ND. Can you add this to vRAAS?
+While vRAAS supports this, most aircraft don't provide me with the required variables to detect if TERR is selected or not.<br/>
+In case you know a way how to detect it, feel free to send me a message on Discord!
+
+#### I get the Self-Test even when the aircraft is cold-and-dark
+At the moment, vRAAS is always "powered on". Linking vRAAS to the aircraft power state is on my to-do list :)<br/>
+To avoid this in the meanwhile, you can disable the Self-Test on the _General Settings_ page. 
+
 ### Any further questions? Ideas? Join our Discord!
 [<img width="200" src="https://github.com/user-attachments/assets/4df0b494-7c98-4a4c-b677-b22b63523ad6">](http://discord.land3simulations.com/)
+
+## TO-DO
+- Link to aircraft power state
+- (Virtual-)Airline Specific profiles
+- More voices
+- More aircraft
+
