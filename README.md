@@ -36,7 +36,7 @@ Generally, vRAAS audio calls work with all aircraft, including 3rd party addons.
 However, some features require additional configuration or fine-tuning.
 The following aircraft will work perfectly without any configuration from your side.
 
-**vRAAS Audio**: Audio calls, generally available for all aircraft
+**vRAAS Audio**: Audio calls, generally available for all aircraft <br/>
 **vRAAS Display**: In-Game RAAS text messages displayed on PFD or ND 
 
 | Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
@@ -70,8 +70,10 @@ Your favourite aircraft is not listed? Feel free to send a request on our Discor
 ## Available Callouts
 
 0. **Self Test**  
-   Checks if vRAAS is working properly and announces unit used for distance calls  
-   **_“RUNWAY AWARESS OKAY - METER / FEET”_**
+   Checks if vRAAS is working properly and announces unit used for distance calls <br/> 
+   **_“RUNWAY AWARESS OKAY - METER / FEET”_**<br/>
+   **_“RUNWAY AWARESS INOP”_**<br/>
+   **_“RUNWAY AWARESS R-T-O”_**<br/>
 
 ### Ground Operations
 
