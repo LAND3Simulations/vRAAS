@@ -4,6 +4,7 @@ Enhance your flight simulation experience with **vRAAS**, a virtual Runway Aware
 
 [<img src="https://github.com/user-attachments/assets/0a74de5a-6c71-4480-9750-ad2e417fdb07">](https://contrail.shop/products/land3-simulations-vraas-msfs) <br/><br/>
 [<img width="200" src="https://github.com/user-attachments/assets/4df0b494-7c98-4a4c-b677-b22b63523ad6">](http://discord.land3simulations.com/)
+[<img width="230" src="https://github.com/user-attachments/assets/de8a0650-3394-44e9-b0f7-347a9ad6842e">](https://contrail.shop/products/land3-simulations-vraas-msfs)
 
 ### Key Features:
 
