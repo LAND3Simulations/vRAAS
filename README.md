@@ -182,36 +182,37 @@ Compared to other RAAS add-ons on the market, **vRAAS** offers the following ben
 ## FAQ
 
 ### Activation / Serial
-- **Is an active internet connection required?**  
+- **Is an active internet connection required?**  <br/>
   _An internet connection is needed to activate the product on the first launch._
 
 ### General
-- **Do I have to launch vRAAS manually each time I want to fly?**  
+- **Do I have to launch vRAAS manually each time I want to fly?**  <br/>
   _The vRAAS process needs to be running for RAAS to function, but you can enable the auto-start option in the General Settings tab. Additionally, you can select options for_ _Minimize to tray_, _Start minimized_, _and_ _Auto-close_ _so you won’t need to interact with the vRAAS window at all._
 
-- **Does vRAAS reduce FPS?**  
+- **Does vRAAS reduce FPS?**  <br/>
   _We haven't observed any noticeable impact on FPS._
   
-- **Do I need Internet for vRAAS to work?**  
+- **Do I need Internet for vRAAS to work?**  <br/>
   _vRAAS automatically downloads aircraft-specific details at each launch. Although vRAAS generally functions well without an internet connection, some convenience features do require it._
 
-- **Can I disable the self-test on startup?**  
+- **Can I disable the self-test on startup?** <br/> 
   _Yes, go to_ _General Settings_ _and disable_ _Self-Test on startup_.
 
-- **How can I change the unit of measurement to feet?**  
+- **How can I change the unit of measurement to feet?**  <br/>
   _Go to **Main Window > RAAS Features > ALL AIRCRAFT > Units** and select your preferred unit._
 
 ### Display
-- **How can I disable the RAAS Display for certain displays?**  
+- **How can I disable the RAAS Display for certain displays?**<br/>
   _Navigate to_ **Main Window > RAAS Features > CURRENT AIRCRAFT > Display Setup**. _Check or uncheck the desired display, and you can also adjust the text position and size here._
 
-- **I don't see any text on my PFD/ND.**  
+- **I don't see any text on my PFD/ND.**<br/>
+  _If you have just installed vRAAS, restart your Simulator. <br/>
   _Ensure the community-folder plugin is installed (it should install automatically). Also, verify if your aircraft is on the supported list above. If not, go to_ **Main Window > RAAS Features > CURRENT AIRCRAFT > Display Setup** _to position the text yourself or reach out on our Discord for assistance._
 
-- **The real aircraft only shows RAAS text when TERR is selected on the ND. Can you add this to vRAAS?**  
+- **The real aircraft only shows RAAS text when TERR is selected on the ND. Can you add this to vRAAS?** <br/> 
   _vRAAS supports this, but many aircraft don’t provide the required data to detect if TERR is selected. If you know of a way to detect it, please share on Discord!_
 
-- **I get the self-test alert even when the aircraft is cold-and-dark.**  
+- **I get the self-test alert even when the aircraft is cold-and-dark.** <br/> 
   _Currently, vRAAS is always "powered on." Linking vRAAS to the aircraft power state is on our to-do list. In the meantime, you can disable the self-test on the_ _General Settings_ _page._
 
 
