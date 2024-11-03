@@ -3,14 +3,14 @@
     "PositionShiftMeters": 30
   },
   "SmartRunway": {
-    "TakeoffFlapsCondition": "[S:FLAPS HANDLE PERCENT|Percent over 100] > 0 && [S:FLAPS HANDLE PERCENT|Percent over 100] < 0.72",
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE PERCENT|percent over 100] > 0 && [S:FLAPS HANDLE PERCENT|percent over 100] < 0.72",
     "TodaCallMaxLength": 2100,
     "TakeoffShortRunwayLength": 2100,
     "LandingDistanceAvailableMaxM": 2100,
     "ApproachShortRunwayCautionM": 2100
   },
   "SmartLanding": {
-    "LandingFlapsCondition": "[S:FLAPS HANDLE PERCENT|Percent over 100] > 0.85"
+    "LandingFlapsCondition": "[S:FLAPS HANDLE PERCENT|percent over 100] > 0.85"
   },
   "DisplayConfig": {
     "Displays": [
