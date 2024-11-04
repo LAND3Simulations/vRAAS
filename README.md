@@ -62,6 +62,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | PMDG                        | B737 (ALL VARIANTS)        |      ✅     	|       ✅      |      	|
 | PMDG                        | B777                       |      ✅     	|       ✅      |      	|
 | ProSim                      | B738                       |      ✅     	|       ❌      |1) vRAAS cannot access ProSim display. |
+| Salty                       | B747-8i                    |      ✅     	|       ✅      |			|
 | TFDi				          | MD-11                      |      ✅     	|       ✅      |1)      	|
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
