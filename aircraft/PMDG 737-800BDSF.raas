@@ -1,7 +1,9 @@
 {
   "General": {
     "PositionShiftMeters": 25,
-    "FlapsInhibit": "[L:switch_501_73X|double] == 0"
+    "FlapsInhibit": "[L:switch_501_73X|double] == 0",
+    "SystemPower": "[L:switch_01_73X|double] > 0",
+    "PowerOnDelay": 90
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 6 && [S:FLAPS HANDLE INDEX|number] != 2",
