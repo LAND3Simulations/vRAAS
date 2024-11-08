@@ -1,7 +1,10 @@
 {
   "General": {
     "PositionShiftMeters": 40,
-    "FlapsInhibit": "[L:switch_301_a|double] == 100"
+    "SystemPower": "[L:Battery|double] > 0",
+    "PowerOnDelay": 120,
+    "FlapsInhibit": "[L:switch_301_a|double] > 0",
+    "RaasInhibit": "[L:switch_297_a|double] > 0"
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[L:switch_507_a|double] >= 10 && [L:switch_507_a|double] <= 40",
@@ -36,7 +39,7 @@
         "FontSize": 80,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "BrightnessVariable": "[L:LEFT_INBD_BRIGHT_CONTROL|double]",
+        "BrightnessVariable": "[L:LEFT_INBD_BRIGHT_CONTROL|double] + 20",
         "OtherStyles": ""
       },
       {
@@ -59,7 +62,7 @@
         "FontSize": 80,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "BrightnessVariable": "[L:RIGHT_INBD_BRIGHT_CONTROL|double]",
+        "BrightnessVariable": "[L:RIGHT_INBD_BRIGHT_CONTROL|double] + 20",
         "OtherStyles": ""
       }
     ]
