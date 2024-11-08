@@ -1,5 +1,7 @@
 {
     "General": {
+        "SystemPower": "[L:B78_AC_BUS_ENERGIZED|double] > 0",
+        "PowerOnDelay": 10,
         "PositionShiftMeters": 35
     },
     "SmartRunway": {
