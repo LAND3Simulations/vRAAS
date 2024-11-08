@@ -1,6 +1,10 @@
 {
   "General": {
-    "PositionShiftMeters": 20
+    "PositionShiftMeters": 20,
+    "SystemPower": "[L:FSS_EXX_MFD_GV_ELECT_AC_BUS_1|double] > 0",
+    "PowerOnDelay": 16,
+    "FlapsInhibit": "[L:FSS_EXX_GND_PROX_FLAP_OVRD|double] > 0",
+    "RaasInhibit": "[L:FSS_EXX_GND_PROX_INHIB_L|double] > 0"
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] == 1 || [S:FLAPS HANDLE INDEX|number] == 2 || [S:FLAPS HANDLE INDEX|number] == 4",
@@ -23,6 +27,17 @@
         "PosY": "13.6%",
         "FontSize": 50,
         "FontFamily": "FSS-EJET",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "ID": "FO_PFD",
+        "PosX": "57.1%",
+        "PosY": "13.6%",
+        "FontSize": 50,
+        "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": false,
         "OtherStyles": ""
       }
