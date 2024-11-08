@@ -1,0 +1,32 @@
+{
+  "General": {
+    "SystemPower": "[L:B78_AC_BUS_ENERGIZED|double] > 0",
+    "PowerOnDelay": 10,
+    "PositionShiftMeters": 35
+  },
+  "SmartRunway": {
+    "TodaCallMaxLength": 2100,
+    "TakeoffShortRunwayLength": 2100,
+    "LandingDistanceAvailableMaxM": 2100,
+    "ApproachShortRunwayCautionM": 2100,
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 [S:FLAPS HANDLE INDEX|number] <= 4"
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "ID": "BOTH_PFD",
+        "PosX": "66.5%",
+        "PosY": "52.5%",
+        "FontSize": 60,
+        "FontFamily": "b78x",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      }
+    ]
+  }
+}
