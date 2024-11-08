@@ -1,6 +1,7 @@
 {
   "General": {
-    "PositionShiftMeters": 25
+    "PositionShiftMeters": 25,
+    "SystemPower": "[L:FSS_B727_FE_ELEC_BUS_1AC_STATE|double] > 0"
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] == 2 || [S:FLAPS HANDLE INDEX|number] == 3",
