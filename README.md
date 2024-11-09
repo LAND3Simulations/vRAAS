@@ -51,10 +51,11 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Horizon Simulations         | B787                       |      ✅     	|       ✅      |        	|
 | Kuro                        | B787                       |      ✅     	|       ✅      |1)      	|
 | IniBuilds A306F             | A306F                      |      ✅     	|       ✅      |1)      	|
-| iFly			               | B737-MAX8                  |      ⚠️     	|       ⚠️      |1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD.       	|
+| iFly			               | B737-MAX8                 |      ⚠️     	|       ⚠️      |1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD.       	|
+| Just Flight                 | RJ 75/80/100               |      ✅     	|       ✅      |      	|
 | Leonardo                    | MADDOX X                   |      ✅     	|       ✅      |      	|
 | LatinVFR                    | A330-900neo                |      ✅     	|       ✅      |1)      	|
-| Headwind Simulations        | A330neo					     |      ✅     	|       ✅      |      	|
+| Headwind Simulations        | A330neo					   |      ✅     	|       ✅      |      	|
 | Microsoft / Default         | A310                       |      ✅     	|       ✅      |1)      	|
 | Asobo / Default             | B747-8i                    |      ✅     	|       ✅      |1)      	|
 | Asobo / Default             | B787-10                    |      ✅     	|       ✅      |1)      	|   
