@@ -229,7 +229,7 @@ Compared to other RAAS add-ons on the market, **vRAAS** offers the following ben
 
 ## TO-DO List
 
-- Link RAAS to aircraft power state
+- ~Link RAAS to aircraft power state~ _Added in Version 1.1_
 - Add (Virtual-)Airline specific profiles
 - Expand voice options
 - Increase support for more aircraft
