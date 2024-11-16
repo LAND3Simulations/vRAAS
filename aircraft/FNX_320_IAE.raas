@@ -1,21 +1,20 @@
 {
   "General": {
-      "PositionShiftMeters": 25,
-      "FlapsInhibit": "[L:I_OH_GPWS_FLAP_MODE_L|double] > 0",
-	  "SystemPower": "[L:B_ELEC_BUS_POWER_AC_ESS|double] > 0",
-	  "PowerOnDelay": 40
+    "PositionShiftMeters": 25,
+    "FlapsInhibit": "[L:I_OH_GPWS_FLAP_MODE_L|double] > 0",
+    "SystemPower": "[L:B_ELEC_BUS_POWER_AC_ESS|double] > 0",
+    "PowerOnDelay": 40
   },
   "SmartRunway": {
-      "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4",
-      "TodaCallMaxLength": 1900,
-      "TakeoffShortRunwayLength": 1900,
-      "LandingDistanceAvailableMaxM": 1900,
-      "ApproachShortRunwayCautionM": 1900
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4",
+    "TodaCallMaxLength": 1700,
+    "TakeoffShortRunwayLength": 1700,
+    "LandingDistanceAvailableMaxM": 1700,
+    "ApproachShortRunwayCautionM": 1700
   },
   "SmartLanding": {
-      "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
-      "ApproachSpeed": "[L:N_FCU_SPEED|double]",
-	  "AltimeterMonitorBelowTA": false
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
+    "ApproachSpeed": "[L:N_FCU_SPEED|double]"
   },
   "DisplayConfig": {
     "Displays": [
@@ -29,7 +28,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:N_DISPLAY_BRIGHTNESS_CI|double] * 100",
-		"TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_CAPT_L|double] > 0",
+        "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_CAPT_L|double] > 0",
         "OtherStyles": ""
       },
       {
@@ -42,7 +41,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:N_DISPLAY_BRIGHTNESS_FI|double] * 100",
-		"TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_FO_L|double] > 0",
+        "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_FO_L|double] > 0",
         "OtherStyles": ""
       }
     ]
