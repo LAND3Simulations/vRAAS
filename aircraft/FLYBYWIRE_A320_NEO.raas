@@ -2,7 +2,7 @@
   "General": {
     "PositionShiftMeters": 25,
     "FlapsInhibit": "[L:A32NX_GPWS_FLAP_OFF|double] > 0",
-	"SystemPower": "[L:A32NX_ELEC_AC_ESS_BUS_IS_POWERED|double] > 0",
+    "SystemPower": "[L:A32NX_ELEC_AC_ESS_BUS_IS_POWERED|double] > 0",
     "PowerOnDelay": 40
   },
   "SmartRunway": {
@@ -28,7 +28,7 @@
         "FontSize": 50,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-		"TerrainEnabled": "[L:A32NX_EFIS_TERR_L_ACTIVE|double] > 0",
+        "TerrainEnabled": "[L:A32NX_EFIS_TERRAIN_L_ACTIVE|double] > 0",
         "OtherStyles": ""
       },
       {
@@ -40,7 +40,7 @@
         "FontSize": 50,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-		"TerrainEnabled": "[L:A32NX_EFIS_TERR_R_ACTIVE|double] > 0",
+        "TerrainEnabled": "[L:A32NX_EFIS_TERRAIN_R_ACTIVE|double] > 0",
         "OtherStyles": ""
       }
     ]
