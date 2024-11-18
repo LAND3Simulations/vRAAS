@@ -1,0 +1,27 @@
+{
+  "General": {
+    "SystemPower": "[L:HJET_MainBus1|double] > 0",
+    "PowerOnDelay": 10
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] == 1"
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] == 2"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "ID": "CPT+FO_PFD",
+        "PosX": "50%",
+        "PosY": "28%",
+        "FontSize": 50,
+        "FontFamily": "Roboto-Medium",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      }
+    ]
+  }
+}
