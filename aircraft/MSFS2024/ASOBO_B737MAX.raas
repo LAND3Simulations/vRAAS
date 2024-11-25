@@ -1,0 +1,31 @@
+{
+  "General": {
+    "SystemPower": "[L:WTB38M_PFD_1_State|double] > 0",
+    "PositionShiftMeters": 35
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 6 && [S:FLAPS HANDLE INDEX|number] != 2",
+	"TodaCallMaxLength": 1800,
+    "TakeoffShortRunwayLength": 1800,
+    "LandingDistanceAvailableMaxM": 1800,
+    "ApproachShortRunwayCautionM": 1800
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 7"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "ID": "CPT+FO_PFD",
+        "PosX": "66.6%",
+        "PosY": "53%",
+        "FontSize": 60,
+        "FontFamily": "ARIAL",
+        "CenterOnSpace": false,
+        "OtherStyles": ""
+      }
+    ]
+  }
+}

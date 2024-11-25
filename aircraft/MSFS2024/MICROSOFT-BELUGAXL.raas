@@ -1,0 +1,47 @@
+{
+  "General": {
+    "SystemPower": "[L:INI_FO_ND_VALID|double] == 0",
+    "PositionShiftMeters": 40,
+    "FlapsInhibit": "[L:INI_GPWS_FLAP_STATE|double] == 0",
+    "RaasInhibit": "[L:INI_GPWS_TERR_STATE|double] == 0"
+  },
+  "SmartRunway": {
+    "TodaCallMaxLength": 1900,
+    "TakeoffShortRunwayLength": 1900,
+    "LandingDistanceAvailableMaxM": 1900,
+    "ApproachShortRunwayCautionM": 1900,
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 3"
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 3",
+    "ApproachSpeed": "[L:INI_VAPP_SPEED|double]"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit03",
+        "ID": "CPT_ND",
+        "PosX": "50%",
+        "PosY": "44%",
+        "FontSize": 60,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "TerrainEnabled": "[L:INI_TERR_ON_CAPT|double] > 0",
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit07",
+        "ID": "FO_ND",
+        "PosX": "50%",
+        "PosY": "44%",
+        "FontSize": 60,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "TerrainEnabled": "[L:INI_TERR_ON_FO|double] > 0",
+        "OtherStyles": ""
+      }
+    ]
+  }
+}

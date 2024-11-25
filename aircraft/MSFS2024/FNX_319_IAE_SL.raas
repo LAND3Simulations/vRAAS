@@ -1,0 +1,19 @@
+{
+  "General": {
+    "PositionShiftMeters": 25,
+    "FlapsInhibit": "[L:I_OH_GPWS_FLAP_MODE_L|double] > 0",
+    "SystemPower": "[L:B_ELEC_BUS_POWER_AC_ESS|double] > 0",
+    "PowerOnDelay": 40
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4",
+    "TodaCallMaxLength": 1700,
+    "TakeoffShortRunwayLength": 1700,
+    "LandingDistanceAvailableMaxM": 1700,
+    "ApproachShortRunwayCautionM": 1700
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
+    "ApproachSpeed": "[L:N_FCU_SPEED|double]"
+  }
+}

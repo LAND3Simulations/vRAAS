@@ -1,15 +1,15 @@
 {
   "General": {
     "Enabled": false,
-    "PositionShiftMeters": 25,
+    "PositionShiftMeters": 35,
     "RaasInhibit": "[L:VC_Runway_Inhibit_SW_VAL|double] == 0"
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 6 && [S:FLAPS HANDLE INDEX|number] != 2",
-    "TodaCallMaxLength": 1900,
-    "TakeoffShortRunwayLength": 1900,
-    "LandingDistanceAvailableMaxM": 1900,
-    "ApproachShortRunwayCautionM": 1900
+    "TodaCallMaxLength": 1800,
+    "TakeoffShortRunwayLength": 1800,
+    "LandingDistanceAvailableMaxM": 1800,
+    "ApproachShortRunwayCautionM": 1800
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 7"
