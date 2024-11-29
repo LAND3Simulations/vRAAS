@@ -4,7 +4,7 @@
     "PositionShiftMeters": 35
   },
   "SmartRunway": {
-    "TakeoffFlapsCondition": "S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 6 && [S:FLAPS HANDLE INDEX|number] != 2",
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 6 && [S:FLAPS HANDLE INDEX|number] != 2",
 	"TodaCallMaxLength": 1800,
     "TakeoffShortRunwayLength": 1800,
     "LandingDistanceAvailableMaxM": 1800,
