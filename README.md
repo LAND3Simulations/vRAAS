@@ -71,6 +71,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Salty                       | B747-8i                    |      ✅     	|       ✅      |			|
 | TFDi				          | MD-11                      |      ✅     	|       ✅      |1)      	|
 
+
 ### MSFS2024
 
 | Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
