@@ -12,7 +12,7 @@
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 3",
-    "ApproachSpeed": "[L:JF_PFD_REF_DYNAMIC|double]",
+    "ApproachSpeed": "[L:JF_PFD_VREF_DYNAMIC|double]",
     "ApproachSpeedIsVref": true
   },
   "DisplayConfig": {
