@@ -68,7 +68,8 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Asobo / Default             | C208 Grand Caravan         |      ✅     	|       ✅      |1)      	|
 | PMDG                        | B737 (ALL VARIANTS)        |      ✅     	|       ✅      |      	|
 | PMDG                        | B777                       |      ✅     	|       ✅      |      	|
-| ProSim                      | B738                       |      ✅     	|       ❌      |1) vRAAS cannot access ProSim display. |
+| ProSim                      | B737                       |      ✅     	|       ⚠️      |1) Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
+| JeeHell FMGS                | A320                       |      ✅     	|       ⚠️      |1) Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
 | Salty                       | B747-8i                    |      ✅     	|       ✅      |			|
 | TFDi				          | MD-11                      |      ✅     	|       ✅      |1)      	|
 
