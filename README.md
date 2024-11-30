@@ -40,6 +40,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 **vRAAS Display**: In-game RAAS text messages displayed on PFD or ND  
 
 ### MSFS2020
+
 | Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
 |---------------------------|----------------------------|:----------:|:------------:|------|
 | Aerosoft           		  | A330                       |      ✅     	|       ✅      |      		|
@@ -81,8 +82,8 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Microsoft / iniBuilds     | A321                       |      ✅     	|       ✅      |      		|
 | Microsoft / iniBuilds     | A330                       |      ✅     	|       ✅      |      		|
 | Microsoft / iniBuilds     | Beluga XL                  |      ✅     	|       ✅      |      		|
-| Asobo			            | B747		                 |      ✅     	|       ✅      |1)      	|
-| Asobo			            | B737 MAX		             |      ✅     	|       ✅      |1)      	|
+| Asobo			             | B747		                  |      ✅     	|       ✅      |1)      	|
+| Asobo			             | B737 MAX		               |      ✅     	|       ✅      |1)      	|
 | Fenix                     | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
