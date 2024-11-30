@@ -2,7 +2,7 @@
   "General": {
     "SystemPower": "[L:INI_FO_ND_VALID|double] == 0",
     "PositionShiftMeters": 40,
-    "FlapsInhibit": "[L:INI_GPWS_FLAP_STATE|double] == 0",
+    "FlapsInhibit": "[L:INI_GPWS_FLAP_MODE|double] == 0",
     "RaasInhibit": "[L:INI_GPWS_TERR_STATE|double] == 0"
   },
   "SmartRunway": {

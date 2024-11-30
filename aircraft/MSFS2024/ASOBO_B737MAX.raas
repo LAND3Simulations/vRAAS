@@ -20,11 +20,11 @@
         "PanelName": "VCockpit01",
         "ID": "CPT+FO_PFD",
         "PosX": "66.6%",
-        "PosY": "53%",
-        "FontSize": 60,
+        "PosY": "52.5%",
+        "FontSize": 55,
         "FontFamily": "ARIAL",
         "CenterOnSpace": false,
-        "OtherStyles": ""
+        "OtherStyles": "backgroundColor:black"
       }
     ]
   }

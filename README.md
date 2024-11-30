@@ -28,7 +28,7 @@ Enhance your flight simulation experience with **vRAAS**, a virtual Runway Aware
 
 ### Compatibility with MSFS 2024:
 
-vRAAS has been tested with the MSFS 2024 Tech Alpha, and all features performed as expected. However, until the final version is available, we cannot guarantee full compatibility with MSFS 2024.
+**vRAAS is 100% compatible with MSFS2024!**
 
 ---
 
@@ -39,6 +39,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 **vRAAS Audio**: Audio calls, generally available for all aircraft  
 **vRAAS Display**: In-game RAAS text messages displayed on PFD or ND  
 
+### MSFS2020
 | Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
 |---------------------------|----------------------------|:----------:|:------------:|------|
 | Aerosoft           		  | A330                       |      ✅     	|       ✅      |      		|
@@ -52,7 +53,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Horizon Simulations         | B787                       |      ✅     	|       ✅      |        	|
 | Kuro                        | B787                       |      ✅     	|       ✅      |1)      	|
 | IniBuilds A306F             | A306F                      |      ✅     	|       ✅      |1)      	|
-| iFly			               | B737-MAX8                 |      ⚠️     	|       ⚠️      |1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD.       	|
+| iFly			              | B737-MAX8                  |      ⚠️     	|       ⚠️      |1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD.       	|
 | Just Flight                 | RJ 75/80/100               |      ✅     	|       ✅      |      	|
 | Leonardo                    | MADDOX X                   |      ✅     	|       ✅      |      	|
 | LatinVFR                    | A330-900neo                |      ✅     	|       ✅      |1)      	|
@@ -69,6 +70,19 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | ProSim                      | B738                       |      ✅     	|       ❌      |1) vRAAS cannot access ProSim display. |
 | Salty                       | B747-8i                    |      ✅     	|       ✅      |			|
 | TFDi				          | MD-11                      |      ✅     	|       ✅      |1)      	|
+
+### MSFS2024
+
+| Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
+|---------------------------|----------------------------|:----------:|:------------:|------|
+| Microsoft / iniBuilds     | A310                       |      ✅     	|       ✅      |      		|
+| Microsoft / iniBuilds     | A320neo                    |      ✅     	|       ✅      |      		|
+| Microsoft / iniBuilds     | A321                       |      ✅     	|       ✅      |      		|
+| Microsoft / iniBuilds     | A330                       |      ✅     	|       ✅      |      		|
+| Microsoft / iniBuilds     | Beluga XL                  |      ✅     	|       ✅      |      		|
+| Asobo			            | B747		                 |      ✅     	|       ✅      |1)      	|
+| Asobo			            | B737 MAX		             |      ✅     	|       ✅      |1)      	|
+| Fenix                     | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
 
