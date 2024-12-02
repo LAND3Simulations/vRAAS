@@ -2,12 +2,11 @@
   "General": {
     "SystemPower": "[L:INI_FO_ND_VALID|double] == 0",
     "PositionShiftMeters": 40,
-    "FlapsInhibit": "[L:INI_GPWS_FLAP_MODE|double] == 0",
     "RaasInhibit": "[L:INI_GPWS_TERR_STATE|double] == 0"
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 3",
-	"TodaCallMaxLength": 1900,
+    "TodaCallMaxLength": 1900,
     "TakeoffShortRunwayLength": 1900,
     "LandingDistanceAvailableMaxM": 1900,
     "ApproachShortRunwayCautionM": 1900
