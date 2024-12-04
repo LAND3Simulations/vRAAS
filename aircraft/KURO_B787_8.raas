@@ -9,7 +9,7 @@
     "TakeoffShortRunwayLength": 2100,
     "LandingDistanceAvailableMaxM": 2100,
     "ApproachShortRunwayCautionM": 2100,
-    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 [S:FLAPS HANDLE INDEX|number] <= 4"
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4"
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4"
