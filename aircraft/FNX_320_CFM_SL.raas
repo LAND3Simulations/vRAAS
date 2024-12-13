@@ -14,7 +14,8 @@
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
-    "ApproachSpeed": "[L:N_FCU_SPEED|double]"
+    "ApproachSpeed": "[L:N_FCU_SPEED|double]",
+    "AltimeterMonitorBelowTA": false
   },
   "DisplayConfig": {
     "Displays": [
