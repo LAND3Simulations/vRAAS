@@ -6,10 +6,10 @@
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4",
-    "TodaCallMaxLength": 3000,
-    "TakeoffShortRunwayLength": 3000,
-    "LandingDistanceAvailableMaxM": 3000,
-    "ApproachShortRunwayCautionM": 3000
+    "TodaCallMaxLength": 2700,
+    "TakeoffShortRunwayLength": 2700,
+    "LandingDistanceAvailableMaxM": 2700,
+    "ApproachShortRunwayCautionM": 2700
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
