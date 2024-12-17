@@ -47,7 +47,8 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Aerosoft           		  | CRJ (ALL VARIANTS)         |      ✅     	|       ✅      |      		|
 | FlyByWire                   | A320neo                    |      ✅     	|       ✅      |1)      	|
 | FlyByWire                   | A380X                      |      ✅     	|       ✅      |        	|
-| Fenix                       | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
+| Fenix                       | A319/A320/A321             |      ✅     	|       ✅      |      	|
+| FsLabs                      | A321ceo             	   |      ✅     	|       ✅      |1)	      	|
 | Flight FX                   | HJET			           |      ✅     	|       ✅      |1)      	|
 | FlightSimStudio FSS         | E170/E175/E190(F)/E195(F)  |      ✅     	|       ✅      |      	|
 | FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
