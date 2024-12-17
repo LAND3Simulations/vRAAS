@@ -6,14 +6,14 @@
     "PowerOnDelay": 40
   },
   "SmartRunway": {
-    "TakeoffFlapsCondition": "[L:L:VC_PED_FLAP_LEVER|double] >= 100 && [L:L:VC_PED_FLAP_LEVER|double] <= 400",
+    "TakeoffFlapsCondition": "[L:VC_PED_FLAP_LEVER|double] >= 100 && [L:VC_PED_FLAP_LEVER|double] <= 400",
     "TodaCallMaxLength": 1700,
     "TakeoffShortRunwayLength": 1700,
     "LandingDistanceAvailableMaxM": 1700,
     "ApproachShortRunwayCautionM": 1700
   },
   "SmartLanding": {
-    "LandingFlapsCondition": "[L:L:VC_PED_FLAP_LEVER|double] >= 300",
+    "LandingFlapsCondition": "[L:VC_PED_FLAP_LEVER|double] >= 300",
     "AltimeterMonitorBelowTA": false,
     "AltimeterMonitorAboveTA": false
   },
