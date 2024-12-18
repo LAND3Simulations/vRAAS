@@ -18,21 +18,21 @@ Most LVARs contain simple bool (1/0, on/off), indicating if something should be 
 |                      |          |                                                                                                                     |
 |                      |          | The following LVARs indicate which message to display. The displayed text is the same as the LVAR name (replace _ with space). |
 | RAAS_APP_RWYS        | 0 / 1    | "APP RWYS"                                                                                                         |
-| RAAS_APP             | 0 / 1    | "APP" + RWY_NUMBER + RWY_DESIGNATOR + RAAS_APPEND_NUMBER. See example below                                        |
-| RAAS_ON              | 0 / 1    | "ON" + RWY_NUMBER + RWY_DESIGNATOR + RAAS_APPEND_NUMBER                                                             |
-| RAAS_ON_RWYS         | 0 / 1    |                                                                                                                     |
-| RAAS_SHORT_RUNWAY    | 0 / 1    |                                                                                                                     |
-| RAAS_ON_TAXIWAY      | 0 / 1    |                                                                                                                     |
-| RAAS_TAXIWAY         | 0 / 1    |                                                                                                                     |
-| RAAS_FLAPS           | 0 / 1    |                                                                                                                     |
+| RAAS_APP             | 0 / 1    | "APP" + RWY_NUMBER + RWY_DESIGNATOR + RAAS_APPEND_NUMBER. See example below (e.g. APP 01C)                         |
+| RAAS_ON              | 0 / 1    | "ON" + RWY_NUMBER + RWY_DESIGNATOR + RAAS_APPEND_NUMBER (e.g. ON 25R)                                              |
+| RAAS_ON_RWYS         | 0 / 1    | "ON RWYS"                                                                                                          |
+| RAAS_SHORT_RUNWAY    | 0 / 1    | "SHORT RUNWAY"                                                                                                     |
+| RAAS_ON_TAXIWAY      | 0 / 1    | "ON TAXIWAY"                                                                                                       |
+| RAAS_TAXIWAY         | 0 / 1    | "TAXIWAY"                                                                                                          |
+| RAAS_FLAPS           | 0 / 1    | "FLAPS"                                                                                                             |
 | RAAS_TOO_HIGH        | 0 / 1    | "TOO HIGH"                                                                                                          |
 | RAAS_TOO_FAST        | 0 / 1    | "TOO FAST"                                                                                                          |
-| RAAS_UNSTABLE        | 0 / 1    |                                                                                                                     |
-| RAAS_ALTM_SETTING    | 0 / 1    |                                                                                                                     |
-| RAAS_LONG_LANDING    | 0 / 1    |                                                                                                                     |
-| RAAS_DEEP_LANDING    | 0 / 1    |                                                                                                                     |
-| RAAS_RAAS_OK_FT      | 0 / 1    |                                                                                                                     |
-| RAAS_RAAS_OK_M       | 0 / 1    |                                                                                                                     |
+| RAAS_UNSTABLE        | 0 / 1    | "UNSTABLE"                                                                                                          |
+| RAAS_ALTM_SETTING    | 0 / 1    | "ALTM SETTING"                                                                                                      |
+| RAAS_LONG_LANDING    | 0 / 1    | "LONG LANDING"                                                                                                      |
+| RAAS_DEEP_LANDING    | 0 / 1    | "DEEP LANDING"                                                                                                      |
+| RAAS_RAAS_OK_FT      | 0 / 1    | "RAAS-OK-FT"                                                                                                        |
+| RAAS_RAAS_OK_M       | 0 / 1    | "RAAS-OK-M"                                                                                                         |
 | RAAS_RAAS_INOP       | 0 / 1    | "RAAS-INOP"                                                                                                         |
 | RAAS_RAAS_N_AVBL     | 0 / 1    | "RAAS-N-AVBL"                                                                                                       |
 | RAAS_RAAS_RTO        | 0 / 1    | "RAAS-RTO"                                                                                                          |
