@@ -66,3 +66,7 @@ Yellow: #FFBF00<br />
 
 The font I'm using is called VCR_OSD_MONO, and you can easily find it online.<br />
 In case you are using a different font, make sure to use a monospaced one. Otherwise, it may look strange.
+
+As a reference, this is the RAAS Self-Test on a real A320neo:
+![IMG_5916](https://github.com/user-attachments/assets/9cd6a68c-d545-4f3f-8983-eddde62d743e)
+
