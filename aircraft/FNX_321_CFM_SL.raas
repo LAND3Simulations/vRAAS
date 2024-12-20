@@ -3,7 +3,8 @@
     "PositionShiftMeters": 25,
     "FlapsInhibit": "[L:I_OH_GPWS_FLAP_MODE_L|double] > 0",
     "SystemPower": "[L:B_ELEC_BUS_POWER_AC_ESS|double] > 0",
-    "PowerOnDelay": 40
+    "PowerOnDelay": 40,
+    "QNH": "if([L:I_FCU_EFIS1_QNH|double],[L:N_FCU_EFIS1_BARO_HPA|double],1013)"
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4",
@@ -14,8 +15,7 @@
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
-    "ApproachSpeed": "[L:N_FCU_SPEED|double]",
-    "AltimeterMonitorBelowTA": false
+    "ApproachSpeed": "[L:N_FCU_SPEED|double]"
   },
   "DisplayConfig": {
     "Displays": [
