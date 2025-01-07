@@ -1,6 +1,6 @@
 {
   "General": {
-    "SystemPower": "[L:HJET_MainBus1|double] > 0",
+    "SystemPower": "1",
     "PowerOnDelay": 10
   },
   "SmartRunway": {
