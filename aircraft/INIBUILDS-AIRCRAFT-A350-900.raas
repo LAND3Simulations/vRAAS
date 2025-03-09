@@ -1,0 +1,33 @@
+{
+  "General": {},
+  "SmartRunway": {
+    "ApproachShortRunwayCautionEnabled": false
+  },
+  "SmartLanding": {},
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "ID": "CPT_ND",
+        "PosX": "75.8%",
+        "PosY": "30.6%",
+        "FontSize": 60,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit03",
+        "ID": "FO_ND",
+        "PosX": "24.8%",
+        "PosY": "30.6%",
+        "FontSize": 60,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "OtherStyles": ""
+      }
+    ]
+  }
+}
