@@ -54,7 +54,8 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
 | Horizon Simulations         | B787                       |      ✅     	|       ✅      |        	|
 | Kuro                        | B787                       |      ✅     	|       ✅      |1)      	|
-| IniBuilds A306F             | A306F                      |      ✅     	|       ✅      |1)      	|
+| IniBuilds                   | A306F                      |      ✅     	|       ✅      |1)      	|
+| IniBuilds                   | A350                       |      ✅     	|       ✅      |1)      	|
 | iFly			              | B737-MAX8                  |      ⚠️     	|       ⚠️      |1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD.       	|
 | Just Flight                 | RJ 75/80/100               |      ✅     	|       ✅      |      	|
 | Leonardo                    | MADDOX X                   |      ✅     	|       ✅      |      	|
@@ -84,6 +85,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Microsoft / iniBuilds     | A321                       |      ✅     	|       ✅      |      		|
 | Microsoft / iniBuilds     | A330                       |      ✅     	|       ✅      |      		|
 | Microsoft / iniBuilds     | Beluga XL                  |      ✅     	|       ✅      |      		|
+| IniBuilds                 | A350                       |      ✅     	|       ✅      |1)      	|
 | Asobo			             | B747		                  |      ✅     	|       ✅      |1)      	|
 | Asobo			             | B737 MAX		               |      ✅     	|       ✅      |1)      	|
 | Fenix                     | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
