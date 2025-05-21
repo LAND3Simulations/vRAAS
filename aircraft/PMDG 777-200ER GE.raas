@@ -14,8 +14,10 @@
     "ApproachShortRunwayCautionM": 2100
   },
   "SmartLanding": {
-    "LandingFlapsCondition": "[L:switch_507_a|double] >= 50",
-    "ApproachSpeed": "if([L:ngx_SPDwindow|double] > 0, [L:ngx_SPDwindow|double], [S:AIRSPEED INDICATED|knots])"
+    "LandingFlapsCondition": "[L:switch_507_a|double] >= 0",
+    "ApproachSpeed": "if([L:ngx_SPDwindow|double] > 0, [L:ngx_SPDwindow|double], [S:AIRSPEED INDICATED|knots])",
+	"AltimeterMonitorBelowTA": false,
+	"AltimeterMonitorAboveTA": false
   },
   "DisplayConfig": {
     "Displays": [
