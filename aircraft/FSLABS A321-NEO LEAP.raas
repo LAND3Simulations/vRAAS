@@ -1,0 +1,50 @@
+{
+  "General": {
+    "PositionShiftMeters": 25,
+    "FlapsInhibit": "[L:VC_OBHD_GPWS_FLAP_MODE_Button_Bot|double] > 0",
+    "SystemPower": "[L:VC_OVHD_ELEC_BAT_1_Button|double] > 0",
+    "PowerOnDelay": 40
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[L:VC_PED_FLAP_LEVER|double] >= 100 && [L:VC_PED_FLAP_LEVER|double] <= 400",
+    "TodaCallMaxLength": 1700,
+    "TakeoffShortRunwayLength": 1700,
+    "LandingDistanceAvailableMaxM": 1700,
+    "ApproachShortRunwayCautionM": 1700
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[L:VC_PED_FLAP_LEVER|double] >= 300",
+    "AltimeterMonitorBelowTA": false,
+    "AltimeterMonitorAboveTA": false
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit04",
+        "ID": "CPT_ND",
+        "PosX": "50.2%",
+        "PosY": "45.1%",
+        "FontSize": 70,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "BrightnessVariable": "[L:VC_MIP_CPT_DU_PNL_ND_BRT_Knob|double] / 2.7",
+        "TerrainEnabled": "[L:VC_MIP_CPT_TERR_ON_ND_Buton_BOT|double] / 2.7",
+        "OtherStyles": ""
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit07",
+        "ID": "FO_ND",
+        "PosX": "50.2%",
+        "PosY": "45.1%",
+        "FontSize": 70,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "BrightnessVariable": "[L:VC_MIP_FO_DU_PNL_ND_BRT_Knob|double] / 2.7",
+        "TerrainEnabled": "[L:VC_MIP_FO_TERR_ON_ND_Buton_BOT|double] / 2.7",
+        "OtherStyles": ""
+      }
+    ]
+  }
+}

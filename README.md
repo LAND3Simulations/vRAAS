@@ -49,6 +49,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | FlyByWire                   | A380X                      |      ✅     	|       ✅      |        	|
 | Fenix                       | A319/A320/A321             |      ✅     	|       ✅      |      	|
 | FsLabs                      | A321ceo             	   |      ✅     	|       ✅      |1)	      	|
+| FsLabs                      | A321neo             	   |      ✅     	|       ✅      |1)	      	|
 | Flight FX                   | HJET			           |      ✅     	|       ✅      |1)      	|
 | FlightSimStudio FSS         | E170/E175/E190(F)/E195(F)  |      ✅     	|       ✅      |      	|
 | FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
@@ -89,6 +90,8 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Asobo			             | B747		                  |      ✅     	|       ✅      |1)      	|
 | Asobo			             | B737 MAX		               |      ✅     	|       ✅      |1)      	|
 | Fenix                     | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
+| FsLabs                      | A321ceo             	   |      ✅     	|       ✅      |1)	      	|
+| FsLabs                      | A321neo             	   |      ✅     	|       ✅      |1)	      	|
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
 
