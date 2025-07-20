@@ -61,6 +61,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Just Flight                 | RJ 75/80/100               |      ✅     	|       ✅      |      	|
 | Leonardo                    | MADDOX X                   |      ✅     	|       ✅      |      	|
 | LatinVFR                    | A330-900neo                |      ✅     	|       ✅      |1)      	|
+| LivToAir                    | CJ3+                       |      ✅     	|       ✅      |1)      	|
 | Headwind Simulations        | A330neo					   |      ✅     	|       ✅      |      	|
 | Microsoft / Default         | A310                       |      ✅     	|       ✅      |1)      	|
 | Asobo / Default             | B747-8i                    |      ✅     	|       ✅      |1)      	|
@@ -92,6 +93,10 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Fenix                     | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
 | FsLabs                      | A321ceo             	   |      ✅     	|       ✅      |1)	      	|
 | FsLabs                      | A321neo             	   |      ✅     	|       ✅      |1)	      	|
+| LivToAir                    | CJ3+                       |      ✅     	|       ✅      |1)      	|
+| PMDG                        | B737 (ALL VARIANTS)        |      ✅     	|       ✅      |      	|
+| PMDG                        | B777                       |      ✅     	|       ✅      |      	|
+| FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
 
