@@ -28,7 +28,7 @@
         "FontSize": 74,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "BrightnessVariable": "[L:N_DISPLAY_BRIGHTNESS_CO|double] * 100",
+        "BrightnessVariable": "[L:A_DISPLAY_BRIGHTNESS_CI_OUTER|double] * 100 + 5",
         "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_CAPT_L|double] > 0",
         "OtherStyles": ""
       },
@@ -41,7 +41,7 @@
         "FontSize": 74,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "BrightnessVariable": "[L:N_DISPLAY_BRIGHTNESS_FO|double] * 100",
+        "BrightnessVariable": "[L:A_DISPLAY_BRIGHTNESS_FI_OUTER|double] * 100 + 5",
         "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_FO_L|double] > 0",
         "OtherStyles": ""
       }
