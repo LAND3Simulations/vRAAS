@@ -1,50 +1,80 @@
 {
-  "General": {
-    "PositionShiftMeters": 25,
-    "FlapsInhibit": "[L:I_OH_GPWS_FLAP_MODE_L|double] > 0",
-    "SystemPower": "[L:B_ELEC_BUS_POWER_AC_ESS|double] > 0",
-    "PowerOnDelay": 40,
-    "QNH": "if([L:I_FCU_EFIS1_QNH|double],[L:N_FCU_EFIS1_BARO_HPA|double],1013)"
-  },
-  "SmartRunway": {
-    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4",
-    "TodaCallMaxLength": 1700,
-    "TakeoffShortRunwayLength": 1700,
-    "LandingDistanceAvailableMaxM": 1700,
-    "ApproachShortRunwayCautionM": 1700
-  },
-  "SmartLanding": {
-    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
-    "ApproachSpeed": "[L:N_FCU_SPEED|double]"
-  },
-  "DisplayConfig": {
-    "Displays": [
-      {
-        "Enabled": true,
-        "PanelName": "VCockpit02",
-        "ID": "CPT_ND",
-        "PosX": "50%",
-        "PosY": "44%",
-        "FontSize": 74,
-        "FontFamily": "VCR_OSD_MONO",
-        "CenterOnSpace": true,
-        "BrightnessVariable": "[L:A_DISPLAY_BRIGHTNESS_CI_OUTER|double] * 100 + 5",
-        "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_CAPT_L|double] > 0",
-        "OtherStyles": ""
-      },
-      {
-        "Enabled": true,
-        "PanelName": "VCockpit06",
-        "ID": "FO_ND",
-        "PosX": "50%",
-        "PosY": "44%",
-        "FontSize": 74,
-        "FontFamily": "VCR_OSD_MONO",
-        "CenterOnSpace": true,
-        "BrightnessVariable": "[L:A_DISPLAY_BRIGHTNESS_FI_OUTER|double] * 100 + 5",
-        "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_FO_L|double] > 0",
-        "OtherStyles": ""
-      }
-    ]
-  }
+    "General": {
+        "PositionShiftMeters": 25,
+        "FlapsInhibit": "[L:I_OH_GPWS_FLAP_MODE_L|double] > 0",
+        "SystemPower": "[L:B_ELEC_BUS_POWER_AC_ESS|double] > 0",
+        "PowerOnDelay": 40,
+        "QNH": "if([L:I_FCU_EFIS1_QNH|double],[L:N_FCU_EFIS1_BARO_HPA|double],1013)"
+    },
+    "SmartRunway": {
+        "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2 && [S:FLAPS HANDLE INDEX|number] <= 4",
+        "TodaCallMaxLength": 1700,
+        "TakeoffShortRunwayLength": 1700,
+        "LandingDistanceAvailableMaxM": 1700,
+        "ApproachShortRunwayCautionM": 1700
+    },
+    "SmartLanding": {
+        "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
+        "ApproachSpeed": "[L:N_FCU_SPEED|double]"
+    },
+    "DisplayConfig": {
+        "Displays": [
+            {
+                "Enabled": true,
+                "PanelName": "VCockpit02",
+                "ID": "CPT_ND A319/A320",
+                "PosX": "50%",
+                "PosY": "44%",
+                "FontSize": 74,
+                "FontFamily": "VCR_OSD_MONO",
+                "CenterOnSpace": true,
+                "DisplayPower": "[S:TITLE|string] NOT LIKE 'FenixA321%'",
+                "BrightnessVariable": "[L:A_DISPLAY_BRIGHTNESS_CI_OUTER|double] * 100",
+                "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_CAPT_L|double] > 0",
+                "OtherStyles": ""
+            },
+            {
+                "Enabled": true,
+                "PanelName": "VCockpit06",
+                "ID": "FO_ND A319/A320",
+                "PosX": "50%",
+                "PosY": "44%",
+                "FontSize": 74,
+                "FontFamily": "VCR_OSD_MONO",
+                "CenterOnSpace": true,
+                "DisplayPower": "[S:TITLE|string] NOT LIKE 'FenixA321%'",
+                "BrightnessVariable": "[L:A_DISPLAY_BRIGHTNESS_FI_OUTER|double] * 100",
+                "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_FO_L|double] > 0",
+                "OtherStyles": ""
+            },
+            {
+                "Enabled": true,
+                "PanelName": "VCockpit02",
+                "ID": "CPT_ND A321",
+                "PosX": "50%",
+                "PosY": "44%",
+                "FontSize": 74,
+                "FontFamily": "VCR_OSD_MONO",
+                "CenterOnSpace": true,
+                "DisplayPower": "[S:TITLE|string] LIKE 'FenixA321%'",
+                "BrightnessVariable": "[L:A_DISPLAY_BRIGHTNESS_CI_OUTER|double] * 100",
+                "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_CAPT_L|double] > 0",
+                "OtherStyles": ""
+            },
+            {
+                "Enabled": true,
+                "PanelName": "VCockpit06",
+                "ID": "FO_ND A321",
+                "PosX": "50%",
+                "PosY": "44%",
+                "FontSize": 74,
+                "FontFamily": "VCR_OSD_MONO",
+                "CenterOnSpace": true,
+                "DisplayPower": "[S:TITLE|string] LIKE 'FenixA321%'",
+                "BrightnessVariable": "[L:A_DISPLAY_BRIGHTNESS_FI_OUTER|double] * 100",
+                "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_FO_L|double] > 0",
+                "OtherStyles": ""
+            }
+        ]
+    }
 }
