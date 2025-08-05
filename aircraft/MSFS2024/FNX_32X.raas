@@ -63,7 +63,7 @@
             },
             {
                 "Enabled": true,
-                "PanelName": "VCockpit06",
+                "PanelName": "VCockpit05",
                 "ID": "FO_ND A321",
                 "PosX": "50%",
                 "PosY": "44%",
