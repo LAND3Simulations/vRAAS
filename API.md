@@ -7,43 +7,43 @@ Most LVARs contain simple bool (1/0, on/off), indicating if something should be 
 
 | LVAR                 | Value    | Comment                                                                                                             |
 |----------------------|----------|----------------------------------------------------------------------------------------------------------------------|
-| RAAS_TEXT_GREEN      | 0/1      | SHOW RAAS TEXT IN COLOR GREEN                                                                                       |
-| RAAS_TEXT_YELLOW     | 0/1      | SHOW RAAS TEXT IN COLOR YELLOW                                                                                      |
+| VRAAS_TEXT_GREEN      | 0/1      | SHOW RAAS TEXT IN COLOR GREEN                                                                                       |
+| VRAAS_TEXT_YELLOW     | 0/1      | SHOW RAAS TEXT IN COLOR YELLOW                                                                                      |
 |                      |          | The two above should be used as a "master" LVAR. Only one of these can be 1 at a time (XOR). Only show the text when one is 1. |
 |                      |          |                                                                                                                     |
-| RAAS_RWY_NUMBER      | 0, 1-36  | Runway number to be appended to RAAS_ON and RAAS_APP                                                                |
-| RAAS_RWY_DESIGNATOR  | 0,1,2,3  | Runway designator (0 = none, 1=L, 2=C, 3=R) to be appended to RAAS_RWY_NUMBER                                       |
-| RAAS_APPEND_NUMBER   | 0,1-99   | Remaining/available runway length on short runway. Only displayed when > 0                                          |
-| RAAS_AUTO_POPUP      | 0/1      | (Optional) 1 when a caution message should auto-enable the terrain display                                          |
+| VRAAS_RWY_NUMBER      | 0, 1-36  | Runway number to be appended to VRAAS_ON and VRAAS_APP                                                                |
+| VRAAS_RWY_DESIGNATOR  | 0,1,2,3  | Runway designator (0 = none, 1=L, 2=C, 3=R) to be appended to VRAAS_RWY_NUMBER                                       |
+| VRAAS_APPEND_NUMBER   | 0,1-99   | Remaining/available runway length on short runway. Only displayed when > 0                                          |
+| VRAAS_AUTO_POPUP      | 0/1      | (Optional) 1 when a caution message should auto-enable the terrain display                                          |
 |                      |          |                                                                                                                     |
 |                      |          | The following LVARs indicate which message to display. The displayed text is the same as the LVAR name (replace _ with space). |
-| RAAS_APP_RWYS        | 0 / 1    | "APP RWYS"                                                                                                         |
-| RAAS_APP             | 0 / 1    | "APP" + RWY_NUMBER + RWY_DESIGNATOR + RAAS_APPEND_NUMBER. See example below (e.g. APP 01C)                         |
-| RAAS_ON              | 0 / 1    | "ON" + RWY_NUMBER + RWY_DESIGNATOR + RAAS_APPEND_NUMBER (e.g. ON 25R)                                              |
-| RAAS_ON_RWYS         | 0 / 1    | "ON RWYS"                                                                                                          |
-| RAAS_SHORT_RUNWAY    | 0 / 1    | "SHORT RUNWAY"                                                                                                     |
-| RAAS_ON_TAXIWAY      | 0 / 1    | "ON TAXIWAY"                                                                                                       |
-| RAAS_TAXIWAY         | 0 / 1    | "TAXIWAY"                                                                                                          |
-| RAAS_FLAPS           | 0 / 1    | "FLAPS"                                                                                                             |
-| RAAS_TOO_HIGH        | 0 / 1    | "TOO HIGH"                                                                                                          |
-| RAAS_TOO_FAST        | 0 / 1    | "TOO FAST"                                                                                                          |
-| RAAS_UNSTABLE        | 0 / 1    | "UNSTABLE"                                                                                                          |
-| RAAS_ALTM_SETTING    | 0 / 1    | "ALTM SETTING"                                                                                                      |
-| RAAS_LONG_LANDING    | 0 / 1    | "LONG LANDING"                                                                                                      |
-| RAAS_DEEP_LANDING    | 0 / 1    | "DEEP LANDING"                                                                                                      |
-| RAAS_RAAS_OK_FT      | 0 / 1    | "RAAS-OK-FT"                                                                                                        |
-| RAAS_RAAS_OK_M       | 0 / 1    | "RAAS-OK-M"                                                                                                         |
-| RAAS_RAAS_INOP       | 0 / 1    | "RAAS-INOP"                                                                                                         |
-| RAAS_RAAS_N_AVBL     | 0 / 1    | "RAAS-N-AVBL"                                                                                                       |
-| RAAS_RAAS_RTO        | 0 / 1    | "RAAS-RTO"                                                                                                          |
-| RAAS_RAAS_INHIBIT    | 0 / 1    | "RAAS-INH"                                                                                                          |
+| VRAAS_APP_RWYS        | 0 / 1    | "APP RWYS"                                                                                                         |
+| VRAAS_APP             | 0 / 1    | "APP" + RWY_NUMBER + RWY_DESIGNATOR + VRAAS_APPEND_NUMBER. See example below (e.g. APP 01C)                         |
+| VRAAS_ON              | 0 / 1    | "ON" + RWY_NUMBER + RWY_DESIGNATOR + VRAAS_APPEND_NUMBER (e.g. ON 25R)                                              |
+| VRAAS_ON_RWYS         | 0 / 1    | "ON RWYS"                                                                                                          |
+| VRAAS_SHORT_RUNWAY    | 0 / 1    | "SHORT RUNWAY"                                                                                                     |
+| VRAAS_ON_TAXIWAY      | 0 / 1    | "ON TAXIWAY"                                                                                                       |
+| VRAAS_TAXIWAY         | 0 / 1    | "TAXIWAY"                                                                                                          |
+| VRAAS_FLAPS           | 0 / 1    | "FLAPS"                                                                                                             |
+| VRAAS_TOO_HIGH        | 0 / 1    | "TOO HIGH"                                                                                                          |
+| VRAAS_TOO_FAST        | 0 / 1    | "TOO FAST"                                                                                                          |
+| VRAAS_UNSTABLE        | 0 / 1    | "UNSTABLE"                                                                                                          |
+| VRAAS_ALTM_SETTING    | 0 / 1    | "ALTM SETTING"                                                                                                      |
+| VRAAS_LONG_LANDING    | 0 / 1    | "LONG LANDING"                                                                                                      |
+| VRAAS_DEEP_LANDING    | 0 / 1    | "DEEP LANDING"                                                                                                      |
+| VRAAS_RAAS_OK_FT      | 0 / 1    | "RAAS-OK-FT"                                                                                                        |
+| VRAAS_RAAS_OK_M       | 0 / 1    | "RAAS-OK-M"                                                                                                         |
+| VRAAS_RAAS_INOP       | 0 / 1    | "RAAS-INOP"                                                                                                         |
+| VRAAS_RAAS_N_AVBL     | 0 / 1    | "RAAS-N-AVBL"                                                                                                       |
+| VRAAS_RAAS_RTO        | 0 / 1    | "RAAS-RTO"                                                                                                          |
+| VRAAS_RAAS_INHIBIT    | 0 / 1    | "RAAS-INH"                                                                                                          |
 
 ### Specials
 
 The "APP ..." and "ON ..." messages are slightly more complicated than the other ones.<br />
 First, append the runway number (01-36). Make sure to add a leading 0 if needed.<br />
 Then append the RWY_DESIGNATOR (L/C/R) with no space between the number and designator.<br />
-In case of a short runway, the RAAS_APPEND_NUMBER will be above 0.<br />
+In case of a short runway, the VRAAS_APPEND_NUMBER will be above 0.<br />
 In this case, add one space and then the number.<br />
 
 The result could look like this:<br />
