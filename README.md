@@ -88,6 +88,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Microsoft / iniBuilds     | A330                       |      ✅     	|       ✅      |      		|
 | Microsoft / iniBuilds     | Beluga XL                  |      ✅     	|       ✅      |      		|
 | IniBuilds                 | A350                       |      ✅     	|       ✅      |1)      	|
+| IniBuilds                 | A340                       |      ✅     	|       ✅      |1)      	|
 | Asobo			             | B747		                  |      ✅     	|       ✅      |1)      	|
 | Asobo			             | B737 MAX		               |      ✅     	|       ✅      |1)      	|
 | Fenix                     | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
