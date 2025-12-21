@@ -97,6 +97,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | LivToAir                    | CJ3+                       |      ✅     	|       ✅      |1)      	|
 | PMDG                        | B737 (ALL VARIANTS)        |      ✅     	|       ✅      |      	|
 | PMDG                        | B777                       |      ✅     	|       ✅      |      	|
+| PMDG                        | B737                       |      ✅     	|       ✅      |      	|
 | FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
