@@ -51,7 +51,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | FsLabs                      | A321ceo             	   |      ✅     	|       ✅      |1)	      	|
 | FsLabs                      | A321neo             	   |      ✅     	|       ✅      |1)	      	|
 | Flight FX                   | HJET			           |      ✅     	|       ✅      |1)      	|
-| FlightSimStudio FSS         | E170/E175/E190(F)/E195(F)  |      ✅     	|       ✅      |      	|
+| FlightSimStudio FSS         | E-Jets (v 1.x and above)   |      ✅     	|       ✅      | |
 | FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
 | Horizon Simulations         | B787                       |      ✅     	|       ✅      |        	|
 | Kuro                        | B787                       |      ✅     	|       ✅      |1)      	|
@@ -99,6 +99,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | PMDG                        | B777                       |      ✅     	|       ✅      |      	|
 | PMDG                        | B737                       |      ✅     	|       ✅      |      	|
 | FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
+| FlightSimStudio FSS         | E-Jets (v 1.x and above)  |      ✅     	|       ✅      | |
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
 
