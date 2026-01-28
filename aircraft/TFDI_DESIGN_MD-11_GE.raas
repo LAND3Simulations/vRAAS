@@ -1,6 +1,8 @@
 {
   "General": {
-    "PositionShiftMeters": 30
+    "PositionShiftMeters": 40,
+    "FlapsInhibit": "[L:MD11_AOVHD_GPWS_SW|double] > 1",
+    "RaasInhibit": "[L:MD11_AOVHD_GPWS_TERROVRD_LT|double] > 0"
   },
   "SmartRunway": {
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE PERCENT|percent over 100] > 0 && [S:FLAPS HANDLE PERCENT|percent over 100] < 0.72",
@@ -10,32 +12,35 @@
     "ApproachShortRunwayCautionM": 2100
   },
   "SmartLanding": {
-    "LandingFlapsCondition": "[S:FLAPS HANDLE PERCENT|percent over 100] > 0.85"
+    "LandingFlapsCondition": "[S:FLAPS HANDLE PERCENT|percent over 100] > 0.85",
+    "ApproachSpeed": "[L:md11_efb_vapp|double]"
   },
   "DisplayConfig": {
     "Displays": [
       {
         "Enabled": true,
         "PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_ND",
-        "PosX": "37.5%",
-        "PosY": "7.7%",
-        "FontSize": 40,
+        "PosX": "37.55%",
+        "PosY": "8.4%",
+        "FontSize": 47,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "BrightnessVariable": "[L:MD11_PED_DU2_BRT_KB|double] * 10",
+        "BrightnessVariable": "[L:MD11_PED_DU2_BRT_KB|double] *10",
         "OtherStyles": ""
       },
       {
         "Enabled": true,
         "PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_ND",
-        "PosX": "12.4%",
-        "PosY": "32.8%",
-        "FontSize": 40,
+        "PosX": "12.46%",
+        "PosY": "33.4%",
+        "FontSize": 50,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "BrightnessVariable": "[L:MD11_PED_DU5_BRT_KB|double] * 10",
+        "BrightnessVariable": "[L:MD11_PED_DU5_BRT_KB|double] *10",
         "OtherStyles": ""
       }
     ]

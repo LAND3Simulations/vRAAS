@@ -75,7 +75,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | ProSim                      | B737                       |      ✅     	|       ⚠️      |1) Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
 | JeeHell FMGS                | A320                       |      ✅     	|       ⚠️      |1) Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
 | Salty                       | B747-8i                    |      ✅     	|       ✅      |			|
-| TFDi				          | MD-11                      |      ✅     	|       ✅      |1)      	|
+| TFDi				          | MD-11                      |      ✅     	|       ✅      |      	|
 
 
 ### MSFS2024
@@ -102,6 +102,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | PMDG                        | B737                       |      ✅     	|       ✅      |      	|
 | FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
 | FlightSimStudio FSS         | E-Jets (v 1.x and above)  |      ✅     	|       ✅      | |
+| TFDi				          | MD-11                      |      ✅     	|       ✅      |      	|
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
 
