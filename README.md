@@ -44,6 +44,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
 |---------------------------|----------------------------|:----------:|:------------:|------|
 | Aerosoft           		  | A330                       |      ✅     	|       ✅      |      		|
+| Aerosoft           		  | A340-600 PRO               |      ✅     	|       ✅      |1)         |
 | Aerosoft           		  | CRJ (ALL VARIANTS)         |      ✅     	|       ✅      |      		|
 | FlyByWire                   | A320neo                    |      ✅     	|       ✅      |1)      	|
 | FlyByWire                   | A380X                      |      ✅     	|       ✅      |        	|
@@ -82,6 +83,8 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 
 | Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
 |---------------------------|----------------------------|:----------:|:------------:|------|
+| Aerosoft           		| A340-600 PRO               |      ✅     	|       ✅      |1)         |
+| Aerosoft           		 | A330                       |      ✅     	|       ✅      |      		|
 | Microsoft / iniBuilds     | A310                       |      ✅     	|       ✅      |      		|
 | Microsoft / iniBuilds     | A320neo                    |      ✅     	|       ✅      |      		|
 | Microsoft / iniBuilds     | A321                       |      ✅     	|       ✅      |      		|
@@ -91,6 +94,8 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | FlyByWire                   | A380X                      |      ✅     	|       ✅      |        	|
 | IniBuilds                 | A350                       |      ✅     	|       ✅      |1)      	|
 | IniBuilds                 | A340                       |      ✅     	|       ✅      |1)      	|
+| iFly			              | B737-MAX8                  |      ⚠️     	|       ⚠️      |1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD.       	|
+| Just Flight                 | RJ 75/80/100               |      ✅     	|       ✅      |      	|
 | Asobo			             | B747		                  |      ✅     	|       ✅      |1)      	|
 | Asobo			             | B737 MAX		               |      ✅     	|       ✅      |1)      	|
 | Fenix                     | A319/A320/A321             |      ✅     	|       ✅      |1)      	|

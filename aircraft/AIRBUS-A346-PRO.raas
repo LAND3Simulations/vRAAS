@@ -1,29 +1,46 @@
 {
-  "General": {},
-  "SmartRunway": {},
-  "SmartLanding": {},
+  "General": {
+    "PowerOnDelay": 10,
+    "PositionShiftMeters": 35,
+    "FlapsInhibit": "[L:AB_OVH_GPWS_FLAPMODE|double] == 0",
+    "RaasInhibit": "[L:AB_OVH_GPWS_SYS|double] == 0"
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 3"
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 3 && [S:FLAPS HANDLE INDEX|number] <= 4"
+  },
   "DisplayConfig": {
     "Displays": [
       {
         "Enabled": true,
-        "PanelName": "VCockpit09",
+        "PanelName": "VCockpit05",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT",
         "PosX": "28%",
-        "PosY": "19%",
-        "FontSize": 50,
+        "PosY": "19.6%",
+        "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
+        "DisplayPower": "[L:AB_MPL_ND_Mode|double] <= 3",
+        "BrightnessVariable": "[L:AB_MPL_ND_Power|double] * 5",
+        "TerrainEnabled": "[L:AB_MPL_ND_TERR|double]",
         "OtherStyles": ""
       },
       {
         "Enabled": true,
-        "PanelName": "VCockpit09",
+        "PanelName": "VCockpit05",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO",
         "PosX": "28%",
-        "PosY": "37.5%",
-        "FontSize": 50,
+        "PosY": "38.1%",
+        "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
+        "DisplayPower": "[L:AB_MPL_ND_FO_Mode|double] <= 3",
+        "BrightnessVariable": "[L:AB_MPL_ND_FO_Power|double] * 5",
+        "TerrainEnabled": "[L:AB_MPL_ND_FO_TERR|double]",
         "OtherStyles": ""
       }
     ]
