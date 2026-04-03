@@ -14,29 +14,38 @@
     "LandingFlapsCondition": "([S:FLAPS HANDLE INDEX|number] >= 4 && [L:A32NX_GPWS_FLAPS3|double]) || [S:FLAPS HANDLE INDEX|number] == 5",
     "ApproachSpeed": "[L:A32NX_SPEEDS_VLS|double]"
   },
+  "ROP": {
+    "DryDecelerationRate": 2.5,
+  },
   "DisplayConfig": {
     "Displays": [
       {
         "Enabled": true,
-        "PanelName": "VCockpit02",
+        "PanelName": "VCockpit78",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_ND",
         "PosX": "50%",
-        "PosY": "28%",
-        "FontSize": 50,
+        "PosY": "43.8%",
+        "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "OtherStyles": ""
+        "TerrainEnabled": "[L:A32NX_EFIS_TERR_L_ACTIVE|double] > 0",
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
       },
       {
         "Enabled": true,
-        "PanelName": "VCockpit15",
+        "PanelName": "VCockpit91",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_ND",
         "PosX": "50%",
-        "PosY": "28%",
-        "FontSize": 50,
+        "PosY": "43.8%",
+        "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "OtherStyles": ""
+        "TerrainEnabled": "[L:A32NX_EFIS_TERR_R_ACTIVE|double] > 0",
+        "MessageCategoryFilter": 3,
+        "OtherStyles": {}
       }
     ]
   }

@@ -11,7 +11,8 @@
     "TodaCallMaxLength": 2100,
     "TakeoffShortRunwayLength": 2100,
     "LandingDistanceAvailableMaxM": 2100,
-    "ApproachShortRunwayCautionM": 2100
+    "ApproachShortRunwayCautionM": 2100,
+	"ApproachShortRunwayCautionEnabled": false
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[L:switch_507_a|double] >= 0",
@@ -19,19 +20,25 @@
 	"AltimeterMonitorBelowTA": false,
 	"AltimeterMonitorAboveTA": false
   },
+  "ROP": {
+    "Enabled": true,
+    "Variant": 1,
+    "DryDecelerationRate": 2.3
+  },
   "DisplayConfig": {
     "Displays": [
       {
-        "Enabled": false,
+        "Enabled": true,
         "PanelName": "VCockpit01",
         "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_PFD",
         "PosX": "21.8%",
-        "PosY": "38.9%",
-        "FontSize": 58,
+        "PosY": "39.7%",
+        "FontSize": 50,
         "FontFamily": "Arial",
         "CenterOnSpace": false,
-        "OtherStyles": ""
+        "MessageCategoryFilter": 2,
+        "OtherStyles": {}
       },
       {
         "Enabled": true,
@@ -44,19 +51,21 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:LEFT_INBD_BRIGHT_CONTROL|double] + 20",
-        "OtherStyles": ""
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
       },
       {
-        "Enabled": false,
+        "Enabled": true,
         "PanelName": "VCockpit01",
         "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_PFD",
-        "PosX": "72%",
-        "PosY": "89%",
-        "FontSize": 58,
+        "PosX": "72.1%",
+        "PosY": "89.6%",
+        "FontSize": 50,
         "FontFamily": "Arial",
         "CenterOnSpace": false,
-        "OtherStyles": ""
+        "MessageCategoryFilter": 2,
+        "OtherStyles": {}
       },
       {
         "Enabled": true,
@@ -69,7 +78,8 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:RIGHT_INBD_BRIGHT_CONTROL|double] + 20",
-        "OtherStyles": ""
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
       }
     ]
   }

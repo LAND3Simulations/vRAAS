@@ -11,7 +11,8 @@
     "TodaCallMaxLength": 2100,
     "TakeoffShortRunwayLength": 2100,
     "LandingDistanceAvailableMaxM": 2100,
-    "ApproachShortRunwayCautionM": 2100
+    "ApproachShortRunwayCautionM": 2100,
+	"ApproachShortRunwayCautionEnabled": false
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[L:switch_507_a|double] >= 0",
@@ -19,53 +20,66 @@
 	"AltimeterMonitorBelowTA": false,
 	"AltimeterMonitorAboveTA": false
   },
+  "ROP": {
+    "Enabled": true,
+    "Variant": 1,
+    "DryDecelerationRate": 2.3
+  },
   "DisplayConfig": {
     "Displays": [
       {
-        "Enabled": false,
+        "Enabled": true,
         "PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_PFD",
-        "PosX": "22.1%",
-        "PosY": "39.1%",
-        "FontSize": 43,
+        "PosX": "21.8%",
+        "PosY": "39.7%",
+        "FontSize": 50,
         "FontFamily": "Arial",
         "CenterOnSpace": false,
-        "OtherStyles": ""
+        "MessageCategoryFilter": 2,
+        "OtherStyles": {}
       },
       {
         "Enabled": true,
         "PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_ND",
         "PosX": "75.1%",
         "PosY": "25.5%",
-        "FontSize": 80,
+        "FontSize": 90,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:LEFT_INBD_BRIGHT_CONTROL|double] + 20",
-        "OtherStyles": ""
-      },
-      {
-        "Enabled": false,
-        "PanelName": "VCockpit01",
-        "ID": "FO_PFD",
-        "PosX": "72.2%",
-        "PosY": "89.1%",
-        "FontSize": 43,
-        "FontFamily": "Arial",
-        "CenterOnSpace": false,
-        "OtherStyles": ""
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
       },
       {
         "Enabled": true,
         "PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_PFD",
+        "PosX": "72.1%",
+        "PosY": "89.6%",
+        "FontSize": 50,
+        "FontFamily": "Arial",
+        "CenterOnSpace": false,
+        "MessageCategoryFilter": 2,
+        "OtherStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_ND",
         "PosX": "25.1%",
         "PosY": "75.5%",
-        "FontSize": 80,
+        "FontSize": 90,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:RIGHT_INBD_BRIGHT_CONTROL|double] + 20",
-        "OtherStyles": ""
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
       }
     ]
   }

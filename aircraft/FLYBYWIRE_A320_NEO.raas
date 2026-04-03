@@ -10,18 +10,23 @@
     "TodaCallMaxLength": 1900,
     "TakeoffShortRunwayLength": 1900,
     "LandingDistanceAvailableMaxM": 1900,
-    "ApproachShortRunwayCautionM": 1900
+    "ApproachShortRunwayCautionM": 1900,
+	"ApproachShortRunwayCautionEnabled": false
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 4",
     "ApproachSpeed": "[L:A32NX_SPEEDS_VLS|double]",
     "ApproachSpeedIsVref": true
   },
+  "ROP": {
+    "Enabled": true,
+    "DryDecelerationRate": 3
+  },
   "DisplayConfig": {
     "Displays": [
       {
         "Enabled": true,
-        "PanelName": "VCockpit02",
+		"PanelName": "VCockpit01",
         "PanelRegex": "0:^.*ND_1.*$",
         "ID": "CPT_ND",
         "PosX": "50.0%",
@@ -29,12 +34,13 @@
         "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "TerrainEnabled": "[L:A32NX_EFIS_TERRAIN_L_ACTIVE|double] > 0",
-        "OtherStyles": ""
+        "TerrainEnabled": "[L:A32NX_EFIS_TERR_L_ACTIVE|double] > 0",
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
       },
       {
         "Enabled": true,
-        "PanelName": "VCockpit15",
+		"PanelName": "VCockpit01",
         "PanelRegex": "0:^.*ND_2.*$",
         "ID": "FO_ND",
         "PosX": "50%",
@@ -42,8 +48,39 @@
         "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "TerrainEnabled": "[L:A32NX_EFIS_TERRAIN_R_ACTIVE|double] > 0",
-        "OtherStyles": ""
+        "TerrainEnabled": "[L:A32NX_EFIS_TERR_R_ACTIVE|double] > 0",
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
+      },
+      {
+        "Enabled": true,
+		"PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*A32NX_PFD_1.*",
+        "ID": "CPT_PFD_ROP",
+        "PosX": "43.5%",
+        "PosY": "43.8%",
+        "FontSize": 29,
+        "FontFamily": "B612",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "OtherStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+		  }
+        },
+	    {
+        "Enabled": true,
+		"PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*A32NX_PFD_2.*",
+        "ID": "ND_PFD_ROP",
+        "PosX": "43.5%",
+        "PosY": "43.8%",
+        "FontSize": 29,
+        "FontFamily": "B612",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "OtherStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
       }
     ]
   }

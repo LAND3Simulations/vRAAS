@@ -6,10 +6,17 @@
     "RaasInhibit": "[L:AB_OVH_GPWS_SYS|double] == 0"
   },
   "SmartRunway": {
-    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 3"
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 3",
+	"ApproachShortRunwayCautionEnabled": false
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 3 && [S:FLAPS HANDLE INDEX|number] <= 4"
+  },
+  "ROP": {
+    "Enabled": true,
+    "DryDecelerationRate": 2.4,
+    "AutobrakeOffEnabled": true,
+    "AutobrakeOff": "[L:AB_VC_AUTO_BRAKE_ACTIV_ON_LIGHT|double] > 0"
   },
   "DisplayConfig": {
     "Displays": [
@@ -26,7 +33,8 @@
         "DisplayPower": "[L:AB_MPL_ND_Mode|double] <= 3",
         "BrightnessVariable": "[L:AB_MPL_ND_Power|double] * 5",
         "TerrainEnabled": "[L:AB_MPL_ND_TERR|double]",
-        "OtherStyles": ""
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
       },
       {
         "Enabled": true,
@@ -41,7 +49,38 @@
         "DisplayPower": "[L:AB_MPL_ND_FO_Mode|double] <= 3",
         "BrightnessVariable": "[L:AB_MPL_ND_FO_Power|double] * 5",
         "TerrainEnabled": "[L:AB_MPL_ND_FO_TERR|double]",
-        "OtherStyles": ""
+        "MessageCategoryFilter": 1,
+        "OtherStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit17",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_PFD",
+        "PosX": "8.2%",
+        "PosY": "19.7%",
+        "FontSize": 29,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "OtherStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit17",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_PFD",
+        "PosX": "8.2%",
+        "PosY": "38.2%",
+        "FontSize": 29,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "OtherStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
       }
     ]
   }
