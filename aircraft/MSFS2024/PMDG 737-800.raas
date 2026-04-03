@@ -36,7 +36,7 @@
         "CenterOnSpace": false,
         "BrightnessVariable": "([L:CA_OUTBD_DU_BRIGHT_CONTROL|double] / 3) + 5",
         "MessageCategoryFilter": 2,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -50,7 +50,7 @@
         "CenterOnSpace": true,
         "BrightnessVariable": "([L:CA_INBD_DU_BRIGHT_CONTROL|double] / 3)",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -64,7 +64,7 @@
         "CenterOnSpace": false,
         "BrightnessVariable": "([L:FO_OUTBD_DU_BRIGHT_CONTROL|double] / 3) + 5",
         "MessageCategoryFilter": 2,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -78,7 +78,7 @@
         "CenterOnSpace": true,
         "BrightnessVariable": "([L:FO_INBD_DU_BRIGHT_CONTROL|double] / 3)",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       }
     ]
   }

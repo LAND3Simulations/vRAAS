@@ -38,7 +38,7 @@
         "FontFamily": "Arial",
         "CenterOnSpace": false,
         "MessageCategoryFilter": 2,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -52,7 +52,7 @@
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:LEFT_INBD_BRIGHT_CONTROL|double] + 20",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -65,7 +65,7 @@
         "FontFamily": "Arial",
         "CenterOnSpace": false,
         "MessageCategoryFilter": 2,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -79,7 +79,7 @@
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:RIGHT_INBD_BRIGHT_CONTROL|double] + 20",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       }
     ]
   }

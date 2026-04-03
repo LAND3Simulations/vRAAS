@@ -39,7 +39,7 @@
         "BrightnessVariable": "[L:N_DISPLAY_BRIGHTNESS_CI|double] * 100",
         "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_CAPT_L|double] > 0",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -53,7 +53,7 @@
         "BrightnessVariable": "[L:N_DISPLAY_BRIGHTNESS_FI|double] * 100",
         "TerrainEnabled": "[L:I_MIP_GPWS_TERRAIN_ON_ND_FO_L|double] > 0",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -65,7 +65,7 @@
         "FontFamily": "B612-Regular",
         "CenterOnSpace": true,
         "MessageCategoryFilter": 2,
-        "OtherStyles": {
+        "AdditionalStyles": {
           "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
         }
       },
@@ -80,7 +80,7 @@
         "FontFamily": "B612-Regular",
         "CenterOnSpace": true,
         "MessageCategoryFilter": 2,
-        "OtherStyles": {
+        "AdditionalStyles": {
           "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
         }
       }

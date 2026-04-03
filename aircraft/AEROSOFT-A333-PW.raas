@@ -26,7 +26,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:AB_MPL_ND_Power|double] * 5",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": true,
@@ -38,7 +38,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:AB_MPL_ND_FO_Power|double] * 5",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

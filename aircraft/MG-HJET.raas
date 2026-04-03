@@ -20,7 +20,7 @@
         "FontSize": 50,
         "FontFamily": "Roboto-Medium",
         "CenterOnSpace": false,
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

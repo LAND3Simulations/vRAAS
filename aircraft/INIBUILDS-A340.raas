@@ -14,7 +14,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "DisplayPower": "1",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": true,
@@ -26,7 +26,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "DisplayPower": "1",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

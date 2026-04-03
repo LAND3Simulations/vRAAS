@@ -36,7 +36,7 @@
         "CenterOnSpace": true,
         "TerrainEnabled": "[L:A32NX_EFIS_TERR_L_ACTIVE|double] > 0",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -50,7 +50,7 @@
         "CenterOnSpace": true,
         "TerrainEnabled": "[L:A32NX_EFIS_TERR_R_ACTIVE|double] > 0",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -63,7 +63,7 @@
         "FontFamily": "B612",
         "CenterOnSpace": true,
         "MessageCategoryFilter": 2,
-        "OtherStyles": {
+        "AdditionalStyles": {
           "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
 		  }
         },
@@ -78,7 +78,7 @@
         "FontFamily": "B612",
         "CenterOnSpace": true,
         "MessageCategoryFilter": 2,
-        "OtherStyles": {
+        "AdditionalStyles": {
           "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
         }
       }

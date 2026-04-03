@@ -14,7 +14,7 @@
         "FontFamily": "Roboto-Regular",
         "CenterOnSpace": false,
         "DisplayPower": "[L:AS1000_PFD_State|double] > 0",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

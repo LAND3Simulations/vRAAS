@@ -24,7 +24,7 @@
         "FontSize": 48,
         "FontFamily": "DejaVuSans-SemiBold",
         "CenterOnSpace": false,
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

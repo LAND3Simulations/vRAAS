@@ -24,7 +24,7 @@
         "FontSize": 45,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

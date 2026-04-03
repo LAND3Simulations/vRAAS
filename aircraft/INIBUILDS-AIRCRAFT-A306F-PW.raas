@@ -23,7 +23,7 @@
         "FontSize": 40,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": true,
@@ -34,7 +34,7 @@
         "FontSize": 40,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

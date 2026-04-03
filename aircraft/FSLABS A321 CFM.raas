@@ -30,7 +30,7 @@
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:VC_MIP_CPT_DU_PNL_ND_BRT_Knob|double] / 2.7",
         "TerrainEnabled": "[L:VC_MIP_CPT_TERR_ON_ND_Buton_BOT|double] / 2.7",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": true,
@@ -43,7 +43,7 @@
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:VC_MIP_FO_DU_PNL_ND_BRT_Knob|double] / 2.7",
         "TerrainEnabled": "[L:VC_MIP_FO_TERR_ON_ND_Buton_BOT|double] / 2.7",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

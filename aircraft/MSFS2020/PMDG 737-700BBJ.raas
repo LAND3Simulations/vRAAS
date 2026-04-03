@@ -28,7 +28,7 @@
         "FontFamily": "Arial",
         "CenterOnSpace": false,
         "BrightnessVariable": "[L:switch_329_73X|double] / 3",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": true,
@@ -40,7 +40,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:switch_330_73X|double] / 3",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": false,
@@ -52,7 +52,7 @@
         "FontFamily": "Arial",
         "CenterOnSpace": false,
         "BrightnessVariable": "[L:switch_509_73X|double] / 3",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": true,
@@ -64,7 +64,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:switch_507_73X|double] / 3",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

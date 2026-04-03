@@ -29,7 +29,7 @@
         "FontSize": 50,
         "FontFamily": "FSS-EJET",
         "CenterOnSpace": false,
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": true,
@@ -41,7 +41,7 @@
         "FontSize": 50,
         "FontFamily": "FSS-EJET",
         "CenterOnSpace": false,
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }

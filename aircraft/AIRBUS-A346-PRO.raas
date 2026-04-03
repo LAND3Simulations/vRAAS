@@ -34,7 +34,7 @@
         "BrightnessVariable": "[L:AB_MPL_ND_Power|double] * 5",
         "TerrainEnabled": "[L:AB_MPL_ND_TERR|double]",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -50,7 +50,7 @@
         "BrightnessVariable": "[L:AB_MPL_ND_FO_Power|double] * 5",
         "TerrainEnabled": "[L:AB_MPL_ND_FO_TERR|double]",
         "MessageCategoryFilter": 1,
-        "OtherStyles": {}
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
@@ -63,7 +63,7 @@
         "FontFamily": "B612-Regular",
         "CenterOnSpace": true,
         "MessageCategoryFilter": 2,
-        "OtherStyles": {
+        "AdditionalStyles": {
           "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
         }
       },
@@ -78,7 +78,7 @@
         "FontFamily": "B612-Regular",
         "CenterOnSpace": true,
         "MessageCategoryFilter": 2,
-        "OtherStyles": {
+        "AdditionalStyles": {
           "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
         }
       }

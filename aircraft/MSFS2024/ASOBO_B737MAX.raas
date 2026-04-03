@@ -24,7 +24,7 @@
         "FontSize": 55,
         "FontFamily": "ARIAL",
         "CenterOnSpace": false,
-        "OtherStyles": "backgroundColor:black"
+        "AdditionalStyles": "backgroundColor:black"
       }
     ]
   }

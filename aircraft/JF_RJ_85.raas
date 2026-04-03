@@ -27,7 +27,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "TerrainEnabled": "[L:PED_FWD_CTR_TerrainDisp_LeftLeaveToRun|double] > 0",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       },
       {
         "Enabled": true,
@@ -39,7 +39,7 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "TerrainEnabled": "[L:PED_FWD_CTR_TerrainDisp_LeftLeaveToRun|double] > 0",
-        "OtherStyles": ""
+        "AdditionalStyles": ""
       }
     ]
   }
