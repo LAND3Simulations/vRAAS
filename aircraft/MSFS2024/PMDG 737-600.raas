@@ -18,6 +18,7 @@
     "ApproachSpeed": "if([L:ngx_SPDwindow|double] > 0, [L:ngx_SPDwindow|double], [S:AIRSPEED INDICATED|knots])"
   },
   "ROP": {
+    "DryDecelerationRate": 2.8,
     "Enabled": true,
     "Variant": 1,
     "AutobrakeOff": "[L:switch_460_73X|double] != 10 && [L:switch_459_73X|double] == 0"

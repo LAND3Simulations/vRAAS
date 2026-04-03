@@ -20,7 +20,7 @@
   },
   "ROP": {
     "Enabled": true,
-    "DryDecelerationRate": 3
+    "DryDecelerationRate": 2.8
   },
   "DisplayConfig": {
     "Displays": [

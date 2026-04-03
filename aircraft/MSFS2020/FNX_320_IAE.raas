@@ -20,7 +20,7 @@
   },
   "ROP": {
     "Enabled": true,
-	"DryDecelerationRate": 3.0,
+	"DryDecelerationRate": 2.8,
     "AutobrakeOffEnabled": true,
     "AutobrakeOff": "[L:I_MIP_AUTOBRAKE_MAX_L|double] > 0 || [L:I_MIP_AUTOBRAKE_MED_L|double] > 0 || [L:I_MIP_AUTOBRAKE_LO_L|double] > 0"
   },
