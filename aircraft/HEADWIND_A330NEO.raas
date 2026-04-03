@@ -15,7 +15,7 @@
     "ApproachSpeed": "[L:A32NX_SPEEDS_VLS|double]"
   },
   "ROP": {
-    "DryDecelerationRate": 2.5,
+    "DryDecelerationRate": 2.5
   },
   "DisplayConfig": {
     "Displays": [
