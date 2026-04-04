@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls C:/GitHub/vRAAS/aircraft/FNX_*)"
+    ]
+  }
+}

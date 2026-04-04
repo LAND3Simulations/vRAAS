@@ -1,0 +1,89 @@
+{
+  "General": {
+    "SystemPower": "[L:INI_ELEC_AC_BUS_1_IS_POWERED|double] > 0",
+    "PowerOnDelay": 15,
+    "PositionShiftMeters": 41,
+    "FlapsInhibit": "[L:INI_GPWS_FLAP_STATE|double] == 0",
+    "RaasInhibit": "[L:INI_GPWS_SYS_STATE|double] == 0"
+  },
+  "SmartRunway": {
+    "ApproachShortRunwayCautionEnabled": false,
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 3"
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 3",
+    "ApproachSpeed": "[L:INI_Airspeed_Dial|double]"
+  },
+  "ROP": {
+    "Enabled": true,
+    "DryDecelerationRate": 2.4,
+    "AutobrakeOffEnabled": true,
+    "AutobrakeOff": "[L:INI_AUTOBRAKE_LEVEL|double] > 0"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_ND",
+        "PosX": "16.45%",
+        "PosY": "14.0%",
+        "FontSize": 70,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "DisplayPower": "1",
+        "BrightnessVariable": "[L:INI_BRIGHTNESS_SCREEN_1|double]",
+        "TerrainEnabled": "[L:INI_TERR_ON_CAPT|double] > 0",
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_ND",
+        "PosX": "16.45%",
+        "PosY": "47.4%",
+        "FontSize": 70,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "DisplayPower": "1",
+        "BrightnessVariable": "[L:INI_BRIGHTNESS_SCREEN_3|double]",
+        "TerrainEnabled": "[L:INI_TERR_ON_FO|double] > 0",
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_PFD_ROP",
+        "PosX": "49.2%",
+        "PosY": "13.6%",
+        "FontSize": 27,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": false,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_PFD_ROP",
+        "PosX": "49.2%",
+        "PosY": "47.0%",
+        "FontSize": 27,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": false,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      }
+    ]
+  }
+}
