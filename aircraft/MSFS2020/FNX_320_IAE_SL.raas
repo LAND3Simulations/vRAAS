@@ -44,6 +44,7 @@
       {
         "Enabled": true,
         "PanelName": "VCockpit06",
+        "PanelRegex": "5:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_ND",
         "PosX": "50%",
         "PosY": "44%",
@@ -58,6 +59,7 @@
       {
         "Enabled": true,
         "PanelName": "VCockpit01",
+        "PanelRegex": "0:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_PFD_ROP",
         "PosX": "43.6%",
         "PosY": "45%",
