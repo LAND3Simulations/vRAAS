@@ -15,6 +15,12 @@
     "LandingFlapsCondition": "[S:FLAPS HANDLE PERCENT|percent over 100] > 0.85",
     "ApproachSpeed": "[L:md11_efb_vapp|double]"
   },
+  "ROP": {
+    "Enabled": true,
+    "Variant": 1,
+    "DryDecelerationRate": 2.3,
+    "AutobrakeOff": "[L:MD11_GSL_ABS_DISARM_LT|double] == 0 && [L:MD11_CTR_AUTOBRAKE_SW|double] != 10"
+  },
   "DisplayConfig": {
     "Displays": [
       {
