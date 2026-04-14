@@ -72,7 +72,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | iFly                   | B737-MAX8                |     ⚠️    |     ⚠️    |    ⚠️   |  ✅ | 1) RAAS included in aircraft. vRAAS enabled by default — disable the built-in RAAS in the iFly EFB to avoid double callouts. |
 | IniBuilds              | A306F                    |     ✅    |           |    ✅   |     | 1)   |
 | IniBuilds              | A340                     |           |     ✅    |    ✅   |  ✅ | 1)   |
-| IniBuilds              | A350                     |     ✅    |     ✅    |    ✅   |     | 1)   |
+| IniBuilds              | A350                     |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
 | JeeHell FMGS           | A320                     |     ✅    |           |    ⚠️   |     | Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
 | Just Flight            | RJ 75/80/100             |     ✅    |     ✅    |    ✅   |     |      |
 | Kuro                   | B787                     |     ✅    |           |    ✅   |     | 1)   |
@@ -80,9 +80,9 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Leonardo               | MADDOX X                 |     ✅    |           |    ✅   |     |      |
 | LivToAir               | CJ3+                     |     ✅    |     ✅    |    ✅   |     | 1)   |
 | Microsoft / iniBuilds  | A310                     |     ✅    |     ✅    |    ✅   |     | 1)   |
-| Microsoft / iniBuilds  | A320neo                  |           |     ✅    |    ✅   |     |      |
-| Microsoft / iniBuilds  | A321                     |           |     ✅    |    ✅   |     |      |
-| Microsoft / iniBuilds  | A330                     |           |     ✅    |    ✅   |     |      |
+| Microsoft / iniBuilds  | A320neo                  |           |     ✅    |    ✅   |  ✅ |      |
+| Microsoft / iniBuilds  | A321                     |           |     ✅    |    ✅   |  ✅ |      |
+| Microsoft / iniBuilds  | A330                     |           |     ✅    |    ✅   |  ✅ |      |
 | Microsoft / iniBuilds  | Beluga XL                |           |     ✅    |    ✅   |     |      |
 | PMDG                   | B737 (ALL VARIANTS)      |     ✅    |     ✅    |    ✅   |  ✅ |      |
 | PMDG                   | B777                     |     ✅    |     ✅    |    ✅   |  ✅ |      |

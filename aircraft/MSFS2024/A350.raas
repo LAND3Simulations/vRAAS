@@ -1,31 +1,72 @@
 {
-  "SmartRunway": {
-    "ApproachShortRunwayCautionEnabled": false
+  "General": {
+    "PositionShiftMeters": 45
   },
+  "SmartRunway": {},
   "SmartLanding": {},
+  "ROP": {
+    "Enabled": true,
+    "DryDecelerationRate": 2.4,
+    "AutobrakeOffEnabled": true,
+    "AutobrakeOff": "[L:INI_AUTOBRAKE_LEVEL|double] > 0"
+  },
   "DisplayConfig": {
     "Displays": [
       {
         "Enabled": true,
         "PanelName": "VCockpit03",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_ND",
         "PosX": "75.5%",
         "PosY": "30.6%",
         "FontSize": 60,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "AdditionalStyles": ""
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
         "PanelName": "VCockpit04",
+        "PanelRegex": "2:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_ND",
         "PosX": "24.65%",
         "PosY": "30.6%",
         "FontSize": 60,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "AdditionalStyles": ""
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit03",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_PFD_ROP",
+        "PosX": "21.9%",
+        "PosY": "32.5%",
+        "FontSize": 29,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": false,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit04",
+        "PanelRegex": "2:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_PFD_ROP",
+        "PosX": "72.7%",
+        "PosY": "32.5%",
+        "FontSize": 29,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": false,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
       }
     ]
   }

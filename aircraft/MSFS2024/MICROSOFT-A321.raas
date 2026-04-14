@@ -10,37 +10,76 @@
     "TakeoffShortRunwayLength": 1700,
     "LandingDistanceAvailableMaxM": 1700,
     "ApproachShortRunwayCautionM": 1700,
+    "ApproachShortRunwayCautionEnabled": false,
     "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1 && [S:FLAPS HANDLE INDEX|number] <= 3"
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 3",
     "ApproachSpeed": "[L:INI_VAPP_SPEED|double]"
   },
+  "ROP": {
+    "Enabled": true,
+    "DryDecelerationRate": 3
+  },
   "DisplayConfig": {
     "Displays": [
       {
         "Enabled": true,
         "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_ND",
         "PosX": "16.6%",
-        "PosY": "15%",
-        "FontSize": 55,
+        "PosY": "15.1%",
+        "FontSize": 66,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "TerrainEnabled": "[L:INI_TERR_ON_CAPT|double] > 0",
-        "AdditionalStyles": ""
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
         "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_ND",
         "PosX": "16.6%",
-        "PosY": "48.2%",
-        "FontSize": 60,
+        "PosY": "48.7%",
+        "FontSize": 66,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "TerrainEnabled": "[L:INI_TERR_ON_FO|double] > 0",
-        "AdditionalStyles": ""
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_PFD_ROP",
+        "PosX": "47.9%",
+        "PosY": "14.3%",
+        "FontSize": 28,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_PFD_ROP",
+        "PosX": "47.9%",
+        "PosY": "47.9%",
+        "FontSize": 28,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
       }
     ]
   }

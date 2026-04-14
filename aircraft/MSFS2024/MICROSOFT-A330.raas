@@ -9,17 +9,23 @@
     "TodaCallMaxLength": 1900,
     "TakeoffShortRunwayLength": 1900,
     "LandingDistanceAvailableMaxM": 1900,
-    "ApproachShortRunwayCautionM": 1900
+    "ApproachShortRunwayCautionM": 1900,
+    "ApproachShortRunwayCautionEnabled": false
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 3",
     "ApproachSpeed": "[L:INI_VAPP_SPEED|double]"
+  },
+  "ROP": {
+    "Enabled": true,
+    "DryDecelerationRate": 2.4
   },
   "DisplayConfig": {
     "Displays": [
       {
         "Enabled": true,
         "PanelName": "VCockpit03",
+        "PanelRegex": "2:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_ND",
         "PosX": "50%",
         "PosY": "44%",
@@ -27,11 +33,13 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "TerrainEnabled": "[L:INI_TERR_ON_CAPT|double] > 0",
-        "AdditionalStyles": ""
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
         "PanelName": "VCockpit07",
+        "PanelRegex": "6:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_ND",
         "PosX": "50%",
         "PosY": "44%",
@@ -39,7 +47,38 @@
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "TerrainEnabled": "[L:INI_TERR_ON_FO|double] > 0",
-        "AdditionalStyles": ""
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_PFD_ROP",
+        "PosX": "43.8%",
+        "PosY": "43.2%",
+        "FontSize": 27,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit06",
+        "PanelRegex": "5:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_PFD_ROP",
+        "PosX": "43.8%",
+        "PosY": "43.2%",
+        "FontSize": 27,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
       }
     ]
   }

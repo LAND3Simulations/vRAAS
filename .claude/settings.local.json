@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(ls C:/GitHub/vRAAS/aircraft/FNX_*)"
+      "Bash(ls C:/GitHub/vRAAS/aircraft/FNX_*)",
+      "Bash(python:*)",
+      "Read(//c/Users/axel/AppData/Roaming/vRAAS/aircraft/MSFS2020/**)",
+      "Read(//c/Users/axel/AppData/Roaming/vRAAS/aircraft/MSFS2024/**)",
+      "Bash(ls -d C:/GitHub/vRAAS/*/)",
+      "Bash(git -C C:/GitHub/vRAAS diff aircraft/)"
     ]
   }
 }
