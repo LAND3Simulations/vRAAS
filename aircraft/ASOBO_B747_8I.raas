@@ -17,24 +17,41 @@
       {
         "Enabled": true,
         "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*",
         "ID": "CPT_ND",
         "PosX": "49.7%",
-        "PosY": "51%",
-        "FontSize": 60,
+        "PosY": "51.0%",
+        "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "AdditionalStyles": ""
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
         "PanelName": "VCockpit03",
+        "PanelRegex": "2:^VCockpit\\d+.*",
         "ID": "FO_ND",
         "PosX": "49.7%",
         "PosY": "51%",
-        "FontSize": 60,
+        "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
-        "AdditionalStyles": ""
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "0:^VCockpit\\d+.*",
+        "ID": "PFD_ROP",
+        "PosX": "44.4%",
+        "PosY": "78.5%",
+        "FontSize": 50,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": false,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {}
       }
     ]
   }

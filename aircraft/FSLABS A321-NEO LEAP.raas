@@ -10,40 +10,83 @@
     "TodaCallMaxLength": 1700,
     "TakeoffShortRunwayLength": 1700,
     "LandingDistanceAvailableMaxM": 1700,
-    "ApproachShortRunwayCautionM": 1700
+    "ApproachShortRunwayCautionM": 1700,
+    "ApproachShortRunwayCautionEnabled": false
   },
   "SmartLanding": {
     "LandingFlapsCondition": "[L:VC_PED_FLAP_LEVER|double] >= 300",
     "AltimeterMonitorBelowTA": false,
     "AltimeterMonitorAboveTA": false
   },
+  "ROP": {
+    "Enabled": true,
+    "DryDecelerationRate": 3,
+    "AutobrakeOffEnabled": true,
+    "AutobrakeOff": "[L:VC_MIP_BRAKES_AUTOBRK_LO_Button_BOT|double] > 0 || [L:VC_MIP_BRAKES_AUTOBRK_MED_Button_BOT|double] > 0 || [L:VC_MIP_BRAKES_AUTOBRK_MAX_Button_BOT|double] > 0"
+  },
   "DisplayConfig": {
     "Displays": [
       {
         "Enabled": true,
-        "PanelName": "VCockpit04",
+        "PanelName": "VCockpit41",
+        "PanelRegex": "3:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "CPT_ND",
-        "PosX": "50.2%",
-        "PosY": "45.1%",
+        "PosX": "50.3%",
+        "PosY": "44.6%",
         "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:VC_MIP_CPT_DU_PNL_ND_BRT_Knob|double] / 2.7",
-        "TerrainEnabled": "[L:VC_MIP_CPT_TERR_ON_ND_Buton_BOT|double] / 2.7",
-        "AdditionalStyles": ""
+        "TerrainEnabled": "[L:VC_MIP_CPT_TERR_ON_ND_Button_BOT|double] > 0",
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
       },
       {
         "Enabled": true,
-        "PanelName": "VCockpit07",
+        "PanelName": "VCockpit38",
+        "PanelRegex": "6:^VCockpit\\d+.*WasmInstrument.*",
         "ID": "FO_ND",
-        "PosX": "50.2%",
-        "PosY": "45.1%",
+        "PosX": "50.3%",
+        "PosY": "44.6%",
         "FontSize": 70,
         "FontFamily": "VCR_OSD_MONO",
         "CenterOnSpace": true,
         "BrightnessVariable": "[L:VC_MIP_FO_DU_PNL_ND_BRT_Knob|double] / 2.7",
-        "TerrainEnabled": "[L:VC_MIP_FO_TERR_ON_ND_Buton_BOT|double] / 2.7",
-        "AdditionalStyles": ""
+        "TerrainEnabled": "[L:VC_MIP_FO_TERR_ON_ND_Button_BOT|double] > 0",
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit77",
+        "PanelRegex": "2:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_PFD_ROP",
+        "PosX": "43.5%",
+        "PosY": "43.1%",
+        "FontSize": 29,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": false,
+        "BrightnessVariable": "[L:VC_MIP_CPT_DU_PNL_PFD_BRT_Knob|double] / 2.7",
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit82",
+        "PanelRegex": "7:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_PFD_ROP",
+        "PosX": "43.5%",
+        "PosY": "41.1%",
+        "FontSize": 29,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": false,
+        "BrightnessVariable": "[L:VC_MIP_FO_DU_PNL_PFD_BRT_Knob|double] / 2.7",
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
       }
     ]
   }
