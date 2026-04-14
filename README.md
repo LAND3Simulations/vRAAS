@@ -36,78 +36,52 @@ Enhance your flight simulation experience with **vRAAS**, a virtual Runway Aware
 
 Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party addons. However, some features require additional configuration or fine-tuning. The following aircraft will work perfectly without any configuration on your part.
 
-**vRAAS Audio**: Audio calls, generally available for all aircraft  
-**vRAAS Display**: In-game RAAS text messages displayed on PFD or ND  
+**vRAAS Audio**: Audio calls, generally available for all aircraft (every row below supports audio).  
+**vRAAS Display**: In-game RAAS text messages displayed on PFD or ND.  
+**ROP**: Runway Overrun Protection — predictive stopping-distance alerts during landing.
 
-### MSFS2020
-
-| Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
-|---------------------------|----------------------------|:----------:|:------------:|------|
-| Aerosoft           		  | A330                       |      ✅     	|       ✅      |      		|
-| Aerosoft           		  | A340-600 PRO               |      ✅     	|       ✅      |1)         |
-| Aerosoft           		  | CRJ (ALL VARIANTS)         |      ✅     	|       ✅      |      		|
-| FlyByWire                   | A320neo                    |      ✅     	|       ✅      |1)      	|
-| FlyByWire                   | A380X                      |      ✅     	|       ✅      |        	|
-| Fenix                       | A319/A320/A321             |      ✅     	|       ✅      |      	|
-| FsLabs                      | A321ceo             	   |      ✅     	|       ✅      |1)	      	|
-| FsLabs                      | A321neo             	   |      ✅     	|       ✅      |1)	      	|
-| Flight FX                   | HJET			           |      ✅     	|       ✅      |1)      	|
-| FlightSimStudio FSS         | E-Jets (v 1.x and above)   |      ✅     	|       ✅      | |
-| FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
-| Horizon Simulations         | B787                       |      ✅     	|       ✅      |        	|
-| Kuro                        | B787                       |      ✅     	|       ✅      |1)      	|
-| IniBuilds                   | A306F                      |      ✅     	|       ✅      |1)      	|
-| IniBuilds                   | A350                       |      ✅     	|       ✅      |1)      	|
-| iFly			              | B737-MAX8                  |      ⚠️     	|       ⚠️      |1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD.       	|
-| Just Flight                 | RJ 75/80/100               |      ✅     	|       ✅      |      	|
-| Leonardo                    | MADDOX X                   |      ✅     	|       ✅      |      	|
-| LatinVFR                    | A330-900neo                |      ✅     	|       ✅      |1)      	|
-| LivToAir                    | CJ3+                       |      ✅     	|       ✅      |1)      	|
-| Headwind Simulations        | A330neo					   |      ✅     	|       ✅      |      	|
-| Microsoft / Default         | A310                       |      ✅     	|       ✅      |1)      	|
-| Asobo / Default             | B747-8i                    |      ✅     	|       ✅      |1)      	|
-| Asobo / Default             | B787-10                    |      ✅     	|       ✅      |1)      	|   
-| Asobo / Default             | A320neo                    |      ✅     	|       ✅      |1)      	|
-| Asobo / Default             | CJ4                        |      ✅     	|       ✅      |1)      	|
-| Asobo / Default             | Citation Longitude         |      ✅     	|       ✅      |1)      	|
-| Asobo / Default             | C208 Grand Caravan         |      ✅     	|       ✅      |1)      	|
-| PMDG                        | B737 (ALL VARIANTS)        |      ✅     	|       ✅      |      	|
-| PMDG                        | B777                       |      ✅     	|       ✅      |      	|
-| ProSim                      | B737                       |      ✅     	|       ⚠️      |1) Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
-| JeeHell FMGS                | A320                       |      ✅     	|       ⚠️      |1) Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
-| Salty                       | B747-8i                    |      ✅     	|       ✅      |			|
-| TFDi				          | MD-11                      |      ✅     	|       ✅      |      	|
-
-
-### MSFS2024
-
-| Developer                 | Aircraft                   	| vRAAS Audio 	| vRAAS Display | NOTE 	|
-|---------------------------|----------------------------|:----------:|:------------:|------|
-| Aerosoft           		| A340-600 PRO               |      ✅     	|       ✅      |1)         |
-| Aerosoft           		 | A330                       |      ✅     	|       ✅      |      		|
-| Microsoft / iniBuilds     | A310                       |      ✅     	|       ✅      |      		|
-| Microsoft / iniBuilds     | A320neo                    |      ✅     	|       ✅      |      		|
-| Microsoft / iniBuilds     | A321                       |      ✅     	|       ✅      |      		|
-| Microsoft / iniBuilds     | A330                       |      ✅     	|       ✅      |      		|
-| Microsoft / iniBuilds     | Beluga XL                  |      ✅     	|       ✅      |      		|
-| FlyByWire                   | A320neo                    |      ✅     	|       ✅      |1)      	|
-| FlyByWire                   | A380X                      |      ✅     	|       ✅      |        	|
-| IniBuilds                 | A350                       |      ✅     	|       ✅      |1)      	|
-| IniBuilds                 | A340                       |      ✅     	|       ✅      |1)      	|
-| iFly			              | B737-MAX8                  |      ⚠️     	|       ⚠️      |1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD.       	|
-| Just Flight                 | RJ 75/80/100               |      ✅     	|       ✅      |      	|
-| Asobo			             | B747		                  |      ✅     	|       ✅      |1)      	|
-| Asobo			             | B737 MAX		               |      ✅     	|       ✅      |1)      	|
-| Fenix                     | A319/A320/A321             |      ✅     	|       ✅      |1)      	|
-| FsLabs                      | A321ceo             	   |      ✅     	|       ✅      |1)	      	|
-| FsLabs                      | A321neo             	   |      ✅     	|       ✅      |1)	      	|
-| LivToAir                    | CJ3+                       |      ✅     	|       ✅      |1)      	|
-| PMDG                        | B737 (ALL VARIANTS)        |      ✅     	|       ✅      |      	|
-| PMDG                        | B777                       |      ✅     	|       ✅      |      	|
-| PMDG                        | B737                       |      ✅     	|       ✅      |      	|
-| FlightSimStudio FSS         | B727                       |      ✅     	|       ❌      |1) No displays to show vRAAS text. |
-| FlightSimStudio FSS         | E-Jets (v 1.x and above)  |      ✅     	|       ✅      | |
-| TFDi				          | MD-11                      |      ✅     	|       ✅      |      	|
+| Developer              | Aircraft                 | MSFS 2020 | MSFS 2024 | Display | ROP | NOTE |
+|------------------------|--------------------------|:---------:|:---------:|:-------:|:---:|------|
+| Aerosoft               | A330                     |     ✅    |     ✅    |    ✅   |     |      |
+| Aerosoft               | A340-600 PRO             |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
+| Aerosoft               | CRJ (ALL VARIANTS)       |     ✅    |           |    ✅   |     |      |
+| Asobo / Default        | A320neo                  |     ✅    |           |    ✅   |     | 1)   |
+| Asobo / Default        | B737 MAX                 |           |     ✅    |    ✅   |     | 1)   |
+| Asobo / Default        | B747-8i                  |     ✅    |     ✅    |    ✅   |     | 1)   |
+| Asobo / Default        | B787-10                  |     ✅    |           |    ✅   |     | 1)   |
+| Asobo / Default        | C208 Grand Caravan       |     ✅    |           |    ✅   |     | 1)   |
+| Asobo / Default        | CJ4                      |     ✅    |           |    ✅   |     | 1)   |
+| Asobo / Default        | Citation Longitude       |     ✅    |           |    ✅   |     | 1)   |
+| Fenix                  | A319/A320/A321           |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
+| Flight FX              | HJET                     |     ✅    |           |    ✅   |     | 1)   |
+| FlightSimStudio FSS    | B727                     |     ✅    |     ✅    |         |     | No displays to show vRAAS text. |
+| FlightSimStudio FSS    | E-Jets (v 1.x and above) |     ✅    |     ✅    |    ✅   |     |      |
+| FlyByWire              | A320neo                  |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
+| FlyByWire              | A380X                    |     ✅    |     ✅    |    ✅   |     |      |
+| FsLabs                 | A321ceo                  |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
+| FsLabs                 | A321neo                  |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
+| Headwind Simulations   | A330neo                  |     ✅    |     ✅    |    ✅   |  ✅ |      |
+| Horizon Simulations    | B787                     |     ✅    |           |    ✅   |     |      |
+| iFly                   | B737-MAX8                |     ⚠️    |     ⚠️    |    ⚠️   |  ✅ | 1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD. |
+| IniBuilds              | A306F                    |     ✅    |           |    ✅   |     | 1)   |
+| IniBuilds              | A340                     |           |     ✅    |    ✅   |  ✅ | 1)   |
+| IniBuilds              | A350                     |     ✅    |     ✅    |    ✅   |     | 1)   |
+| JeeHell FMGS           | A320                     |     ✅    |           |    ⚠️   |     | Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
+| Just Flight            | RJ 75/80/100             |     ✅    |     ✅    |    ✅   |     |      |
+| Kuro                   | B787                     |     ✅    |           |    ✅   |     | 1)   |
+| LatinVFR               | A330-900neo              |     ✅    |           |    ✅   |     | 1)   |
+| Leonardo               | MADDOX X                 |     ✅    |           |    ✅   |     |      |
+| LivToAir               | CJ3+                     |     ✅    |     ✅    |    ✅   |     | 1)   |
+| Microsoft / iniBuilds  | A310                     |     ✅    |     ✅    |    ✅   |     | 1)   |
+| Microsoft / iniBuilds  | A320neo                  |           |     ✅    |    ✅   |     |      |
+| Microsoft / iniBuilds  | A321                     |           |     ✅    |    ✅   |     |      |
+| Microsoft / iniBuilds  | A330                     |           |     ✅    |    ✅   |     |      |
+| Microsoft / iniBuilds  | Beluga XL                |           |     ✅    |    ✅   |     |      |
+| PMDG                   | B737 (ALL VARIANTS)      |     ✅    |     ✅    |    ✅   |  ✅ |      |
+| PMDG                   | B777                     |     ✅    |     ✅    |    ✅   |  ✅ |      |
+| ProSim                 | B737                     |     ✅    |           |    ⚠️   |     | Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
+| Salty                  | B747-8i                  |     ✅    |           |    ✅   |     |      |
+| TFDi                   | MD-11                    |     ✅    |     ✅    |    ✅   |     |      |
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
 
