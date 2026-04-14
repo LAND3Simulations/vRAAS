@@ -62,7 +62,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | FsLabs                 | A321neo                  |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
 | Headwind Simulations   | A330neo                  |     ✅    |     ✅    |    ✅   |  ✅ |      |
 | Horizon Simulations    | B787                     |     ✅    |           |    ✅   |     |      |
-| iFly                   | B737-MAX8                |     ⚠️    |     ⚠️    |    ⚠️   |  ✅ | 1) RAAS included in aircraft. vRAAS disabled by default. Enabling vRAAS shows text on PFD. |
+| iFly                   | B737-MAX8                |     ⚠️    |     ⚠️    |    ⚠️   |  ✅ | 1) RAAS included in aircraft. vRAAS enabled by default — disable the built-in RAAS in the iFly EFB to avoid double callouts. |
 | IniBuilds              | A306F                    |     ✅    |           |    ✅   |     | 1)   |
 | IniBuilds              | A340                     |           |     ✅    |    ✅   |  ✅ | 1)   |
 | IniBuilds              | A350                     |     ✅    |     ✅    |    ✅   |     | 1)   |
@@ -81,7 +81,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | PMDG                   | B777                     |     ✅    |     ✅    |    ✅   |  ✅ |      |
 | ProSim                 | B737                     |     ✅    |           |    ⚠️   |     | Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
 | Salty                  | B747-8i                  |     ✅    |           |    ✅   |     |      |
-| TFDi                   | MD-11                    |     ✅    |     ✅    |    ✅   |     |      |
+| TFDi                   | MD-11                    |     ✅    |     ✅    |    ✅   |  ✅ |      |
 
 1\) **_TOO FAST_** callout during approach is currently unavailable for this aircraft due to missing data from add-on.
 
