@@ -79,7 +79,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | LatinVFR               | A330-900neo              |     ✅    |           |    ✅   |     | 1)   |
 | Leonardo               | MADDOX X                 |     ✅    |           |    ✅   |     |      |
 | LivToAir               | CJ3+                     |     ✅    |     ✅    |    ✅   |     | 1)   |
-| Microsoft / iniBuilds  | A310                     |     ✅    |     ✅    |    ✅   |     | 1)   |
+| Microsoft / iniBuilds  | A310                     |     ✅    |     ✅    |    ✅   |  ✅  | 1)   |
 | Microsoft / iniBuilds  | A320neo                  |           |     ✅    |    ✅   |  ✅ |      |
 | Microsoft / iniBuilds  | A321                     |           |     ✅    |    ✅   |  ✅ |      |
 | Microsoft / iniBuilds  | A330                     |           |     ✅    |    ✅   |  ✅ |      |

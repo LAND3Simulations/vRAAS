@@ -1,0 +1,73 @@
+{
+  "General": {},
+  "SmartRunway": {
+    "ApproachShortRunwayCautionEnabled": false
+  },
+  "SmartLanding": {},
+  "ROP": {
+    "Enabled": true,
+    "DryDecelerationRate": 2.8,
+    "AutobrakeOffEnabled": true,
+    "AutobrakeOff": "[L:A310_AUTOBRAKE_LEVEL|double]"
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit12",
+        "PanelRegex": "11:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_ND",
+        "PosX": "50%",
+        "PosY": "52.4%",
+        "FontSize": 40,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "CPT_PFD_ROP",
+        "PosX": "50%",
+        "PosY": "41.0%",
+        "FontSize": 22,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit12",
+        "PanelRegex": "14:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_ND",
+        "PosX": "50%",
+        "PosY": "52.4%",
+        "FontSize": 40,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "13:^VCockpit\\d+.*WasmInstrument.*",
+        "ID": "FO_PFD_ROP",
+        "PosX": "50%",
+        "PosY": "41.0%",
+        "FontSize": 22,
+        "FontFamily": "B612-Regular",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {
+          "textShadow": "1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+        }
+      }
+    ]
+  }
+}

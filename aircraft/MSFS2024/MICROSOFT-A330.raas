@@ -18,7 +18,9 @@
   },
   "ROP": {
     "Enabled": true,
-    "DryDecelerationRate": 2.4
+    "DryDecelerationRate": 2.4,
+	"AutobrakeOffEnabled": true,
+    "AutobrakeOff": "[L:INI_AUTOBRAKE_LEVEL|double] > 0"
   },
   "DisplayConfig": {
     "Displays": [
