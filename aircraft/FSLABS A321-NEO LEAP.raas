@@ -19,9 +19,9 @@
     "AltimeterMonitorAboveTA": false
   },
   "ROP": {
-    "Enabled": true,
+    "Enabled": false,
     "DryDecelerationRate": 3,
-    "AutobrakeOffEnabled": true,
+    "AutobrakeOffEnabled": false,
     "AutobrakeOff": "[L:VC_MIP_BRAKES_AUTOBRK_LO_Button_BOT|double] > 0 || [L:VC_MIP_BRAKES_AUTOBRK_MED_Button_BOT|double] > 0 || [L:VC_MIP_BRAKES_AUTOBRK_MAX_Button_BOT|double] > 0"
   },
   "DisplayConfig": {
