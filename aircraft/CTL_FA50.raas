@@ -1,0 +1,47 @@
+{
+  "General": {
+    "SystemPower": "[L:EFIS_C86C_EHSI_LEFT_POWER|double] > 0"
+  },
+  "SmartRunway": {
+    "TakeoffFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 1"
+  },
+  "SmartLanding": {
+    "LandingFlapsCondition": "[S:FLAPS HANDLE INDEX|number] >= 2",
+    "ApproachSpeed": "[S:FLAPS HANDLE INDEX|number]"
+  },
+  "ROP": {},
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit59",
+        "PanelRegex": "0:.*ctl-ehsi-pilot.*",
+        "ID": "CPT_ND",
+        "PosX": "50%",
+        "PosY": "44%",
+        "FontSize": 40,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "DisplayPower": "[L:EFIS_C86C_EHSI_LEFT_POWER|double] > 0",
+        "BrightnessVariable": "[L:EFIS_C86C_EHSI_LEFT_SCREEN_BRIGHTNESS|double]",
+        "MessageCategoryFilter": 3,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit59",
+        "PanelRegex": "0:.*ctl-ehsi-copilot.*",
+        "ID": "FO_ND",
+        "PosX": "50%",
+        "PosY": "44%",
+        "FontSize": 40,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "DisplayPower": "[L:EFIS_C86C_EHSI_RIGHT_POWER|double] > 0",
+        "BrightnessVariable": "[L:EFIS_C86C_EHSI_RIGHT_SCREEN_BRIGHTNESS|double]",
+        "MessageCategoryFilter": 3,
+        "AdditionalStyles": {}
+      }
+    ]
+  }
+}
