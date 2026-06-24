@@ -21,6 +21,7 @@
   "ROP": {
     "Enabled": true,
     "DryDecelerationRate": 2.8
+	"AutobrakeOff": "[L:A32NX_AUTOBRAKES_ARMED_MODE|double] > 0"
   },
   "DisplayConfig": {
     "Displays": [
