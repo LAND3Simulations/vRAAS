@@ -61,7 +61,8 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Asobo / Default        | Citation Longitude       |     ✅    |           |    ✅   |     | 1)   |
 | Contrail               | Falcon FA50              |     ✅    |     ✅     |    ✅   |     |    |
 | Fenix                  | A319/A320/A321           |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
-| Flight FX              | HJET                     |     ✅    |           |    ✅   |     | 1)   |
+| Flight FX              | HJET                     |     ✅    |     ✅      |    ✅   |     | 1)   |
+| Flight FX              | Cessna Citation X        |     ✅    |     ✅      |    ✅   |     | 1)   |
 | FlightSimStudio FSS    | B727                     |     ✅    |     ✅    |         |     | No displays to show vRAAS text. |
 | FlightSimStudio FSS    | E-Jets (v 1.x and above) |     ✅    |     ✅    |    ✅   |     |      |
 | FlyByWire              | A320neo                  |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |

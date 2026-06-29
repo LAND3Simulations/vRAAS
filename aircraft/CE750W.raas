@@ -1,0 +1,66 @@
+{
+  "General": {},
+  "SmartRunway": {
+    "TodaCallMaxLength": 1800,
+    "TakeoffShortRunwayLength": 1600,
+    "LandingDistanceAvailableMaxM": 2000,
+    "ApproachShortRunwayCautionM": 1800,
+  },
+  "ROP": {
+    "Enabled": true,
+    "Variant": 1,
+    "DryDecelerationRate": 3
+  },
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit37",
+        "ID": "CPT_PFD",
+        "PosX": "48%",
+        "PosY": "20%",
+        "FontSize": 25,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit38",
+        "ID": "CPT_ND",
+        "PosX": "50%",
+        "PosY": "20%",
+        "FontSize": 45,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit39",
+        "ID": "FO_PFD",
+        "PosX": "49%",
+        "PosY": "20%",
+        "FontSize": 25,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 2,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit40",
+        "ID": "FO_ND",
+        "PosX": "50%",
+        "PosY": "20%",
+        "FontSize": 45,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": true,
+        "MessageCategoryFilter": 1,
+        "AdditionalStyles": {}
+      }
+    ]
+  }
+}
