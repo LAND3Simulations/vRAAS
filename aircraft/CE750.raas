@@ -4,8 +4,7 @@
     "TodaCallMaxLength": 1800,
     "TakeoffShortRunwayLength": 1600,
     "LandingDistanceAvailableMaxM": 2000,
-    "ApproachShortRunwayCautionM": 1800,
-    "ExtendedHoldingOnRunwayInitial": 60
+    "ApproachShortRunwayCautionM": 1800
   },
   "ROP": {
     "Enabled": true,
