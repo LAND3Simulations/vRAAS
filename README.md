@@ -59,6 +59,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | Asobo / Default        | C208 Grand Caravan       |     ✅    |           |    ✅   |     | 1)   |
 | Asobo / Default        | CJ4                      |     ✅    |           |    ✅   |     | 1)   |
 | Asobo / Default        | Citation Longitude       |     ✅    |           |    ✅   |     | 1)   |
+| Contrail               | Falcon FA50              |     ✅    |     ✅     |    ✅   |     |    |
 | Fenix                  | A319/A320/A321           |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
 | Flight FX              | HJET                     |     ✅    |           |    ✅   |     | 1)   |
 | FlightSimStudio FSS    | B727                     |     ✅    |     ✅    |         |     | No displays to show vRAAS text. |
@@ -75,6 +76,7 @@ Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party add
 | IniBuilds              | A350                     |     ✅    |     ✅    |    ✅   |  ✅ | 1)   |
 | JeeHell FMGS           | A320                     |     ✅    |           |    ⚠️   |     | Use [3rd party vRAAS Overlay](https://flightsim.to/file/85252/pero-vraas-overlay) for display output |
 | Just Flight            | RJ 75/80/100             |     ✅    |     ✅    |    ✅   |     |      |
+| Just Flight            | Fokker F70/F100           |     ✅    |     ✅    |    ✅   |     |      |
 | Kuro                   | B787                     |     ✅    |           |    ✅   |     | 1)   |
 | LatinVFR               | A330-900neo              |     ✅    |           |    ✅   |     | 1)   |
 | Leonardo               | MADDOX X                 |     ✅    |           |    ✅   |     |      |
