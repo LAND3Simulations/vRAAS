@@ -1,0 +1,21 @@
+{
+  "appVersion": "2.0.0",
+  "schemaVersion": 2,
+  "minAppVersion": "2.0.0",
+  "profiles": [
+    {
+      "modelId": "FenixA320",
+      "profileVersion": "e3bff3d1b6c0",
+      "hash": "e3bff3d1b6c0e3240f0a88b3b9f028375c3354fd0af1c98cf41441d7d341a354",
+      "path": "FenixA320.raas2"
+    }
+  ],
+  "matchTable": [
+    {
+      "modelId": "FenixA320",
+      "titleMatch": [
+        "^FENIX.*"
+      ]
+    }
+  ]
+}

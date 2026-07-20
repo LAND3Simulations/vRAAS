@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "FenixA320",
+    "titleMatch": [
+      "^FENIX.*"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "ND_Captain",
+      "offsetX": "",
+      "offsetY": "-5%",
+      "fontSize": 74,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "",
+      "brightnessRpn": "(L:N_DISPLAY_BRIGHTNESS_CI) 100 *",
+      "terrainRpn": "(L:I_MIP_GPWS_TERRAIN_ON_ND_CAPT_L) 0 >",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "ND_FO",
+      "offsetX": "",
+      "offsetY": "-5%",
+      "fontSize": 74,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "",
+      "brightnessRpn": "(L:N_DISPLAY_BRIGHTNESS_FI) 100 *",
+      "terrainRpn": "(L:I_MIP_GPWS_TERRAIN_ON_ND_FO_L) 0 >",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "PFD_Captain",
+      "offsetX": "-6.5%",
+      "offsetY": "-8%",
+      "fontSize": 29,
+      "fontFamily": "B612-Regular",
+      "centerOnSpace": true,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": "textShadow:1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+    },
+    {
+      "enabled": true,
+      "anchor": "PFD_FO",
+      "offsetX": "-6.5%",
+      "offsetY": "-8%",
+      "fontSize": 29,
+      "fontFamily": "B612-Regular",
+      "centerOnSpace": true,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": "textShadow:1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+    }
+  ],
+  "general.flapsInhibitRpn": "(L:I_OH_GPWS_FLAP_MODE_L) 0 >",
+  "general.positionShiftM": 25,
+  "general.powerOnDelayS": 40,
+  "general.qnhRpn": "(L:I_FCU_EFIS1_QNH) if{ (L:N_FCU_EFIS1_BARO_HPA) } els{ 1013 }",
+  "general.systemPowerRpn": "(L:B_ELEC_BUS_POWER_AC_ESS) 0 >",
+  "rop.autobrakeEngagedRpn": "(L:I_MIP_AUTOBRAKE_MAX_L) 0 > (L:I_MIP_AUTOBRAKE_MED_L) 0 > or (L:I_MIP_AUTOBRAKE_LO_L) 0 > or",
+  "rop.autobrakeOffEnabled": true,
+  "rop.dryDecel": 2.8,
+  "rop.enabled": true,
+  "smartLanding.approachSpeedRpn": "(L:N_FCU_SPEED)",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 4 >=",
+  "smartRunway.approachShortRunwayCautionEnabled": false,
+  "smartRunway.approachShortRunwayCautionM": 1700,
+  "smartRunway.landingDistanceAvailableMaxM": 1700,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 2 >= (A:FLAPS HANDLE INDEX,number) 4 <= and",
+  "smartRunway.takeoffShortRunwayLengthM": 1700,
+  "smartRunway.todaCallMaxLengthM": 1700,
+  "smartRunway.todaCallMode": 2
+}

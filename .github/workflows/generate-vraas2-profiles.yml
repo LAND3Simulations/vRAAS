@@ -1,0 +1,35 @@
+name: Validate vRAAS2 profiles
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - aircraft2/**
+      - .github/vraas2-titlematch.authored.json
+      - scripts/Generate-Vraas2Manifest.ps1
+      - .github/workflows/generate-vraas2-profiles.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - aircraft2/**
+      - .github/vraas2-titlematch.authored.json
+      - scripts/Generate-Vraas2Manifest.ps1
+      - .github/workflows/generate-vraas2-profiles.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out profiles
+        uses: actions/checkout@v4
+
+      - name: Validate profiles and manifest freshness
+        shell: pwsh
+        run: ./scripts/Generate-Vraas2Manifest.ps1 -Check
