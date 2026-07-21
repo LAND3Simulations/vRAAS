@@ -5,8 +5,8 @@
   "profiles": [
     {
       "modelId": "FenixA320",
-      "profileVersion": "e3bff3d1b6c0",
-      "hash": "e3bff3d1b6c0e3240f0a88b3b9f028375c3354fd0af1c98cf41441d7d341a354",
+      "profileVersion": "c25084efc0ff",
+      "hash": "c25084efc0ffee5657f880bfd1d5b107805207e9890594e47f15972458f8ea22",
       "path": "FenixA320.raas2"
     }
   ],

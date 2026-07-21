@@ -3,6 +3,12 @@ param(
     [string]$ProfilesPath,
     [string]$MatchPath,
     [string]$OutputPath,
+    # Optional. When set, ALSO emits the compiled-in base table the WASM module ships with
+    # (bundled_profiles.gen.cpp), generated from the same aircraft2 profiles + title rules as the
+    # CDN manifest so the shipped base and the CDN set never drift. Left empty for CI, which only
+    # validates the manifest and cannot see the RAAS repo. Sibling-repo default path, from here:
+    #   ../RAAS/vRAAS2/wasm/adapters/bundled_profiles.gen.cpp
+    [string]$EmitCppPath,
     [string]$AppVersion = "2.0.0",
     [switch]$Check
 )
@@ -25,6 +31,9 @@ if (-not $OutputPath) {
 $ProfilesPath = [IO.Path]::GetFullPath($ProfilesPath)
 $MatchPath = [IO.Path]::GetFullPath($MatchPath)
 $OutputPath = [IO.Path]::GetFullPath($OutputPath)
+if ($EmitCppPath) {
+    $EmitCppPath = [IO.Path]::GetFullPath($EmitCppPath)
+}
 
 if (-not (Test-Path -LiteralPath $ProfilesPath -PathType Container)) {
     throw "Profiles directory not found: $ProfilesPath"
@@ -77,7 +86,79 @@ foreach ($entry in $authoredMatches) {
     }
 }
 
+function New-BundledProfilesCpp {
+    param(
+        [object[]]$Bundled,
+        [object[]]$MatchTable
+    )
+
+    # Emits the compiled-in base table the WASM module reads (bundled_profiles.gen.h contract):
+    # each aircraft2 profile as a JSON string literal, plus the ordered title->model rules. LF
+    # line endings, so the output is byte-stable across platforms for the -Check comparison.
+    $lf = "`n"
+    $sb = [System.Text.StringBuilder]::new()
+    $add = {
+        param([string]$Text)
+        [void]$sb.Append($Text)
+        [void]$sb.Append($lf)
+    }
+
+    & $add "// GENERATED FILE - do not edit by hand."
+    & $add "// Produced by vRAAS/scripts/Generate-Vraas2Manifest.ps1 -EmitCppPath."
+    & $add "//"
+    & $add "// Vendor profiles are compiled into the module rather than shipped as package files:"
+    & $add "// WASM cannot read .cfg/.xml/.bgl/.dds out of an encrypted Marketplace package, and this"
+    & $add "// sidesteps the question entirely. The work/profiles CDN cache overlays this at runtime."
+    & $add "#include ""bundled_profiles.gen.h"""
+    & $add ""
+    & $add "namespace vraas2 {"
+    & $add "namespace wasm {"
+    & $add ""
+
+    & $add "const BundledProfile kBundledProfiles[] = {"
+    if ($Bundled.Count -eq 0) {
+        & $add "    {0, 0},   // sentinel, never read (kBundledProfileCount == 0)"
+    }
+    foreach ($b in $Bundled) {
+        $mid = $b.modelId.Replace('\', '\\').Replace('"', '\"')
+        & $add ("    { ""$mid"",")
+        foreach ($line in ($b.json -split "`n")) {
+            $esc = $line.TrimEnd("`r").Replace('\', '\\').Replace('"', '\"')
+            & $add ("        ""$esc""")
+        }
+        & $add "    },"
+    }
+    & $add "};"
+    & $add "const int kBundledProfileCount = $($Bundled.Count);"
+    & $add ""
+
+    & $add "// Ordered specific to generic; first match wins. Matching is an unanchored"
+    & $add "// substring search unless the pattern uses ^ or `$, so a generic rule placed too"
+    & $add "// early will shadow the specific rules below it."
+    & $add "const TitleMatchRule kTitleMatchRules[] = {"
+    $ruleCount = 0
+    foreach ($m in $MatchTable) {
+        $mid = ([string]$m.modelId).Replace('\', '\\').Replace('"', '\"')
+        foreach ($p in $m.titleMatch) {
+            $pat = ([string]$p).Replace('\', '\\').Replace('"', '\"')
+            & $add ("    { ""$mid"", ""$pat"" },")
+            $ruleCount++
+        }
+    }
+    if ($ruleCount -eq 0) {
+        & $add "    {0, 0},   // sentinel, never read (kTitleMatchRuleCount == 0)"
+    }
+    & $add "};"
+    & $add "const int kTitleMatchRuleCount = $ruleCount;"
+    & $add ""
+    & $add "}  // namespace wasm"
+    & $add "}  // namespace vraas2"
+
+    return $sb.ToString()
+}
+
 $manifestProfiles = @()
+$bundled = @()
 foreach ($profilePath in $profilePaths) {
     $modelId = [IO.Path]::GetFileNameWithoutExtension($profilePath)
     try {
@@ -112,6 +193,7 @@ foreach ($profilePath in $profilePaths) {
         hash = $hash
         path = "$modelId.raas2"
     }
+    $bundled += [pscustomobject]@{ modelId = $modelId; json = $profileJson }
 }
 
 $manifest = [ordered]@{
@@ -123,6 +205,11 @@ $manifest = [ordered]@{
 }
 $generatedJson = $manifest | ConvertTo-Json -Depth 20
 
+$generatedCpp = $null
+if ($EmitCppPath) {
+    $generatedCpp = New-BundledProfilesCpp -Bundled $bundled -MatchTable $matchTable
+}
+
 if ($Check) {
     if (-not (Test-Path -LiteralPath $OutputPath -PathType Leaf)) {
         throw "Manifest is missing: $OutputPath. Run this script without -Check and commit the result."
@@ -133,6 +220,17 @@ if ($Check) {
         throw "Manifest is stale: $OutputPath. Run this script without -Check and commit the result."
     }
 
+    if ($EmitCppPath) {
+        if (-not (Test-Path -LiteralPath $EmitCppPath -PathType Leaf)) {
+            throw "Bundled table is missing: $EmitCppPath. Run this script without -Check and commit the result."
+        }
+        $committedCpp = [IO.File]::ReadAllText($EmitCppPath)
+        if ($committedCpp -cne $generatedCpp) {
+            throw "Bundled table is stale: $EmitCppPath. Run this script without -Check and commit the result."
+        }
+        Write-Host "Bundled table is valid and current: $EmitCppPath"
+    }
+
     Write-Host "Manifest is valid and current: $OutputPath"
     return
 }
@@ -141,3 +239,10 @@ $outputDirectory = [IO.Path]::GetDirectoryName($OutputPath)
 [IO.Directory]::CreateDirectory($outputDirectory) | Out-Null
 [IO.File]::WriteAllText($OutputPath, $generatedJson, [Text.UTF8Encoding]::new($false))
 Write-Host "Wrote manifest for $($manifestProfiles.Count) profiles to $OutputPath"
+
+if ($EmitCppPath) {
+    $cppDirectory = [IO.Path]::GetDirectoryName($EmitCppPath)
+    [IO.Directory]::CreateDirectory($cppDirectory) | Out-Null
+    [IO.File]::WriteAllText($EmitCppPath, $generatedCpp, [Text.UTF8Encoding]::new($false))
+    Write-Host "Wrote bundled table for $($bundled.Count) profiles to $EmitCppPath"
+}
