@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# vRAAS2 profile payloads and manifest: byte-exact, never CRLF-normalize.
+# The client SHA-256-verifies each .raas2 against the manifest hash; LF/CRLF
+# rewriting desyncs the served bytes from the hash and blocks auto-download.
+aircraft2/*.raas2 -text
+aircraft2/current_version.json -text
