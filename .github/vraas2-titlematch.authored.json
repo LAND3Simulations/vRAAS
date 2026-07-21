@@ -1,7 +1,0 @@
-[
-  {
-    "_comment": "Ordered TITLE regex rules for vRAAS2. Each modelId is the corresponding aircraft2/<modelId>.raas2 filename. The first matching rule wins. Use the restricted matcher grammar documented in RAAS/vRAAS2/core/include/vraas2/core/domain/title_matcher.h. Add only verified mappings, because this ID also keys the shared Type and Displays settings.",
-    "modelId": "FenixA320",
-    "titleMatch": ["^FENIX.*"]
-  }
-]

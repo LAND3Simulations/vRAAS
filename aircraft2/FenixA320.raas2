@@ -4,7 +4,7 @@
     "minAppVersion": "2.0.0",
     "modelId": "FenixA320",
     "titleMatch": [
-      "(?i)^FENIXA(319|320|321)$"
+      "(?i)^FENIX.*"
     ]
   },
   "displays": [

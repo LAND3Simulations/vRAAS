@@ -1,11 +1,10 @@
 [CmdletBinding()]
 param(
     [string]$ProfilesPath,
-    [string]$MatchPath,
     [string]$OutputPath,
     # Optional. When set, ALSO emits the compiled-in base table the WASM module ships with
-    # (bundled_profiles.gen.cpp), generated from the same aircraft2 profiles + title rules as the
-    # CDN manifest so the shipped base and the CDN set never drift. Left empty for CI, which only
+    # (bundled_profiles.gen.cpp), generated from the same aircraft2 profiles + their meta.titleMatch
+    # as the CDN manifest so the shipped base and the CDN set never drift. Left empty for CI, which only
     # validates the manifest and cannot see the RAAS repo. Sibling-repo default path, from here:
     #   ../RAAS/vRAAS2/wasm/adapters/bundled_profiles.gen.cpp
     [string]$EmitCppPath,
@@ -21,15 +20,11 @@ $repositoryRoot = Split-Path -Parent $PSScriptRoot
 if (-not $ProfilesPath) {
     $ProfilesPath = Join-Path $repositoryRoot "aircraft2"
 }
-if (-not $MatchPath) {
-    $MatchPath = Join-Path $repositoryRoot ".github/vraas2-titlematch.authored.json"
-}
 if (-not $OutputPath) {
     $OutputPath = Join-Path $ProfilesPath "current_version.json"
 }
 
 $ProfilesPath = [IO.Path]::GetFullPath($ProfilesPath)
-$MatchPath = [IO.Path]::GetFullPath($MatchPath)
 $OutputPath = [IO.Path]::GetFullPath($OutputPath)
 if ($EmitCppPath) {
     $EmitCppPath = [IO.Path]::GetFullPath($EmitCppPath)
@@ -37,9 +32,6 @@ if ($EmitCppPath) {
 
 if (-not (Test-Path -LiteralPath $ProfilesPath -PathType Container)) {
     throw "Profiles directory not found: $ProfilesPath"
-}
-if (-not (Test-Path -LiteralPath $MatchPath -PathType Leaf)) {
-    throw "Authored title-match file not found: $MatchPath"
 }
 
 $profilePaths = [string[]](Get-ChildItem -LiteralPath $ProfilesPath -Filter "*.raas2" -File |
@@ -49,42 +41,60 @@ if ($profilePaths.Count -eq 0) {
     throw "No .raas2 profiles found in $ProfilesPath"
 }
 
-try {
-    $matchJson = [IO.File]::ReadAllText($MatchPath)
-    $authoredMatches = @($matchJson | ConvertFrom-Json)
+# Restricted-grammar validator for titleMatch patterns. Mirrors TitlePatternValidator.cs in the
+# RAAS repo and, transitively, the WASM matcher (core/src/title_matcher.cpp): a pattern that
+# passes here is guaranteed to compile in the sim. Catches bad patterns at publish time instead of
+# silently failing to match. Supported: optional leading (?i), ^, $, ., .*, [...] classes with
+# ranges and leading ^ negation, top-level |, backslash escapes, literals. Rejected: + ? {n,m}
+# ( ) groups, backreferences, lookaround, \d style classes, bare *, trailing backslash.
+function Find-TitleClassEnd {
+    param([string]$Pattern, [int]$Open)
+    $i = $Open + 1
+    if ($i -lt $Pattern.Length -and $Pattern[$i] -eq '^') { $i++ }
+    if ($i -lt $Pattern.Length -and $Pattern[$i] -eq ']') { $i++ }   # literal ] as first member
+    while ($i -lt $Pattern.Length) {
+        if ($Pattern[$i] -eq '\') { $i += 2; continue }
+        if ($Pattern[$i] -eq ']') { return $i }
+        $i++
+    }
+    return -1
 }
-catch {
-    throw "Invalid JSON in $MatchPath`: $($_.Exception.Message)"
-}
 
-$matchesByModel = @{}
-$matchTable = @()
-foreach ($entry in $authoredMatches) {
-    $modelId = [string]$entry.modelId
-    $patterns = @($entry.titleMatch)
-
-    if ([string]::IsNullOrWhiteSpace($modelId)) {
-        throw "Every entry in $MatchPath must have a non-empty modelId."
-    }
-    if ($matchesByModel.ContainsKey($modelId)) {
-        throw "Duplicate modelId in $MatchPath`: $modelId"
-    }
-    if ($patterns.Count -eq 0) {
-        throw "$modelId has no titleMatch patterns in $MatchPath"
-    }
-
-    foreach ($pattern in $patterns) {
-        if ([string]::IsNullOrWhiteSpace([string]$pattern) -or $pattern -eq "TODO") {
-            throw "$modelId contains an empty or TODO titleMatch pattern in $MatchPath"
+# Returns $null when the pattern is valid, otherwise a human-readable error string.
+function Test-TitlePattern {
+    param([string]$Pattern)
+    if ([string]::IsNullOrWhiteSpace($Pattern)) { return "pattern is empty" }
+    if ($Pattern -eq "TODO") { return "placeholder pattern; author a real titleMatch regex" }
+    $i = 0
+    if ($Pattern.StartsWith("(?i)", [System.StringComparison]::Ordinal)) { $i = 4 }
+    while ($i -lt $Pattern.Length) {
+        $c = $Pattern[$i]
+        if ($c -eq '\') {
+            if ($i + 1 -ge $Pattern.Length) { return "trailing backslash" }
+            $i += 2; continue
         }
+        if ($c -eq '[') {
+            $close = Find-TitleClassEnd $Pattern $i
+            if ($close -lt 0) { return "unterminated character class at index $i" }
+            $i = $close + 1; continue
+        }
+        if ($c -eq '+' -or $c -eq '?' -or $c -eq '{' -or $c -eq '}' -or $c -eq '(' -or $c -eq ')') {
+            return "unsupported construct '$c' at index $i (the runtime matcher supports only ^ `$ . .* [...] | and literals)"
+        }
+        if ($c -eq '*') {
+            if ($i -eq 0 -or $Pattern[$i - 1] -ne '.') {
+                return "'*' at index $i must directly follow '.' (only .* is supported)"
+            }
+            $i++; continue
+        }
+        $i++
     }
-
-    $matchesByModel[$modelId] = $true
-    $matchTable += [ordered]@{
-        modelId = $modelId
-        titleMatch = [string[]]$patterns
-    }
+    return $null
 }
+
+# The match table is now derived from each profile's meta.titleMatch (built in the profile loop
+# below, in filename-enumeration order: first match wins, so name files specific-before-generic).
+$matchTable = @()
 
 function New-BundledProfilesCpp {
     param(
@@ -181,8 +191,22 @@ foreach ($profilePath in $profilePaths) {
     if ($profile.meta.modelId -cne $modelId) {
         throw "$modelId meta.modelId must exactly match its filename."
     }
-    if (-not $matchesByModel.ContainsKey($modelId)) {
-        throw "$modelId has no authored titleMatch entry in $MatchPath"
+    # Identity rules live with the profile that owns them (meta.titleMatch). Build the ordered
+    # match table straight from them; the converter seeds this with "TODO", which the validator
+    # rejects, so an un-post-processed profile fails the build instead of shipping a dead rule.
+    $patterns = @($profile.meta.titleMatch)
+    if ($patterns.Count -eq 0) {
+        throw "$modelId has no meta.titleMatch patterns."
+    }
+    foreach ($pattern in $patterns) {
+        $patternError = Test-TitlePattern ([string]$pattern)
+        if ($patternError) {
+            throw "$modelId meta.titleMatch pattern '$pattern' is invalid: $patternError"
+        }
+    }
+    $matchTable += [ordered]@{
+        modelId = $modelId
+        titleMatch = [string[]]$patterns
     }
 
     $contentBytes = [Text.Encoding]::UTF8.GetBytes($profileJson)
