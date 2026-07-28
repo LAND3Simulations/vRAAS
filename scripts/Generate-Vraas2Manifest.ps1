@@ -8,7 +8,11 @@ param(
     # validates the manifest and cannot see the RAAS repo. Sibling-repo default path, from here:
     #   ../RAAS/vRAAS2/wasm/adapters/bundled_profiles.gen.cpp
     [string]$EmitCppPath,
-    [string]$AppVersion = "2.0.0",
+    # The released app version published in the manifest, which the in-sim app compares against its
+    # own build version to decide whether to show "update available". Normally left empty: it comes
+    # from aircraft2\app_release.json so that -Check (what CI runs) regenerates deterministically.
+    # Hand-editing the version into current_version.json would make CI fail as "stale".
+    [string]$AppVersion,
     [switch]$Check
 )
 
@@ -32,6 +36,24 @@ if ($EmitCppPath) {
 
 if (-not (Test-Path -LiteralPath $ProfilesPath -PathType Container)) {
     throw "Profiles directory not found: $ProfilesPath"
+}
+
+# Released app version + optional one-line note, from the committed release file. Releasing is
+# therefore: edit app_release.json, rerun this script, commit both. A missing file keeps the old
+# behaviour (2.0.0, no note) so an older checkout still generates.
+$appNote = ""
+$releasePath = Join-Path $ProfilesPath "app_release.json"
+if (Test-Path -LiteralPath $releasePath -PathType Leaf) {
+    $release = Get-Content -LiteralPath $releasePath -Raw | ConvertFrom-Json
+    if (-not $AppVersion -and $release.appVersion) { $AppVersion = [string]$release.appVersion }
+    if ($release.appNote) { $appNote = [string]$release.appNote }
+}
+if (-not $AppVersion) { $AppVersion = "2.0.0" }
+if ($AppVersion -notmatch '^\d+\.\d+\.\d+$') {
+    throw "appVersion must be M.m.p (got '$AppVersion'). The in-sim comparison parses nothing else."
+}
+if ($appNote.Length -gt 80) {
+    throw "appNote must be 80 characters or fewer (got $($appNote.Length)); it is one line in the EFB."
 }
 
 $profilePaths = [string[]](Get-ChildItem -LiteralPath $ProfilesPath -Filter "*.raas2" -File |
@@ -222,6 +244,7 @@ foreach ($profilePath in $profilePaths) {
 
 $manifest = [ordered]@{
     appVersion = $AppVersion
+    appNote = $appNote
     schemaVersion = $schemaVersion
     minAppVersion = $minimumAppVersion
     profiles = $manifestProfiles
