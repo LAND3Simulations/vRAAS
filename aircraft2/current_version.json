@@ -1,6 +1,6 @@
 {
-  "appVersion": "2.0.0",
-  "appNote": "",
+  "appVersion": "2.0.1",
+  "appNote": "Bugfixes.",
   "schemaVersion": 2,
   "minAppVersion": "2.0.0",
   "profiles": [
