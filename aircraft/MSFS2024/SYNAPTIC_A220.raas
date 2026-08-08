@@ -1,0 +1,41 @@
+{
+  "General": {},
+  "SmartRunway": {
+    "ExtendedHoldingOnRunwayInitial": 0
+  },
+  "SmartLanding": {
+    "AltimeterMonitorBelowTA": false,
+    "AltimeterMonitorAboveTA": false
+  },
+  "ROP": {},
+  "DisplayConfig": {
+    "Displays": [
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*",
+        "ID": "F4729",
+        "PosX": "88.02%",
+        "PosY": "9.7%",
+        "FontSize": 52,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": false,
+        "MessageCategoryFilter": 3,
+        "AdditionalStyles": {}
+      },
+      {
+        "Enabled": true,
+        "PanelName": "VCockpit02",
+        "PanelRegex": "1:^VCockpit\\d+.*",
+        "ID": "EE711",
+        "PosX": "13.02%",
+        "PosY": "9.7%",
+        "FontSize": 50,
+        "FontFamily": "VCR_OSD_MONO",
+        "CenterOnSpace": false,
+        "MessageCategoryFilter": 3,
+        "AdditionalStyles": {}
+      }
+    ]
+  }
+}
