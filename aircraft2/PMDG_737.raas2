@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "PMDG_737",
+    "vendor": "PMDG",
+    "aircraft": "B737 (all variants)",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i)^737"
+    ],
+    "folderMatch": [
+      "(?i)pmdg"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "DU_LeftOutboard",
+      "offsetX": "-6.5%",
+      "offsetY": "31%",
+      "fontSize": 50,
+      "fontFamily": "Arial",
+      "centerOnSpace": false,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "(L:CA_OUTBD_DU_BRIGHT_CONTROL) (L:switch_329_73X) max 3 /",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "DU_LeftInboard",
+      "offsetX": "",
+      "offsetY": "-10%",
+      "fontSize": 90,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "",
+      "brightnessRpn": "(L:CA_INBD_DU_BRIGHT_CONTROL) (L:switch_330_73X) max 3 /",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "DU_RightOutboard",
+      "offsetX": "-6.5%",
+      "offsetY": "31%",
+      "fontSize": 50,
+      "fontFamily": "Arial",
+      "centerOnSpace": false,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "(L:FO_OUTBD_DU_BRIGHT_CONTROL) (L:switch_509_73X) max 3 /",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "DU_RightInboard",
+      "offsetX": "",
+      "offsetY": "-10%",
+      "fontSize": 90,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "",
+      "brightnessRpn": "(L:FO_INBD_DU_BRIGHT_CONTROL) (L:switch_507_73X) max 3 /",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    }
+  ],
+  "general.flapsInhibitRpn": "(L:switch_501_73X) 0 ==",
+  "general.positionShiftM": 25,
+  "general.powerOnDelayS": 90,
+  "general.systemPowerRpn": "(L:switch_01_73X) 0 >",
+  "rop.autobrakeEngagedRpn": "(L:switch_460_73X) 10 != (L:switch_459_73X) 0 == and",
+  "rop.dryDecel": 2.8,
+  "rop.enabled": true,
+  "rop.variant": 1,
+  "smartLanding.approachSpeedRpn": "(L:ngx_SPDwindow) 0 > if{ (L:ngx_SPDwindow) } els{ (A:AIRSPEED INDICATED,knots) }",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 7 >=",
+  "smartRunway.approachShortRunwayCautionEnabled": false,
+  "smartRunway.approachShortRunwayCautionM": 1900,
+  "smartRunway.landingDistanceAvailableMaxM": 1900,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >= (A:FLAPS HANDLE INDEX,number) 6 <= and (A:FLAPS HANDLE INDEX,number) 2 != and",
+  "smartRunway.takeoffShortRunwayLengthM": 1900,
+  "smartRunway.todaCallMaxLengthM": 1900,
+  "smartRunway.todaCallMode": 2
+}

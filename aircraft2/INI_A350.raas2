@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "INI_A350",
+    "vendor": "IniBuilds",
+    "aircraft": "A350",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i).*A350.*"
+    ],
+    "folderMatch": [
+      "(?i).*a350.*"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "EFIS_1",
+      "offsetX": "25.2%",
+      "offsetY": "-16.4%",
+      "fontSize": 70,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "EFIS_2",
+      "offsetX": "-25.2%",
+      "offsetY": "-16.2%",
+      "fontSize": 70,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    }
+  ],
+  "smartRunway.approachShortRunwayCautionEnabled": false,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.todaCallMode": 2
+}

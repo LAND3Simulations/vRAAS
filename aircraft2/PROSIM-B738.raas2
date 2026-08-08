@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "PROSIM-B738",
+	"vendor": "ProSim",
+    "aircraft": "B737",
+	"sims": [
+      "2024",
+	  "2020"
+    ],
+    "titleMatch": [
+      "(?i)^PROSIM-B738.*"
+    ]
+  },
+  "general.positionShiftM": 25,
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 7 >=",
+  "smartRunway.approachShortRunwayCautionM": 1900,
+  "smartRunway.landingDistanceAvailableMaxM": 1900,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >= (A:FLAPS HANDLE INDEX,number) 6 <= and (A:FLAPS HANDLE INDEX,number) 2 != and",
+  "smartRunway.takeoffShortRunwayLengthM": 1900,
+  "smartRunway.todaCallMaxLengthM": 1900,
+  "smartRunway.todaCallMode": 2
+}

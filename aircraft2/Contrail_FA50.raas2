@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "Contrail_FA50",
+    "vendor": "Contrail",
+    "aircraft": "Falcon FA50",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i)^Contrail Falcon"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "ctl-ehsi-pilot",
+      "offsetX": "",
+      "offsetY": "-6%",
+      "fontSize": 40,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "(L:EFIS_C86C_EHSI_LEFT_POWER) 0 >",
+      "brightnessRpn": "(L:EFIS_C86C_EHSI_LEFT_SCREEN_BRIGHTNESS)",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "ctl-ehsi-copilot",
+      "offsetX": "",
+      "offsetY": "-6%",
+      "fontSize": 40,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "(L:EFIS_C86C_EHSI_RIGHT_POWER) 0 >",
+      "brightnessRpn": "(L:EFIS_C86C_EHSI_RIGHT_SCREEN_BRIGHTNESS)",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    }
+  ],
+  "general.systemPowerRpn": "(L:EFIS_C86C_EHSI_LEFT_POWER) 0 >",
+  "smartLanding.approachSpeedRpn": "(A:FLAPS HANDLE INDEX,number)",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 2 >=",
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >=",
+  "smartRunway.todaCallMode": 2
+}

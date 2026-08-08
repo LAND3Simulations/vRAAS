@@ -6,3 +6,8 @@
 # rewriting desyncs the served bytes from the hash and blocks auto-download.
 aircraft2/*.raas2 -text
 aircraft2/current_version.json -text
+
+# Generated supported-aircraft pages: the CI freshness check byte-compares them against a fresh
+# render, so the checkout must always give the LF the generator writes.
+supported-aircraft.md text eol=lf
+supported-aircraft/index.html text eol=lf

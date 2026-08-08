@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "JustFlight_Fokker",
+    "vendor": "Just Flight",
+    "aircraft": "Fokker F70/F100",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i).*Just Flight F.*"
+    ],
+    "folderMatch": [
+      "(?i).*just flight fokker.*"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "DU_L_DISP",
+      "offsetX": "",
+      "offsetY": "-15%",
+      "fontSize": 90,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "(L:PED_FWD_CTR_TerrainDisp_LeftLeaveToRun) 0 >",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "DU2_L_DISP",
+      "offsetX": "",
+      "offsetY": "-15%",
+      "fontSize": 90,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "(L:PED_FWD_CTR_TerrainDisp_LeftLeaveToRun) 0 >",
+      "additionalStyles": ""
+    }
+  ],
+  "general.flapsInhibitRpn": "(L:R_ANNUNS_FlapWarnOvrd_button_LeftLeaveToRun) 0 >",
+  "general.systemPowerRpn": "(L:JF_RJ_ELEC_AC_ess) 0 >",
+  "smartLanding.approachSpeedIsVref": true,
+  "smartLanding.approachSpeedRpn": "(L:JF_PFD_VREF_DYNAMIC)",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 3 >=",
+  "smartRunway.approachShortRunwayCautionM": 1000,
+  "smartRunway.landingDistanceAvailableMaxM": 1000,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >=",
+  "smartRunway.takeoffShortRunwayLengthM": 1000,
+  "smartRunway.todaCallMaxLengthM": 1000,
+  "smartRunway.todaCallMode": 2
+}

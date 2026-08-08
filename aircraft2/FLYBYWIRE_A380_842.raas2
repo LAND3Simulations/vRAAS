@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "FLYBYWIRE_A380_842",
+    "vendor": "FlyByWire",
+    "aircraft": "A380X",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i)^FlyByWire A380X.*"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "a380x-nd:1",
+      "offsetX": "",
+      "offsetY": "-16%",
+      "fontSize": 60,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "(L:A32NX_EGPWC_ND_L_TERRAIN_ACTIVE) 0 >",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "a380x-nd:2",
+      "offsetX": "",
+      "offsetY": "-16%",
+      "fontSize": 60,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "(L:A32NX_EGPWC_ND_R_TERRAIN_ACTIVE) 0 >",
+      "additionalStyles": ""
+    }
+  ],
+  "general.positionShiftM": 55,
+  "general.powerOnDelayS": 40,
+  "general.systemPowerRpn": "(L:A32NX_ELEC_AC_ESS_BUS_IS_POWERED) 0 >",
+  "smartLanding.approachSpeedRpn": "(L:A32NX_SPEEDS_VAPP)",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 4 >=",
+  "smartRunway.approachShortRunwayCautionM": 2700,
+  "smartRunway.landingDistanceAvailableMaxM": 2700,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 2 >= (A:FLAPS HANDLE INDEX,number) 4 <= and",
+  "smartRunway.takeoffShortRunwayLengthM": 2700,
+  "smartRunway.todaCallMaxLengthM": 2700,
+  "smartRunway.todaCallMode": 2
+}

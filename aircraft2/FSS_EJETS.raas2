@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "FSS_EJETS",
+    "vendor": "FlightSimStudio FSS",
+    "aircraft": "E-Jets",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i)^FSS Embraer.*"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "PilotMFDDisplay",
+      "offsetX": "",
+      "offsetY": "-25%",
+      "fontSize": 75,
+      "centerOnSpace": false,
+      "categoryFilter": 3,
+      "powerRpn": "(L:FSS_EXX_MFD_LEFT_PAGE_NDX) 0 ==",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "CoPilotMFDDisplay",
+      "offsetX": "",
+      "offsetY": "-25%",
+      "fontSize": 75,
+      "centerOnSpace": false,
+      "categoryFilter": 3,
+      "powerRpn": "(L:FSS_EXX_MFD_RIGHT_PAGE_NDX) 0 ==",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    }
+  ],
+  "general.flapsInhibitRpn": "(L:FSS_EXX_GND_PROX_FLAP_OVRD) 0 >",
+  "general.positionShiftM": 20,
+  "general.powerOnDelayS": 16,
+  "general.raasInhibitRpn": "(L:FSS_EXX_GND_PROX_INHIB_L) 0 >",
+  "general.systemPowerRpn": "(L:FSS_EXX_MFD_GV_ELECT_AC_BUS_1) 0 >",
+  "smartLanding.approachSpeedRpn": "(L:FSS_EXX_PFD_GV_AIRSPD_VAP_1)",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 5 >=",
+  "smartRunway.approachShortRunwayCautionM": 1300,
+  "smartRunway.landingDistanceAvailableMaxM": 1300,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 == (A:FLAPS HANDLE INDEX,number) 2 == or (A:FLAPS HANDLE INDEX,number) 4 == or",
+  "smartRunway.takeoffShortRunwayLengthM": 1300,
+  "smartRunway.todaCallMaxLengthM": 1300,
+  "smartRunway.todaCallMode": 2
+}

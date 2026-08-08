@@ -41,6 +41,8 @@ Enhance your flight simulation experience with **vRAAS**, a virtual Runway Aware
 
 ## Aircraft Compatibility List
 
+Using **vRAAS 2** (in-sim, MSFS 2024)? Its list is generated from the shipped profiles: [vRAAS 2 Supported Aircraft](supported-aircraft.md). The table below is for vRAAS 1.
+
 Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party addons. However, some features require additional configuration or fine-tuning. The following aircraft will work perfectly without any configuration on your part.
 
 **vRAAS Audio**: Audio calls — available for *all* aircraft.  

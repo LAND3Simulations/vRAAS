@@ -1,21 +1,238 @@
 {
-  "appVersion": "2.0.1",
-  "appNote": "Bugfixes.",
+  "appVersion": "2.0.0",
+  "appNote": "First public beta.",
   "schemaVersion": 2,
   "minAppVersion": "2.0.0",
   "profiles": [
     {
-      "modelId": "FenixA320",
-      "profileVersion": "bf6f65888d2d",
-      "hash": "bf6f65888d2d9b2f77cfc96ced263d1d3e63cc3988347031935bdad7658d7030",
-      "path": "FenixA320.raas2"
+      "modelId": "Aerosoft_A346",
+      "profileVersion": "2ae5ea982c81",
+      "hash": "2ae5ea982c81b3afa379f4a3851899d225a2313ae9f74f04b69ec736e58e9e70",
+      "path": "Aerosoft_A346.raas2"
+    },
+    {
+      "modelId": "Contrail_FA50",
+      "profileVersion": "1fc0bee5052d",
+      "hash": "1fc0bee5052d70a145d6b4925503e1c7526a40aa7c6e21cd733148651d9678ea",
+      "path": "Contrail_FA50.raas2"
+    },
+    {
+      "modelId": "Fenix_A32X",
+      "profileVersion": "c74ebf615986",
+      "hash": "c74ebf615986ba98b3c39020c59d57a5292758eaa950ca227adac4827353b5c5",
+      "path": "Fenix_A32X.raas2"
+    },
+    {
+      "modelId": "FLYBYWIRE_A320_NEO",
+      "profileVersion": "7f590b1e7f3e",
+      "hash": "7f590b1e7f3e6d019f76e3c2f76c1bcff75d53d4c4f20a732839aa55f4c1a4af",
+      "path": "FLYBYWIRE_A320_NEO.raas2"
+    },
+    {
+      "modelId": "FLYBYWIRE_A380_842",
+      "profileVersion": "0a399e7b221e",
+      "hash": "0a399e7b221ec828ea963268a9cb1448049383b921c73e2a047e3870b80be5bb",
+      "path": "FLYBYWIRE_A380_842.raas2"
+    },
+    {
+      "modelId": "FSLABS_A32X",
+      "profileVersion": "253b0f08a7a8",
+      "hash": "253b0f08a7a8530fa0ad4db1e116ab660353f8142487616a1fcce7f51047a437",
+      "path": "FSLABS_A32X.raas2"
+    },
+    {
+      "modelId": "FSS_B727",
+      "profileVersion": "40a3095b4879",
+      "hash": "40a3095b4879716d11eb5bb20da7e6b4e4b06164da4fd42ce7d55a8e1e7c9168",
+      "path": "FSS_B727.raas2"
+    },
+    {
+      "modelId": "FSS_EJETS",
+      "profileVersion": "e3697f54d487",
+      "hash": "e3697f54d4876c5797ba5fc4f6f8b1094917a6bfc41377ba3fd6f69f5fbd9117",
+      "path": "FSS_EJETS.raas2"
+    },
+    {
+      "modelId": "INI_A340",
+      "profileVersion": "84ec7d4bd3a6",
+      "hash": "84ec7d4bd3a6940db899766f074856e25388ce71a9f72b57945e7ab7a37f3a61",
+      "path": "INI_A340.raas2"
+    },
+    {
+      "modelId": "INI_A350",
+      "profileVersion": "86a70bbc0f53",
+      "hash": "86a70bbc0f53d6ae36914a06036a014084814b78119df4a871a5b13adc0fa546",
+      "path": "INI_A350.raas2"
+    },
+    {
+      "modelId": "JustFlight_Fokker",
+      "profileVersion": "35ad75d0579d",
+      "hash": "35ad75d0579ddb894908264949dbe2552338ab2f0997e5d9bcf982334db838d4",
+      "path": "JustFlight_Fokker.raas2"
+    },
+    {
+      "modelId": "MICROSOFT-A330",
+      "profileVersion": "20ba1e599fc6",
+      "hash": "20ba1e599fc6e18eb19e15624d0685ec7424fea4e6da85e0927787deb3881d24",
+      "path": "MICROSOFT-A330.raas2"
+    },
+    {
+      "modelId": "MICROSOFT-BELUGAXL",
+      "profileVersion": "00b06173b9be",
+      "hash": "00b06173b9bed33baadd9162eb2fd95cb88529a13274e2e7bdf8b82a7fb0f611",
+      "path": "MICROSOFT-BELUGAXL.raas2"
+    },
+    {
+      "modelId": "PMDG_737",
+      "profileVersion": "4f704e649d0c",
+      "hash": "4f704e649d0c426a14716256d9ba9763ab23c6da6d3b9dce1e9ae2434d75fa3f",
+      "path": "PMDG_737.raas2"
+    },
+    {
+      "modelId": "PMDG_777",
+      "profileVersion": "f72b45fc31d6",
+      "hash": "f72b45fc31d698c6a171404250e16c62b3d88f97cd19e7544a17ae8f34508eac",
+      "path": "PMDG_777.raas2"
+    },
+    {
+      "modelId": "PROSIM-B738",
+      "profileVersion": "f93e9e4746d8",
+      "hash": "f93e9e4746d88eead1533df3590e91e9df697379a37428c9852975545d570405",
+      "path": "PROSIM-B738.raas2"
+    },
+    {
+      "modelId": "TFDI_MD-11",
+      "profileVersion": "193ba2619e68",
+      "hash": "193ba2619e68c8e0db7a0e23ecedf0e424469f75c48390372f09dbccf8af8844",
+      "path": "TFDI_MD-11.raas2"
     }
   ],
   "matchTable": [
     {
-      "modelId": "FenixA320",
+      "modelId": "Aerosoft_A346",
+      "titleMatch": [
+        "(?i)^ToLiss A346"
+      ]
+    },
+    {
+      "modelId": "Contrail_FA50",
+      "titleMatch": [
+        "(?i)^Contrail Falcon"
+      ]
+    },
+    {
+      "modelId": "Fenix_A32X",
       "titleMatch": [
         "(?i)^FENIX.*"
+      ]
+    },
+    {
+      "modelId": "FLYBYWIRE_A320_NEO",
+      "titleMatch": [
+        "(?i)^Airbus A320 Neo FlyByWire.*"
+      ]
+    },
+    {
+      "modelId": "FLYBYWIRE_A380_842",
+      "titleMatch": [
+        "(?i)^FlyByWire A380X.*"
+      ]
+    },
+    {
+      "modelId": "FSLABS_A32X",
+      "titleMatch": [
+        "(?i)^FSLabs A32.*",
+        "(?i)^FSLabs A31.*"
+      ]
+    },
+    {
+      "modelId": "FSS_B727",
+      "titleMatch": [
+        "(?i)^Boeing 72.*"
+      ],
+      "folderMatch": [
+        "(?i)fss.*"
+      ]
+    },
+    {
+      "modelId": "FSS_EJETS",
+      "titleMatch": [
+        "(?i)^FSS Embraer.*"
+      ]
+    },
+    {
+      "modelId": "INI_A340",
+      "titleMatch": [
+        "(?i)^A340"
+      ],
+      "folderMatch": [
+        "(?i)inibuilds-a340"
+      ]
+    },
+    {
+      "modelId": "INI_A350",
+      "titleMatch": [
+        "(?i).*A350.*"
+      ],
+      "folderMatch": [
+        "(?i).*a350.*"
+      ]
+    },
+    {
+      "modelId": "JustFlight_Fokker",
+      "titleMatch": [
+        "(?i).*Just Flight F.*"
+      ],
+      "folderMatch": [
+        "(?i).*just flight fokker.*"
+      ]
+    },
+    {
+      "modelId": "MICROSOFT-A330",
+      "titleMatch": [
+        "(?i)^A330.*"
+      ],
+      "folderMatch": [
+        "(?i)microsoft-a330.*"
+      ]
+    },
+    {
+      "modelId": "MICROSOFT-BELUGAXL",
+      "titleMatch": [
+        "(?i)^A330-BelugaXL.*"
+      ],
+      "folderMatch": [
+        "(?i)microsoft-beluga.*"
+      ]
+    },
+    {
+      "modelId": "PMDG_737",
+      "titleMatch": [
+        "(?i)^737"
+      ],
+      "folderMatch": [
+        "(?i)pmdg"
+      ]
+    },
+    {
+      "modelId": "PMDG_777",
+      "titleMatch": [
+        "(?i)^777"
+      ],
+      "folderMatch": [
+        "(?i)pmdg"
+      ]
+    },
+    {
+      "modelId": "PROSIM-B738",
+      "titleMatch": [
+        "(?i)^PROSIM-B738.*"
+      ]
+    },
+    {
+      "modelId": "TFDI_MD-11",
+      "titleMatch": [
+        ".*TFDi Design MD-11.*"
       ]
     }
   ]

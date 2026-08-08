@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "Aerosoft_A346",
+    "vendor": "Aerosoft",
+    "aircraft": "A340-600",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i)^ToLiss A346"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "NanoVGInstruments#2",
+      "offsetX": "",
+      "offsetY": "-5%",
+      "fontSize": 74,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "(L:AB_MPL_ND_Mode) 3 <=",
+      "brightnessRpn": "(L:AB_MPL_ND_Power) 5 *",
+      "terrainRpn": "(L:AB_MPL_ND_TERR)",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "NanoVGInstruments#4",
+      "offsetX": "-6.5%",
+      "offsetY": "-8%",
+      "fontSize": 29,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "(L:AB_MPL_ND_FO_Mode) 3 <=",
+      "brightnessRpn": "(L:AB_MPL_ND_FO_Power) 5 *",
+      "terrainRpn": "(L:AB_MPL_ND_FO_TERR)",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "NanoVGInstruments#1",
+      "offsetX": "-6.5%",
+      "offsetY": "-8%",
+      "fontSize": 29,
+      "fontFamily": "B612-Regular",
+      "centerOnSpace": true,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": "textShadow:1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+    },
+    {
+      "enabled": true,
+      "anchor": "NanoVGInstruments#5",
+      "offsetX": "-6.5%",
+      "offsetY": "-8%",
+      "fontSize": 29,
+      "fontFamily": "B612-Regular",
+      "centerOnSpace": true,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": "textShadow:1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+    }
+  ],
+  "general.flapsInhibitRpn": "(L:AB_OVH_GPWS_FLAPMODE) 0 ==",
+  "general.positionShiftM": 35,
+  "general.powerOnDelayS": 10,
+  "general.raasInhibitRpn": "(L:AB_OVH_GPWS_SYS) 0 ==",
+  "rop.autobrakeEngagedRpn": "(L:AB_VC_AUTO_BRAKE_ACTIV_ON_LIGHT) 0 >",
+  "rop.autobrakeOffEnabled": true,
+  "rop.dryDecel": 2.4,
+  "rop.enabled": true,
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 3 >= (A:FLAPS HANDLE INDEX,number) 4 <= and",
+  "smartRunway.approachShortRunwayCautionEnabled": false,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >= (A:FLAPS HANDLE INDEX,number) 3 <= and",
+  "smartRunway.todaCallMode": 2
+}

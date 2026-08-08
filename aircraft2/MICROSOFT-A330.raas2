@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "MICROSOFT-A330",
+	"vendor": "Microsoft (Default)",
+    "aircraft": "A330",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+	"titleMatch": [
+      "(?i)^A330.*"
+    ],
+    "folderMatch": [
+      "(?i)microsoft-a330.*"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "ND_1",
+      "legacyPanel": "2:^VCockpit\\d+.*WasmInstrument.*",
+      "offsetX": "",
+      "offsetY": "-5%",
+      "fontSize": 74,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "(L:INI_TERR_ON_CAPT) 0 >",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "ND_2",
+      "legacyPanel": "6:^VCockpit\\d+.*WasmInstrument.*",
+      "offsetX": "",
+      "offsetY": "-5%",
+      "fontSize": 74,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "(L:INI_TERR_ON_FO) 0 >",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "PFD_1",
+      "legacyPanel": "1:^VCockpit\\d+.*WasmInstrument.*",
+      "offsetX": "-6.5%",
+      "offsetY": "-8%",
+      "fontSize": 29,
+      "fontFamily": "B612-Regular",
+      "centerOnSpace": true,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": "textShadow:1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+    },
+    {
+      "enabled": true,
+      "anchor": "PFD_2",
+      "legacyPanel": "5:^VCockpit\\d+.*WasmInstrument.*",
+      "offsetX": "-6.5%",
+      "offsetY": "-8%",
+      "fontSize": 29,
+      "fontFamily": "B612-Regular",
+      "centerOnSpace": true,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": "textShadow:1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+    }
+  ],
+  "general.positionShiftM": 40,
+  "general.raasInhibitRpn": "(L:INI_GPWS_TERR_STATE) 0 ==",
+  "general.systemPowerRpn": "(L:INI_FO_ND_VALID) 0 ==",
+  "rop.autobrakeEngagedRpn": "(L:INI_AUTOBRAKE_LEVEL) 0 >",
+  "rop.autobrakeOffEnabled": true,
+  "rop.dryDecel": 2.4,
+  "rop.enabled": true,
+  "smartLanding.approachSpeedRpn": "(L:INI_VAPP_SPEED)",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 3 >=",
+  "smartRunway.approachShortRunwayCautionEnabled": false,
+  "smartRunway.approachShortRunwayCautionM": 1900,
+  "smartRunway.landingDistanceAvailableMaxM": 1900,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >= (A:FLAPS HANDLE INDEX,number) 3 <= and",
+  "smartRunway.takeoffShortRunwayLengthM": 1900,
+  "smartRunway.todaCallMaxLengthM": 1900,
+  "smartRunway.todaCallMode": 2
+}

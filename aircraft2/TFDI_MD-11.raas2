@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "TFDI_MD-11",
+    "vendor": "TFDi",
+    "aircraft": "MD-11",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      ".*TFDi Design MD-11.*"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "DU2",
+      "offsetX": "",
+      "offsetY": "-16%",
+      "fontSize": 55,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "(L:MD11_PED_DU2_BRT_KB) 10 *",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "DU5",
+      "offsetX": "",
+      "offsetY": "-16%",
+      "fontSize": 55,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "(L:MD11_PED_DU5_BRT_KB) 10 *",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    }
+  ],
+  "general.flapsInhibitRpn": "(L:MD11_AOVHD_GPWS_SW) 1 >",
+  "general.positionShiftM": 40,
+  "general.raasInhibitRpn": "(L:MD11_AOVHD_GPWS_TERROVRD_LT) 0 >",
+  "rop.autobrakeEngagedRpn": "(L:MD11_GSL_ABS_DISARM_LT) 0 == (L:MD11_CTR_AUTOBRAKE_SW) 10 != and",
+  "rop.dryDecel": 2.3,
+  "rop.enabled": true,
+  "rop.variant": 1,
+  "smartLanding.approachSpeedRpn": "(L:md11_efb_vapp)",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE PERCENT,percent over 100) 0.85 >",
+  "smartRunway.approachShortRunwayCautionM": 2000,
+  "smartRunway.landingDistanceAvailableMaxM": 2000,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE PERCENT,percent over 100) 0 > (A:FLAPS HANDLE PERCENT,percent over 100) 0.72 < and",
+  "smartRunway.takeoffShortRunwayLengthM": 2000,
+  "smartRunway.todaCallMaxLengthM": 2000,
+  "smartRunway.todaCallMode": 2
+}

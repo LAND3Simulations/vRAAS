@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "INI_A340",
+    "vendor": "IniBuilds",
+    "aircraft": "A340",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i)^A340"
+    ],
+    "folderMatch": [
+      "(?i)inibuilds-a340"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "DisplayManager",
+      "offsetX": "-25.4%",
+      "offsetY": "-35.6%",
+      "fontSize": 70,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "1",
+      "brightnessRpn": "(L:INI_BRIGHTNESS_SCREEN_1)",
+      "terrainRpn": "(L:INI_TERR_ON_CAPT) 0 >",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "DisplayManager",
+      "offsetX": "-25.4%",
+      "offsetY": "-2.2%",
+      "fontSize": 70,
+      "fontFamily": "VCR_OSD_MONO",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "1",
+      "brightnessRpn": "(L:INI_BRIGHTNESS_SCREEN_3)",
+      "terrainRpn": "(L:INI_TERR_ON_FO) 0 >",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "DisplayManager",
+      "offsetX": "28.3%",
+      "offsetY": "-3.5%",
+      "fontSize": 27,
+      "fontFamily": "B612-Regular",
+      "centerOnSpace": false,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": "textShadow:1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+    },
+    {
+      "enabled": true,
+      "anchor": "DisplayManager",
+      "offsetX": "23.7%",
+      "offsetY": "-37.0%",
+      "fontSize": 27,
+      "fontFamily": "B612-Regular",
+      "centerOnSpace": false,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": "textShadow:1px 1px 0 black, -1px 1px 0 black, 1px 0 0 black, -1px 0 0 black, 0 1px 0 black"
+    }
+  ],
+  "general.flapsInhibitRpn": "(L:INI_GPWS_FLAP_STATE) 0 ==",
+  "general.positionShiftM": 41,
+  "general.powerOnDelayS": 15,
+  "general.raasInhibitRpn": "(L:INI_GPWS_SYS_STATE) 0 ==",
+  "general.systemPowerRpn": "(L:INI_ELEC_AC_BUS_1_IS_POWERED) 0 >",
+  "rop.autobrakeEngagedRpn": "(L:INI_AUTOBRAKE_LEVEL) 0 >",
+  "rop.autobrakeOffEnabled": true,
+  "rop.dryDecel": 2.4,
+  "rop.enabled": true,
+  "smartLanding.approachSpeedRpn": "(L:INI_Airspeed_Dial)",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 3 >=",
+  "smartRunway.approachShortRunwayCautionEnabled": false,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >= (A:FLAPS HANDLE INDEX,number) 3 <= and",
+  "smartRunway.todaCallMode": 2
+}

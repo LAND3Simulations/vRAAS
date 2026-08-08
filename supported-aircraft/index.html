@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>vRAAS 2 Supported Aircraft</title>
+<style>
+:root { color-scheme: light dark; --fg: #1b1f23; --muted: #57606a; --bg: #ffffff; --line: #d8dee4; --head: #f6f8fa; --tick: #1a7f37; }
+@media (prefers-color-scheme: dark) { :root { --fg: #e6edf3; --muted: #9198a1; --bg: #0d1117; --line: #30363d; --head: #161b22; --tick: #3fb950; } }
+body { margin: 0 auto; padding: 2rem 1rem 4rem; max-width: 60rem; background: var(--bg); color: var(--fg); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+h1 { font-size: 1.75rem; margin: 0 0 .5rem; }
+p { margin: .5rem 0; }
+.legend { color: var(--muted); font-size: .9rem; }
+.wrap { overflow-x: auto; margin-top: 1.5rem; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { border: 1px solid var(--line); padding: .4rem .7rem; text-align: left; vertical-align: top; }
+th { background: var(--head); }
+td.mark, th.mark { text-align: center; }
+.yes { color: var(--tick); font-weight: 600; }
+footer { margin-top: 2rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<!-- Generated from the profiles in aircraft2/ by scripts/Generate-Vraas2Manifest.ps1. Do not edit by hand. -->
+<h1>vRAAS 2 Supported Aircraft</h1>
+<p>vRAAS 2 requires <strong>MSFS 2024</strong>. Audio callouts work with <em>every</em> aircraft, no configuration needed. The 17 aircraft below additionally ship a tuned vRAAS 2 profile that is downloaded automatically.</p>
+<p class="legend"><strong>Display</strong>: RAAS text on the PFD or ND. <strong>ROP</strong>: Runway Overrun Prevention, predictive stopping-distance alerts during landing.</p>
+<div class="wrap">
+<table>
+<thead><tr><th>Developer</th><th>Aircraft</th><th class="mark">Display</th><th class="mark">ROP</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td>Aerosoft</td><td>A340-600</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>Contrail</td><td>Falcon FA50</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"></td><td></td></tr>
+<tr><td>Fenix</td><td>A319/A320/A321</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>FlightSimStudio FSS</td><td>E-Jets</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"></td><td></td></tr>
+<tr><td>FlyByWire</td><td>A320neo</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>FlyByWire</td><td>A380X</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"></td><td></td></tr>
+<tr><td>FSLabs</td><td>A319/A320/A321</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>FSS</td><td>B727</td><td class="mark"></td><td class="mark"></td><td></td></tr>
+<tr><td>IniBuilds</td><td>A340</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>IniBuilds</td><td>A350</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"></td><td></td></tr>
+<tr><td>Just Flight</td><td>Fokker F70/F100</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"></td><td></td></tr>
+<tr><td>Microsoft (Default)</td><td>A330</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>Microsoft (Default)</td><td>Beluga XL</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>PMDG</td><td>B737 (all variants)</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>PMDG</td><td>B777</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+<tr><td>ProSim</td><td>B737</td><td class="mark"></td><td class="mark"></td><td></td></tr>
+<tr><td>TFDi</td><td>MD-11</td><td class="mark"><span class="yes">&#10003;</span></td><td class="mark"><span class="yes">&#10003;</span></td><td></td></tr>
+</tbody>
+</table>
+</div>
+<p>Don't see your favourite aircraft? Send a request on our <a href="http://discord.land3simulations.com/">Discord</a>.</p>
+<footer>Generated from the profiles in aircraft2/ by scripts/Generate-Vraas2Manifest.ps1. Do not edit by hand.</footer>
+</body>
+</html>

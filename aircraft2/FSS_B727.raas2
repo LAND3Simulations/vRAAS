@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "FSS_B727",
+    "vendor": "FSS",
+    "aircraft": "B727",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i)^Boeing 72.*"
+    ],
+    "folderMatch": [
+      "(?i)fss.*"
+    ]
+  },
+  "general.positionShiftM": 25,
+  "general.systemPowerRpn": "(L:FSS_B727_FE_ELEC_BUS_1AC_STATE) 0 >",
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 6 >=",
+  "smartRunway.approachShortRunwayCautionM": 1400,
+  "smartRunway.landingDistanceAvailableMaxM": 1400,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 2 == (A:FLAPS HANDLE INDEX,number) 3 == or",
+  "smartRunway.takeoffShortRunwayLengthM": 1400,
+  "smartRunway.todaCallMaxLengthM": 1400,
+  "smartRunway.todaCallMode": 2
+}
