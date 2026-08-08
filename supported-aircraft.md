@@ -22,13 +22,13 @@ The 17 aircraft below additionally ship a tuned vRAAS 2 profile that is download
 | FlyByWire | A320neo | &#10003; | &#10003; |  |
 | FlyByWire | A380X | &#10003; |  |  |
 | FSLabs | A319/A320/A321 | &#10003; | &#10003; |  |
-| FSS | B727 |  |  |  |
+| FSS | B727 |  |  | Audio only, as the 727 has no displays |
 | IniBuilds | A340 | &#10003; | &#10003; |  |
 | IniBuilds | A350 | &#10003; |  |  |
 | Just Flight | Fokker F70/F100 | &#10003; |  |  |
 | Microsoft (Default) | A330 | &#10003; | &#10003; |  |
 | Microsoft (Default) | Beluga XL | &#10003; | &#10003; |  |
-| PMDG | B737 (all variants) | &#10003; | &#10003; |  |
+| PMDG | B737 | &#10003; | &#10003; |  |
 | PMDG | B777 | &#10003; | &#10003; |  |
 | ProSim | B737 |  |  |  |
 | TFDi | MD-11 | &#10003; | &#10003; |  |

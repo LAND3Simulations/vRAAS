@@ -4,7 +4,7 @@
     "minAppVersion": "2.0.0",
     "modelId": "PMDG_737",
     "vendor": "PMDG",
-    "aircraft": "B737 (all variants)",
+    "aircraft": "B737",
     "sims": [
       "2024"
     ],
