@@ -48,8 +48,8 @@
     },
     {
       "modelId": "FSS_EJETS",
-      "profileVersion": "e3697f54d487",
-      "hash": "e3697f54d4876c5797ba5fc4f6f8b1094917a6bfc41377ba3fd6f69f5fbd9117",
+      "profileVersion": "dca8691a6849",
+      "hash": "dca8691a684944d888fd27b5ad4da7d9638a33ea2e29c22e2dca4ebd7d0d40d6",
       "path": "FSS_EJETS.raas2"
     },
     {
@@ -60,8 +60,8 @@
     },
     {
       "modelId": "INI_A350",
-      "profileVersion": "86a70bbc0f53",
-      "hash": "86a70bbc0f53d6ae36914a06036a014084814b78119df4a871a5b13adc0fa546",
+      "profileVersion": "a1684b6911d0",
+      "hash": "a1684b6911d03e1e08d69ab2c958e4633c5759da1891f9e990baa55af0de02ef",
       "path": "INI_A350.raas2"
     },
     {
@@ -84,14 +84,14 @@
     },
     {
       "modelId": "PMDG_737",
-      "profileVersion": "97904600c76a",
-      "hash": "97904600c76af6cf74ed34ac7200d80278145971fe1fba514a622fb529a5d64f",
+      "profileVersion": "3d60d4218fc5",
+      "hash": "3d60d4218fc506f950780894dc32a345ee1d1d8eaa2604b0582c136bfd41ee24",
       "path": "PMDG_737.raas2"
     },
     {
       "modelId": "PMDG_777",
-      "profileVersion": "f72b45fc31d6",
-      "hash": "f72b45fc31d698c6a171404250e16c62b3d88f97cd19e7544a17ae8f34508eac",
+      "profileVersion": "41c0d063c5b8",
+      "hash": "41c0d063c5b8fe70592f0f0aa6774b0d711730abe4d2d6f178c8b197f0e15cca",
       "path": "PMDG_777.raas2"
     },
     {
@@ -208,7 +208,7 @@
     {
       "modelId": "PMDG_737",
       "titleMatch": [
-        "(?i)^737"
+        "(?i)737"
       ],
       "folderMatch": [
         "(?i)pmdg"
@@ -217,7 +217,7 @@
     {
       "modelId": "PMDG_777",
       "titleMatch": [
-        "(?i)^777"
+        "(?i)777"
       ],
       "folderMatch": [
         "(?i)pmdg"

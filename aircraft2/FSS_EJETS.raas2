@@ -45,7 +45,7 @@
   "general.positionShiftM": 20,
   "general.powerOnDelayS": 16,
   "general.raasInhibitRpn": "(L:FSS_EXX_GND_PROX_INHIB_L) 0 >",
-  "general.systemPowerRpn": "(L:FSS_EXX_MFD_GV_ELECT_AC_BUS_1) 0 >",
+  "general.systemPowerRpn": "(L:FSS_EXX_ELEC_PWR_AC_AVAIL) 0 >",
   "smartLanding.approachSpeedRpn": "(L:FSS_EXX_PFD_GV_AIRSPD_VAP_1)",
   "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 5 >=",
   "smartRunway.approachShortRunwayCautionM": 1300,

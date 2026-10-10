@@ -46,6 +46,7 @@
       "additionalStyles": ""
     }
   ],
+  "general.raasInhibitRpn": "(L:INI_SURV_ROW_ROP) 0 ==",
   "smartRunway.approachShortRunwayCautionEnabled": false,
   "smartRunway.landingDistanceAvailableMode": 0,
   "smartRunway.todaCallMode": 2
