@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "minAppVersion": "2.0.0",
+    "modelId": "BlueBird_757",
+    "vendor": "BlueBird",
+    "aircraft": "B757",
+    "sims": [
+      "2024"
+    ],
+    "notes": "",
+    "titleMatch": [
+      "(?i)757"
+    ],
+    "folderMatch": [
+      "(?i)bluebird.*757|bbs.*757"
+    ]
+  },
+  "displays": [
+    {
+      "enabled": true,
+      "anchor": "nd_l",
+      "offsetX": "0%",
+      "offsetY": "-13%",
+      "fontSize": 80,
+      "fontFamily": "",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "nd_r",
+      "offsetX": "0%",
+      "offsetY": "-13%",
+      "fontSize": 80,
+      "fontFamily": "",
+      "centerOnSpace": true,
+      "categoryFilter": 1,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "pfd_l",
+      "offsetX": "0%",
+      "offsetY": "43%",
+      "fontSize": 40,
+      "fontFamily": "",
+      "centerOnSpace": false,
+      "categoryFilter": 2,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    },
+    {
+      "enabled": true,
+      "anchor": "pfd_r",
+      "offsetX": "0%",
+      "offsetY": "43%",
+      "fontSize": 40,
+      "fontFamily": "",
+      "centerOnSpace": false,
+      "categoryFilter": 3,
+      "powerRpn": "",
+      "brightnessRpn": "",
+      "terrainRpn": "",
+      "additionalStyles": ""
+    }
+  ],
+  "general.flapsInhibitRpn": "(L:B757_MAIN_L_FLAPOVRD_BUTTON) 0 >",
+  "general.positionShiftM": 30,
+  "general.powerOnDelayS": 25,
+  "general.raasInhibitRpn": "(L:B757_TERR_OVRD_DECAL3) 0 >",
+  "general.systemPowerRpn": "(L:B757_L_BUS_PWR_SRC) 0 > (L:B757_L_BUS_PWR_SRC) 4 < and",
+  "rop.autobrakeEngagedRpn": "(L:BBS_AUTOBRAKE_KNOB) 3 >=",
+  "rop.autobrakeOffEnabled": true,
+  "rop.dryDecel": 2.8,
+  "rop.enabled": true,
+  "rop.variant": 1,
+  "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 4 >=",
+  "smartRunway.approachShortRunwayCautionEnabled": false,
+  "smartRunway.approachShortRunwayCautionM": 1800,
+  "smartRunway.landingDistanceAvailableMaxM": 1800,
+  "smartRunway.landingDistanceAvailableMode": 0,
+  "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >= (A:FLAPS HANDLE INDEX,number) 4 <= and",
+  "smartRunway.takeoffShortRunwayLengthM": 1800,
+  "smartRunway.todaCallMaxLengthM": 1800,
+  "smartRunway.todaCallMode": 2
+}

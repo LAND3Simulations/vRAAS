@@ -11,6 +11,12 @@
       "path": "Aerosoft_A346.raas2"
     },
     {
+      "modelId": "BlueBird_757",
+      "profileVersion": "62b73646e24c",
+      "hash": "62b73646e24cf1a8bcbc0ea72a11cd2453e6d9bad19605512ee2723bc21a6347",
+      "path": "BlueBird_757.raas2"
+    },
+    {
       "modelId": "Contrail_FA50",
       "profileVersion": "1fc0bee5052d",
       "hash": "1fc0bee5052d70a145d6b4925503e1c7526a40aa7c6e21cd733148651d9678ea",
@@ -112,6 +118,15 @@
       "modelId": "Aerosoft_A346",
       "titleMatch": [
         "(?i)^ToLiss A346"
+      ]
+    },
+    {
+      "modelId": "BlueBird_757",
+      "titleMatch": [
+        "(?i)757"
+      ],
+      "folderMatch": [
+        "(?i)bluebird.*757|bbs.*757"
       ]
     },
     {
