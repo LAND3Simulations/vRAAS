@@ -1,3 +1,5 @@
+> **vRAAS has moved.** vRAAS² runs directly inside MSFS 2024. Callouts, supported aircraft and purchase links: **[land3simulations.com/vraas](https://land3simulations.com/vraas)**. The content below documents vRAAS 1.
+
 ## vRAAS for MSFS
 
 Enhance your flight simulation experience with **vRAAS**, a virtual Runway Awareness and Advisory System designed to replicate real-world RAAS functionality, delivering runway alerts and advisories directly within MSFS. Every feature operates exactly like its real counterpart and can be easily customized or disabled to suit your preferences.
@@ -41,7 +43,7 @@ Enhance your flight simulation experience with **vRAAS**, a virtual Runway Aware
 
 ## Aircraft Compatibility List
 
-Using **vRAAS 2** (in-sim, MSFS 2024)? Its list is generated from the shipped profiles: [vRAAS 2 Supported Aircraft](supported-aircraft.md). The table below is for vRAAS 1.
+Using **vRAAS 2** (in-sim, MSFS 2024)? See its [supported aircraft](https://land3simulations.com/vraas#supported-aircraft). The table below is for vRAAS 1.
 
 Generally, **vRAAS audio calls work with all aircraft**, including 3rd-party addons. However, some features require additional configuration or fine-tuning. The following aircraft will work perfectly without any configuration on your part.
 

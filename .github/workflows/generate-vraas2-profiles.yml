@@ -8,8 +8,6 @@ on:
       - aircraft2/**
       - scripts/Generate-Vraas2Manifest.ps1
       - .github/workflows/generate-vraas2-profiles.yml
-      - supported-aircraft.md
-      - supported-aircraft/index.html
   pull_request:
     branches:
       - main
@@ -17,8 +15,6 @@ on:
       - aircraft2/**
       - scripts/Generate-Vraas2Manifest.ps1
       - .github/workflows/generate-vraas2-profiles.yml
-      - supported-aircraft.md
-      - supported-aircraft/index.html
   workflow_dispatch:
 
 permissions:
@@ -32,6 +28,6 @@ jobs:
       - name: Check out profiles
         uses: actions/checkout@v4
 
-      - name: Validate profiles, manifest and supported-aircraft pages
+      - name: Validate profiles and manifest
         shell: pwsh
         run: ./scripts/Generate-Vraas2Manifest.ps1 -Check
