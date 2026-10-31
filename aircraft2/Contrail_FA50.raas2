@@ -44,7 +44,7 @@
     }
   ],
   "general.systemPowerRpn": "(L:EFIS_C86C_EHSI_LEFT_POWER) 0 >",
-  "smartLanding.approachSpeedRpn": "(A:FLAPS HANDLE INDEX,number)",
+  "smartLanding.approachSpeedRpn": "(L:CTL_FA50_PERF_VAPP)",
   "smartLanding.landingFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 2 >=",
   "smartRunway.landingDistanceAvailableMode": 0,
   "smartRunway.takeoffFlapsConditionRpn": "(A:FLAPS HANDLE INDEX,number) 1 >=",
